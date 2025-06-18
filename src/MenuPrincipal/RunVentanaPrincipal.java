@@ -1,4 +1,4 @@
-package menu_principal;
+package MenuPrincipal;
 
 public class RunVentanaPrincipal {
 
