@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package unidades;
-
+ import MenuPrincipal.VentanaPrincipal;
 /**
  *
  * @author Cesar
@@ -15,6 +15,7 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
      */
     public VentanaUnidad1() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -26,21 +27,107 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        btnMenu = new javax.swing.JButton();
+        lblTituloUnidad1 = new javax.swing.JLabel();
+        btnTema01 = new javax.swing.JButton();
+        btnTema02 = new javax.swing.JButton();
+        btnTema03 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtDescripcionTema01 = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        txtDescripcionTema02 = new javax.swing.JTextArea();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        txtDescripcionTema03 = new javax.swing.JTextArea();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        btnMenu.setText("Menú ");
+        btnMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMenuActionPerformed(evt);
+            }
+        });
+
+        lblTituloUnidad1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblTituloUnidad1.setText("Unidad 1 - Estructuras de Datos Lineales ");
+
+        btnTema01.setText("Tema 01");
+
+        btnTema02.setText("Tema 02");
+
+        btnTema03.setText("Tema 03");
+
+        txtDescripcionTema01.setColumns(20);
+        txtDescripcionTema01.setRows(2);
+        txtDescripcionTema01.setText("Operaciones con arreglos unidimensionales: \ninserción, actualización, eliminación, recorrido, copia.");
+        jScrollPane1.setViewportView(txtDescripcionTema01);
+
+        txtDescripcionTema02.setColumns(20);
+        txtDescripcionTema02.setRows(2);
+        txtDescripcionTema02.setText("Operaciones con Arreglos Unidimensionales: \ncomparación, clonación, fusión.");
+        jScrollPane2.setViewportView(txtDescripcionTema02);
+
+        txtDescripcionTema03.setColumns(20);
+        txtDescripcionTema03.setRows(4);
+        txtDescripcionTema03.setText("Operaciones con Arreglos Bidimensionales: \n- Matrices cuadradas poco densas: Matriz triangular inferior,\n Matriz triangular superior, Matriz tridiagonal. \n- Matrices simétricas y asimétricas.");
+        jScrollPane3.setViewportView(txtDescripcionTema03);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 592, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnTema02, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnTema01, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnTema03, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 335, Short.MAX_VALUE)
+                    .addComponent(jScrollPane2)
+                    .addComponent(jScrollPane1))
+                .addGap(35, 35, 35))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnMenu))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addComponent(lblTituloUnidad1)))
+                .addContainerGap(126, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 420, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnMenu)
+                .addGap(8, 8, 8)
+                .addComponent(lblTituloUnidad1)
+                .addGap(46, 46, 46)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnTema01))
+                .addGap(39, 39, 39)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnTema02)
+                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(37, 37, 37)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnTema03))
+                .addContainerGap(71, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
+        VentanaPrincipal menu = new VentanaPrincipal();
+        menu.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnMenuActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +165,16 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnMenu;
+    private javax.swing.JButton btnTema01;
+    private javax.swing.JButton btnTema02;
+    private javax.swing.JButton btnTema03;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JLabel lblTituloUnidad1;
+    private javax.swing.JTextArea txtDescripcionTema01;
+    private javax.swing.JTextArea txtDescripcionTema02;
+    private javax.swing.JTextArea txtDescripcionTema03;
     // End of variables declaration//GEN-END:variables
 }

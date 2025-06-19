@@ -175,9 +175,9 @@ public class View_Tema01 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnInsertarActionPerformed
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
-        /*VentanaUnidad1 unidad01 = new VentanaUnidad1();
+        VentanaUnidad1 unidad01 = new VentanaUnidad1();
         unidad01.setVisible(true);
-        this.setVisible(false);*/
+        this.setVisible(false);
     }//GEN-LAST:event_btnVolverActionPerformed
 
     private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed
@@ -191,7 +191,7 @@ public class View_Tema01 extends javax.swing.JFrame {
                 
                     txtArreglo.setText("Arreglo sin elementos creado");
                     txtArreglo.setForeground(Color.GRAY);
-                    txtArreglo.setEditable(false); // Solo si no quieres que el usuario escriba ahí
+                    txtArreglo.setEditable(false);
             } else {
                 JOptionPane.showMessageDialog(this, "El tamaño debe ser mayor a cero y menor a 10.");
             }
