@@ -2,7 +2,7 @@ package View_Tema03;
 
 import CLASES.Tema03_Matriz;
 import javax.swing.JOptionPane;
-import unidades.VentanaUnidad1;
+//import unidades.VentanaUnidad1;
 
 public class View_Tema03 extends javax.swing.JFrame {
 
@@ -260,9 +260,9 @@ public class View_Tema03 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed
-        VentanaUnidad1 unidad01 = new VentanaUnidad1();
+        /*VentanaUnidad1 unidad01 = new VentanaUnidad1();
         unidad01.setVisible(true);
-        this.setVisible(false);
+        this.setVisible(false);*/
     }//GEN-LAST:event_btnAtrasActionPerformed
 
     private void btnMostraMatrizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostraMatrizActionPerformed
@@ -377,9 +377,9 @@ public class View_Tema03 extends javax.swing.JFrame {
     }//GEN-LAST:event_txtTamañoActionPerformed
 
     private void btnUnidad01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad01ActionPerformed
-        VentanaUnidad1 unidad01 = new VentanaUnidad1();
+        /*VentanaUnidad1 unidad01 = new VentanaUnidad1();
         unidad01.setVisible(true);
-        this.setVisible(false);
+        this.setVisible(false);*/
     }//GEN-LAST:event_btnUnidad01ActionPerformed
 
     private void btnUnidad02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad02ActionPerformed

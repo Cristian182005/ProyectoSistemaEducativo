@@ -2,7 +2,7 @@
 package MenuPrincipal;
 
 import unidades.VentanaUnidad2;
-import unidades.VentanaUnidad1;
+//import unidades.VentanaUnidad1;
 
 public class VentanaPrincipal extends javax.swing.JFrame {
 
@@ -133,9 +133,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnUnidad1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad1ActionPerformed
-        VentanaUnidad1 unidad1 = new VentanaUnidad1();
+        /*VentanaUnidad1 unidad1 = new VentanaUnidad1();
         unidad1.setVisible(true);
-        this.setVisible(false);
+        this.setVisible(false);*/
     }//GEN-LAST:event_btnUnidad1ActionPerformed
 
     private void btnUnidad2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad2ActionPerformed
