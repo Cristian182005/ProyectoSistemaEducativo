@@ -2,6 +2,7 @@
 package unidades;
 
 import MenuPrincipal.VentanaPrincipal;
+import View_Tema01.View_Tema01;
 
 public class VentanaUnidad1 extends javax.swing.JFrame {
 
@@ -16,8 +17,8 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
 
         btnMenu = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnViewTema01 = new javax.swing.JButton();
+        btnViewTema02 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
@@ -40,9 +41,14 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel1.setText("Estructuras de Datos Estáticas");
 
-        jButton1.setText("Tema 01");
+        btnViewTema01.setText("Tema 01");
+        btnViewTema01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewTema01ActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("Tema 02");
+        btnViewTema02.setText("Tema 02");
 
         jButton3.setText("Tema 03");
 
@@ -76,8 +82,8 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
                     .addComponent(btnMenu)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnViewTema02, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnViewTema01, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
@@ -99,13 +105,13 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
                 .addGap(60, 60, 60)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+                        .addComponent(btnViewTema01, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
                         .addGap(15, 15, 15))
                     .addComponent(jScrollPane3))
                 .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+                        .addComponent(btnViewTema02, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
                         .addGap(11, 11, 11))
                     .addComponent(jScrollPane2))
                 .addGap(44, 44, 44)
@@ -125,6 +131,12 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
         principal.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnMenuActionPerformed
+
+    private void btnViewTema01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewTema01ActionPerformed
+        View_Tema01 tema01 = new View_Tema01();
+        tema01.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnViewTema01ActionPerformed
 
     public static void main(String args[]) {
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -159,8 +171,8 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnMenu;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton btnViewTema01;
+    private javax.swing.JButton btnViewTema02;
     private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
