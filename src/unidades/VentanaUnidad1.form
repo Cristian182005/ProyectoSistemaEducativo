@@ -30,9 +30,15 @@
                   <Component id="btnMenu" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
+<<<<<<< HEAD
                           <Component id="btnViewTema02" min="-2" pref="87" max="-2" attributes="0"/>
                           <Component id="btnViewTema01" min="-2" pref="87" max="-2" attributes="0"/>
                           <Component id="jButton3" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
+=======
+                          <Component id="jBTema02" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Component id="jBTema01" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Component id="jBTema03" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
@@ -41,7 +47,7 @@
                           <Component id="jScrollPane1" max="32767" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLTitulo" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -56,11 +62,15 @@
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Component id="btnMenu" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <Component id="jLTitulo" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
                       <Component id="btnViewTema01" pref="29" max="32767" attributes="0"/>
+=======
+                      <Component id="jBTema01" pref="29" max="32767" attributes="0"/>
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
                       <EmptySpace min="15" pref="15" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jScrollPane3" max="32767" attributes="0"/>
@@ -68,7 +78,11 @@
               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
                       <Component id="btnViewTema02" pref="29" max="32767" attributes="0"/>
+=======
+                      <Component id="jBTema02" pref="29" max="32767" attributes="0"/>
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
                       <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jScrollPane2" max="32767" attributes="0"/>
@@ -76,7 +90,7 @@
               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="jButton3" pref="31" max="32767" attributes="0"/>
+                      <Component id="jBTema03" pref="31" max="32767" attributes="0"/>
                       <EmptySpace min="63" pref="63" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jScrollPane1" max="32767" attributes="0"/>
@@ -98,7 +112,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabel1">
+    <Component class="javax.swing.JLabel" name="jLTitulo">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="24" style="1"/>
@@ -106,23 +120,37 @@
         <Property name="text" type="java.lang.String" value="Estructuras de Datos Est&#xe1;ticas"/>
       </Properties>
     </Component>
+<<<<<<< HEAD
     <Component class="javax.swing.JButton" name="btnViewTema01">
+=======
+    <Component class="javax.swing.JButton" name="jBTema01">
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
       <Properties>
         <Property name="text" type="java.lang.String" value="Tema 01"/>
       </Properties>
       <Events>
+<<<<<<< HEAD
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnViewTema01ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnViewTema02">
+=======
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBTema01ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jBTema02">
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
       <Properties>
         <Property name="text" type="java.lang.String" value="Tema 02"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JButton" name="jButton3">
+    <Component class="javax.swing.JButton" name="jBTema03">
       <Properties>
         <Property name="text" type="java.lang.String" value="Tema 03"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBTema03ActionPerformed"/>
+      </Events>
     </Component>
     <Container class="javax.swing.JScrollPane" name="jScrollPane2">
       <AuxValues>
@@ -131,7 +159,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextArea" name="jTextArea2">
+        <Component class="javax.swing.JTextArea" name="txtTema02">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
@@ -151,7 +179,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextArea" name="jTextArea3">
+        <Component class="javax.swing.JTextArea" name="txtTema01">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
@@ -172,7 +200,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
       <SubComponents>
-        <Component class="javax.swing.JTextArea" name="jTextArea1">
+        <Component class="javax.swing.JTextArea" name="txtTema03">
           <Properties>
             <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
