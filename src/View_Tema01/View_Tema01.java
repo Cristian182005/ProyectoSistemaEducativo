@@ -9,10 +9,6 @@ import Unidad01.ArreglosUnid01;
 import java.awt.Color;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Cesar
- */
 public class View_Tema01 extends javax.swing.JFrame {
 
     private ArreglosUnid01 miArreglo;
@@ -102,9 +98,10 @@ public class View_Tema01 extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(btnRecorrer, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel3)
-                                        .addComponent(btnCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                        .addGap(124, 124, 124))
+                                    .addComponent(btnCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
@@ -232,10 +229,8 @@ public class View_Tema01 extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new View_Tema01().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new View_Tema01().setVisible(true);
         });
     }
 
