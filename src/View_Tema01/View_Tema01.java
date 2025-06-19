@@ -6,7 +6,6 @@ package View_Tema01;
 
 import unidades.VentanaUnidad1;
 import Unidad01.ArreglosUnid01;
-
 import java.awt.Color;
 import javax.swing.JOptionPane;
 

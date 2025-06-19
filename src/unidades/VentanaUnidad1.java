@@ -4,6 +4,8 @@
  */
 package unidades;
  import MenuPrincipal.VentanaPrincipal;
+import View_Tema01.View_Tema01;
+import View_Tema02.View_Tema02;
 /**
  *
  * @author Cesar
@@ -52,21 +54,34 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
         lblTituloUnidad1.setText("Unidad 1 - Estructuras de Datos Lineales ");
 
         btnTema01.setText("Tema 01");
+        btnTema01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTema01ActionPerformed(evt);
+            }
+        });
 
         btnTema02.setText("Tema 02");
+        btnTema02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnTema02ActionPerformed(evt);
+            }
+        });
 
         btnTema03.setText("Tema 03");
 
+        txtDescripcionTema01.setEditable(false);
         txtDescripcionTema01.setColumns(20);
         txtDescripcionTema01.setRows(2);
         txtDescripcionTema01.setText("Operaciones con arreglos unidimensionales: \ninserción, actualización, eliminación, recorrido, copia.");
         jScrollPane1.setViewportView(txtDescripcionTema01);
 
+        txtDescripcionTema02.setEditable(false);
         txtDescripcionTema02.setColumns(20);
         txtDescripcionTema02.setRows(2);
         txtDescripcionTema02.setText("Operaciones con Arreglos Unidimensionales: \ncomparación, clonación, fusión.");
         jScrollPane2.setViewportView(txtDescripcionTema02);
 
+        txtDescripcionTema03.setEditable(false);
         txtDescripcionTema03.setColumns(20);
         txtDescripcionTema03.setRows(4);
         txtDescripcionTema03.setText("Operaciones con Arreglos Bidimensionales: \n- Matrices cuadradas poco densas: Matriz triangular inferior,\n Matriz triangular superior, Matriz tridiagonal. \n- Matrices simétricas y asimétricas.");
@@ -129,15 +144,23 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnMenuActionPerformed
 
+    private void btnTema01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTema01ActionPerformed
+        View_Tema01 tema01 = new View_Tema01();
+        tema01.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnTema01ActionPerformed
+
+    private void btnTema02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTema02ActionPerformed
+        View_Tema02 tema02 = new View_Tema02();
+        tema02.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnTema02ActionPerformed
+
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {

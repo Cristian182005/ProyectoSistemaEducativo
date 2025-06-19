@@ -101,11 +101,17 @@
       <Properties>
         <Property name="text" type="java.lang.String" value="Tema 01"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTema01ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnTema02">
       <Properties>
         <Property name="text" type="java.lang.String" value="Tema 02"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnTema02ActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnTema03">
       <Properties>
@@ -121,6 +127,7 @@
       <SubComponents>
         <Component class="javax.swing.JTextArea" name="txtDescripcionTema01">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="2"/>
             <Property name="text" type="java.lang.String" value="Operaciones con arreglos unidimensionales: &#xa;inserci&#xf3;n, actualizaci&#xf3;n, eliminaci&#xf3;n, recorrido, copia."/>
@@ -137,6 +144,7 @@
       <SubComponents>
         <Component class="javax.swing.JTextArea" name="txtDescripcionTema02">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="2"/>
             <Property name="text" type="java.lang.String" value="Operaciones con Arreglos Unidimensionales: &#xa;comparaci&#xf3;n, clonaci&#xf3;n, fusi&#xf3;n."/>
@@ -153,6 +161,7 @@
       <SubComponents>
         <Component class="javax.swing.JTextArea" name="txtDescripcionTema03">
           <Properties>
+            <Property name="editable" type="boolean" value="false"/>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="4"/>
             <Property name="text" type="java.lang.String" value="Operaciones con Arreglos Bidimensionales: &#xa;- Matrices cuadradas poco densas: Matriz triangular inferior,&#xa; Matriz triangular superior, Matriz tridiagonal. &#xa;- Matrices sim&#xe9;tricas y asim&#xe9;tricas."/>
