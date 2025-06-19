@@ -6,6 +6,7 @@ package View_Tema01;
 
 import unidades.VentanaUnidad1;
 import Unidad01.ArreglosUnid01;
+
 import java.awt.Color;
 import javax.swing.JOptionPane;
 
@@ -174,9 +175,9 @@ public class View_Tema01 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnInsertarActionPerformed
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
-        VentanaUnidad1 unidad01 = new VentanaUnidad1();
+        /*VentanaUnidad1 unidad01 = new VentanaUnidad1();
         unidad01.setVisible(true);
-        this.setVisible(false);
+        this.setVisible(false);*/
     }//GEN-LAST:event_btnVolverActionPerformed
 
     private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed

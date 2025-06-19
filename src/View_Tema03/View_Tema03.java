@@ -2,7 +2,7 @@ package View_Tema03;
 
 import CLASES.Tema03_Matriz;
 import javax.swing.JOptionPane;
-import unidades.VentanaUnidad1;
+//import unidades.VentanaUnidad1;
 
 public class View_Tema03 extends javax.swing.JFrame {
 
@@ -260,9 +260,9 @@ public class View_Tema03 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed
-        VentanaUnidad1 unidad01 = new VentanaUnidad1();
+        /*VentanaUnidad1 unidad01 = new VentanaUnidad1();
         unidad01.setVisible(true);
-        this.setVisible(false);
+        this.setVisible(false);*/
     }//GEN-LAST:event_btnAtrasActionPerformed
 
     private void btnMostraMatrizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostraMatrizActionPerformed
@@ -271,7 +271,8 @@ public class View_Tema03 extends javax.swing.JFrame {
             return;
         }
 
-        int[][] datos = matriz.getMatriz();
+        int[][] original = matriz.getMatriz();
+        int[][] inversa = matriz.getInversa();
         int n = matriz.getTamaño();
 
         StringBuilder sb = new StringBuilder();
@@ -279,7 +280,15 @@ public class View_Tema03 extends javax.swing.JFrame {
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                sb.append(datos[i][j]).append("\t");
+                sb.append(original[i][j]).append("\t");
+            }
+            sb.append("\n");
+        }
+
+        sb.append("\nMatriz inversa (transpuesta):\n\n");
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                sb.append(inversa[i][j]).append("\t");
             }
             sb.append("\n");
         }
@@ -289,7 +298,7 @@ public class View_Tema03 extends javax.swing.JFrame {
 
     private void btnMetricaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMetricaActionPerformed
         if (matriz == null) {
-            JOptionPane.showMessageDialog(this,"Primero debes agregar los datos de la matriz.");
+            JOptionPane.showMessageDialog(this, "Primero debes agregar los datos de la matriz.");
             return;
         }
 
@@ -304,8 +313,8 @@ public class View_Tema03 extends javax.swing.JFrame {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 sb.append("[").append(i).append("][").append(j).append("] = ").append(datos[i][j])
-                .append("  vs  ")
-                .append("[").append(j).append("][").append(i).append("] = ").append(datos[j][i]);
+                        .append("  vs  ")
+                        .append("[").append(j).append("][").append(i).append("] = ").append(datos[j][i]);
 
                 if (datos[i][j] != datos[j][i]) {
                     sb.append("  ❌\n");
@@ -357,10 +366,10 @@ public class View_Tema03 extends javax.swing.JFrame {
 
         matriz.llenar(datos);
         txaMostrar.setText("\n"
-            + "Tamaño de la matriz: " + tamaño + "x" + tamaño + "\n"
-            + "\n"
-            + "Los elementos de \n"
-            + "la matriz son: " + elementos);
+                + "Tamaño de la matriz: " + tamaño + "x" + tamaño + "\n"
+                + "\n"
+                + "Los elementos de \n"
+                + "la matriz son: " + elementos);
     }//GEN-LAST:event_btnAgregarActionPerformed
 
     private void txtTamañoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTamañoActionPerformed
@@ -368,30 +377,22 @@ public class View_Tema03 extends javax.swing.JFrame {
     }//GEN-LAST:event_txtTamañoActionPerformed
 
     private void btnUnidad01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad01ActionPerformed
-        VentanaUnidad1 unidad01 = new VentanaUnidad1();
+        /*VentanaUnidad1 unidad01 = new VentanaUnidad1();
         unidad01.setVisible(true);
-        this.setVisible(false);
+        this.setVisible(false);*/
     }//GEN-LAST:event_btnUnidad01ActionPerformed
 
     private void btnUnidad02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad02ActionPerformed
-        
+
     }//GEN-LAST:event_btnUnidad02ActionPerformed
 
     private void btnUnidad03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad03ActionPerformed
-        
+
     }//GEN-LAST:event_btnUnidad03ActionPerformed
 
     private void btnUnidad04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad04ActionPerformed
-        
+
     }//GEN-LAST:event_btnUnidad04ActionPerformed
-
-    public Tema03_Matriz getMatriz() {
-        return matriz;
-    }
-
-    public void setMatriz(Tema03_Matriz matriz) {
-        this.matriz = matriz;
-    }
 
     public static void main(String args[]) {
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -403,16 +404,24 @@ public class View_Tema03 extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(View_Tema03.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(View_Tema03.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(View_Tema03.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(View_Tema03.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(View_Tema03.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(View_Tema03.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(View_Tema03.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(View_Tema03.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
