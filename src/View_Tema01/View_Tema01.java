@@ -3,20 +3,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package View_Tema01;
-
+ 
 import unidades.VentanaUnidad1;
 import Unidad01.ArreglosUnid01;
-import java.awt.Color;
 import javax.swing.JOptionPane;
-
+/**
+ *
+ * @author Cesar
+ */
 public class View_Tema01 extends javax.swing.JFrame {
-
-    private ArreglosUnid01 miArreglo;
+    
+    private ArreglosUnid01 arreglo;
+    
     public View_Tema01() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,15 +30,17 @@ public class View_Tema01 extends javax.swing.JFrame {
 
         btnVolver = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        btnCrearArreglo = new javax.swing.JButton();
+        btnInsertarDatos = new javax.swing.JButton();
+        btnActualizarDato = new javax.swing.JButton();
+        btnBorrarDato = new javax.swing.JButton();
+        btnBorrarArreglo = new javax.swing.JButton();
+        btnRecorrerArreglo = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        txtTamaño = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
-        btnInsertar = new javax.swing.JButton();
-        btnRecorrer = new javax.swing.JButton();
-        btnEliminarArreglo = new javax.swing.JButton();
-        btnEliminarDato = new javax.swing.JButton();
-        btnCrear = new javax.swing.JButton();
-        btnActualizar = new javax.swing.JButton();
-        btnCopiar = new javax.swing.JButton();
-        txtArreglo = new javax.swing.JTextField();
+        txtDatos = new javax.swing.JTextField();
+        txtRecorrido = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,156 +54,278 @@ public class View_Tema01 extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setText("Arreglos Unidimensionales - Operaciones Básicas");
 
-        btnInsertar.setText("Insertar Dato(s)");
-        btnInsertar.addActionListener(new java.awt.event.ActionListener() {
+        btnCrearArreglo.setText("Crear Arreglo");
+        btnCrearArreglo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnInsertarActionPerformed(evt);
+                btnCrearArregloActionPerformed(evt);
             }
         });
 
-        btnRecorrer.setText("Recorrer Arreglo");
-
-        btnEliminarArreglo.setText("Eliminar Arreglo");
-
-        btnEliminarDato.setText("Eliminar Dato");
-
-        btnCrear.setText("Crear Arreglo");
-        btnCrear.addActionListener(new java.awt.event.ActionListener() {
+        btnInsertarDatos.setText("Insertar");
+        btnInsertarDatos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCrearActionPerformed(evt);
+                btnInsertarDatosActionPerformed(evt);
             }
         });
 
-        btnActualizar.setText("Actualizar Arreglo");
-
-        btnCopiar.setText("Copiar Arreglo");
-
-        txtArreglo.addActionListener(new java.awt.event.ActionListener() {
+        btnActualizarDato.setText("Actualizar Dato");
+        btnActualizarDato.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtArregloActionPerformed(evt);
+                btnActualizarDatoActionPerformed(evt);
             }
         });
+
+        btnBorrarDato.setText("Borrar Dato");
+        btnBorrarDato.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarDatoActionPerformed(evt);
+            }
+        });
+
+        btnBorrarArreglo.setText("Borrar Arreglo");
+        btnBorrarArreglo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrarArregloActionPerformed(evt);
+            }
+        });
+
+        btnRecorrerArreglo.setText("Recorrer");
+        btnRecorrerArreglo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRecorrerArregloActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setText("Insertar tamaño del arreglo: ");
+
+        jLabel3.setText("Insertar datos del arreglo:");
+
+        txtRecorrido.setEditable(false);
+        txtRecorrido.setFont(new java.awt.Font("Segoe UI Variable", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btnVolver)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(30, 30, 30)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btnVolver))
+                        .addComponent(btnActualizarDato)
+                        .addGap(34, 34, 34)
+                        .addComponent(btnBorrarArreglo, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(btnBorrarDato, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtRecorrido)
                             .addGroup(layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(btnRecorrer, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel3)
-                                        .addGap(124, 124, 124))
-                                    .addComponent(btnCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel3))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(btnInsertar, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(btnActualizar))
-                                    .addComponent(btnCopiar, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnEliminarArreglo, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnEliminarDato, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(txtArreglo))))
-                .addContainerGap(43, Short.MAX_VALUE))
+                                        .addComponent(txtTamaño, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(btnCrearArreglo, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnInsertarDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnRecorrerArreglo, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(88, 88, 88)
+                .addComponent(jLabel1)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(btnVolver)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(21, 21, 21)
                 .addComponent(jLabel1)
-                .addGap(40, 40, 40)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnCrear)
-                    .addComponent(btnInsertar)
-                    .addComponent(btnActualizar))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnRecorrer)
-                    .addComponent(btnCopiar))
-                .addGap(18, 18, 18)
-                .addComponent(txtArreglo, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnCrearArreglo)
+                    .addComponent(jLabel2)
+                    .addComponent(txtTamaño, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnEliminarArreglo)
-                    .addComponent(btnEliminarDato))
-                .addContainerGap(47, Short.MAX_VALUE))
+                    .addComponent(jLabel3)
+                    .addComponent(txtDatos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnInsertarDatos))
+                .addGap(31, 31, 31)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtRecorrido, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnRecorrerArreglo))
+                .addGap(39, 39, 39)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnActualizarDato)
+                    .addComponent(btnBorrarArreglo)
+                    .addComponent(btnBorrarDato))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnInsertarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertarActionPerformed
-    if (miArreglo == null) {
-        JOptionPane.showMessageDialog(this, "Primero debe crear el arreglo.");
-        return;
-    }
+    private void btnInsertarDatosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInsertarDatosActionPerformed
+        if (arreglo == null) {
+            JOptionPane.showMessageDialog(null, "Primero crea un arreglo.", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
 
-    try {
-        String input = JOptionPane.showInputDialog(this, "Ingrese un número a insertar:");
-        if (input != null) {
-            int valor = Integer.parseInt(input);
-            boolean exito = miArreglo.insertar(valor);
+        String texto = txtDatos.getText().trim();
+        if (texto.isEmpty()) {
+            JOptionPane.showMessageDialog(null, "Ingrese al menos un valor.", "Aviso", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
 
-            if (exito) {
-                txtArreglo.setText(miArreglo.recorrerHorizontal());
-                txtArreglo.setForeground(Color.BLACK);
-            } else {
-                JOptionPane.showMessageDialog(this, "El arreglo está lleno.");
+        String[] partes = texto.split(",");
+        int insertados = 0;
+        int noInsertados = 0;
+
+        for (String parte : partes) {
+            try {
+                int valor = Integer.parseInt(parte.trim());
+                if (arreglo.insertar(valor)) {
+                    insertados++;
+                } else {
+                    noInsertados++;
+                }
+            } catch (NumberFormatException ex) {
+                noInsertados++;
             }
         }
-    } catch (NumberFormatException e) {
-        JOptionPane.showMessageDialog(this, "Debe ingresar un número válido.");
-    }        
-    }//GEN-LAST:event_btnInsertarActionPerformed
+
+        String mensaje = "Valores insertados: " + insertados;
+        if (noInsertados > 0) {
+            mensaje += "\nNo se pudieron insertar " + noInsertados + " valores (error o arreglo lleno).";
+        }
+
+        JOptionPane.showMessageDialog(null, mensaje);
+    }//GEN-LAST:event_btnInsertarDatosActionPerformed
+
+    private void btnRecorrerArregloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRecorrerArregloActionPerformed
+        if (arreglo == null) {
+            JOptionPane.showMessageDialog(null, "Primero crea un arreglo.", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        String contenido = arreglo.recorrer();
+        txtRecorrido.setText(contenido.isEmpty() ? "Arreglo vacío" : contenido);
+    }//GEN-LAST:event_btnRecorrerArregloActionPerformed
+
+    private void btnCrearArregloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearArregloActionPerformed
+        if (arreglo != null) {
+            JOptionPane.showMessageDialog(null, "Ya existe un arreglo. Debes eliminarlo antes de crear uno nuevo.", "Advertencia", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+
+        try {
+            int tamaño = Integer.parseInt(txtTamaño.getText());
+            if (tamaño > 0) {
+                arreglo = new ArreglosUnid01(tamaño);
+                JOptionPane.showMessageDialog(null, "Arreglo creado con tamaño " + tamaño);
+            } else {
+                JOptionPane.showMessageDialog(null, "El tamaño debe ser mayor que 0.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Por favor ingrese un número válido.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_btnCrearArregloActionPerformed
+
+    private void btnBorrarArregloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarArregloActionPerformed
+        if (arreglo == null) {
+            JOptionPane.showMessageDialog(null, "No hay ningún arreglo creado.", "Advertencia", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+
+        int confirmacion = JOptionPane.showConfirmDialog(
+            null,
+            "¿Estás seguro de que deseas eliminar el arreglo?",
+            "Confirmar eliminación",
+            JOptionPane.YES_NO_OPTION
+        );
+
+        if (confirmacion == JOptionPane.YES_OPTION) {
+            arreglo = null;
+            txtDatos.setText("");
+            txtTamaño.setText("");
+            txtRecorrido.setText("");
+            JOptionPane.showMessageDialog(null, "Arreglo eliminado correctamente.");
+        }
+    }//GEN-LAST:event_btnBorrarArregloActionPerformed
+
+    private void btnActualizarDatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarDatoActionPerformed
+        if (arreglo == null) {
+            JOptionPane.showMessageDialog(null, "Primero crea un arreglo.", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
+        try {
+            String inputPos = JOptionPane.showInputDialog(null, "Ingrese la posición que desea actualizar:");
+            if (inputPos == null) return; // Cancelado
+
+            int pos = Integer.parseInt(inputPos);
+
+            String inputValor = JOptionPane.showInputDialog(null, "Ingrese el nuevo valor para la posición [" + pos + "]:");
+            if (inputValor == null) return; // Cancelado
+
+            int nuevoValor = Integer.parseInt(inputValor);
+
+            boolean actualizado = arreglo.actualizar(pos, nuevoValor);
+
+            if (actualizado) {
+                JOptionPane.showMessageDialog(null, "Valor actualizado correctamente en la posición [" + pos + "].");
+                txtRecorrido.setText(arreglo.recorrer());
+            } else {
+                JOptionPane.showMessageDialog(null, "Posición inválida. Fuera del rango actual.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Debe ingresar números válidos.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_btnActualizarDatoActionPerformed
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
-        VentanaUnidad1 unidad01 = new VentanaUnidad1();
-        unidad01.setVisible(true);
+        VentanaUnidad1 unidad1 = new VentanaUnidad1();
+        unidad1.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnVolverActionPerformed
 
-    private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed
-    try {
-        String input = JOptionPane.showInputDialog(this, "Ingrese el tamaño del arreglo:");
-        if (input != null) { 
-            int tamaño = Integer.parseInt(input);
-            if (tamaño > 0 && tamaño <= 10) {
-                miArreglo = new ArreglosUnid01(tamaño);
-                JOptionPane.showMessageDialog(this, "Arreglo creado con tamaño " + tamaño);
-                
-                    txtArreglo.setText("Arreglo sin elementos creado");
-                    txtArreglo.setForeground(Color.GRAY);
-                    txtArreglo.setEditable(false);
-            } else {
-                JOptionPane.showMessageDialog(this, "El tamaño debe ser mayor a cero y menor a 10.");
-            }
+    private void btnBorrarDatoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarDatoActionPerformed
+        if (arreglo == null) {
+            JOptionPane.showMessageDialog(null, "Primero crea un arreglo.", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
         }
-    } catch (NumberFormatException e) {
-        JOptionPane.showMessageDialog(this, "Debe ingresar un número válido.");
-    }        
-    }//GEN-LAST:event_btnCrearActionPerformed
 
-    private void txtArregloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtArregloActionPerformed
+        try {
+            String inputPos = JOptionPane.showInputDialog(null, "Ingrese la posición que desea eliminar:");
+            if (inputPos == null) return; // Cancelado
 
-    }//GEN-LAST:event_txtArregloActionPerformed
+            int pos = Integer.parseInt(inputPos);
+
+            boolean eliminado = arreglo.eliminar(pos);
+
+            if (eliminado) {
+                JOptionPane.showMessageDialog(null, "Elemento en la posición [" + pos + "] eliminado correctamente.");
+                txtRecorrido.setText(arreglo.recorrer());
+            } else {
+                JOptionPane.showMessageDialog(null, "Posición inválida. Fuera del rango actual.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(null, "Debe ingresar un número válido.", "Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }//GEN-LAST:event_btnBorrarDatoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -229,22 +355,26 @@ public class View_Tema01 extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> {
-            new View_Tema01().setVisible(true);
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new View_Tema01().setVisible(true);
+            }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnActualizar;
-    private javax.swing.JButton btnCopiar;
-    private javax.swing.JButton btnCrear;
-    private javax.swing.JButton btnEliminarArreglo;
-    private javax.swing.JButton btnEliminarDato;
-    private javax.swing.JButton btnInsertar;
-    private javax.swing.JButton btnRecorrer;
+    private javax.swing.JButton btnActualizarDato;
+    private javax.swing.JButton btnBorrarArreglo;
+    private javax.swing.JButton btnBorrarDato;
+    private javax.swing.JButton btnCrearArreglo;
+    private javax.swing.JButton btnInsertarDatos;
+    private javax.swing.JButton btnRecorrerArreglo;
     private javax.swing.JButton btnVolver;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JTextField txtArreglo;
+    private javax.swing.JTextField txtDatos;
+    private javax.swing.JTextField txtRecorrido;
+    private javax.swing.JTextField txtTamaño;
     // End of variables declaration//GEN-END:variables
 }

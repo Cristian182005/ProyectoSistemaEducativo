@@ -3,38 +3,86 @@ package Unidad01;
 import java.util.Arrays;
 
 public class ArreglosUnid02 {
-    private int[] arreglo1;
-    private int[] arreglo2;
+    private int[] arreglo;
+    private int elementos;
 
-    public ArreglosUnid02(int[] arreglo1, int[] arreglo2) {
-        this.arreglo1 = arreglo1;
-        this.arreglo2 = arreglo2;
+    public boolean crearArreglo(int tamaño) {
+        if (tamaño > 0) {
+            arreglo = new int[tamaño];
+            elementos = 0;
+            return true;
+        }
+        return false;
     }
 
-    public boolean comparar() {
-        return Arrays.equals(arreglo1, arreglo2);
+    public boolean insertar(int valor) {
+        if (arreglo != null && elementos < arreglo.length) {
+            arreglo[elementos++] = valor;
+            return true;
+        }
+        return false;
     }
 
-    public int[] clonarArreglo1() {
-        return arreglo1.clone();
+    public int insertarVarios(String valoresSeparadosPorComa) {
+        if (arreglo == null) return 0;
+
+        String[] partes = valoresSeparadosPorComa.split(",");
+        int insertados = 0;
+
+        for (String parte : partes) {
+            try {
+                int valor = Integer.parseInt(parte.trim());
+                if (insertar(valor)) {
+                    insertados++;
+                }
+            } catch (NumberFormatException e) {
+
+            }
+        }
+        return insertados;
     }
 
-    public int[] fusionar() {
-        int[] fusion = new int[arreglo1.length + arreglo2.length];
-        System.arraycopy(arreglo1, 0, fusion, 0, arreglo1.length);
-        System.arraycopy(arreglo2, 0, fusion, arreglo1.length, arreglo2.length);
+    public void borrarArreglo() {
+        arreglo = null;
+        elementos = 0;
+    }
+
+    public int[] clonar() {
+        if (arreglo == null) return null;
+        return Arrays.copyOf(arreglo, elementos); 
+    }
+
+    public boolean comparar(int[] otro) {
+        if (arreglo == null || otro == null) return false;
+        return Arrays.equals(Arrays.copyOf(arreglo, elementos), otro);
+    }
+
+    public int[] fusionar(int[] otro) {
+        if (arreglo == null || otro == null) return null;
+        int[] fusion = new int[elementos + otro.length];
+        System.arraycopy(arreglo, 0, fusion, 0, elementos);
+        System.arraycopy(otro, 0, fusion, elementos, otro.length);
         return fusion;
     }
 
-    public String mostrarArreglo(int[] arr) {
-        return Arrays.toString(arr);
+    public String mostrar() {
+        if (arreglo == null || elementos == 0) return "Arreglo vacío";
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < elementos; i++) {
+            sb.append("[").append(i).append("]=").append(arreglo[i]).append("  ");
+        }
+        return sb.toString().trim();
     }
 
-    public void setArreglo1(int[] arreglo1) {
-        this.arreglo1 = arreglo1;
+    public int[] getArregloActual() {
+        return arreglo == null ? null : Arrays.copyOf(arreglo, elementos);
     }
 
-    public void setArreglo2(int[] arreglo2) {
-        this.arreglo2 = arreglo2;
-    }    
+    public int getCapacidad() {
+        return arreglo == null ? 0 : arreglo.length;
+    }
+
+    public int getElementos() {
+        return elementos;
+    }  
 }

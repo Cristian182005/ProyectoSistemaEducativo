@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package unidades;
- import MenuPrincipal.VentanaPrincipal;
+import MenuPrincipal.VentanaPrincipal;
 import View_Tema01.View_Tema01;
 import View_Tema02.View_Tema02;
 /**
