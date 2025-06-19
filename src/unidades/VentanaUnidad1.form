@@ -30,9 +30,15 @@
                   <Component id="btnMenu" alignment="0" min="-2" max="-2" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <Group type="103" groupAlignment="1" attributes="0">
+<<<<<<< HEAD
+                          <Component id="btnViewTema02" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Component id="btnViewTema01" min="-2" pref="87" max="-2" attributes="0"/>
+                          <Component id="jButton3" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
+=======
                           <Component id="jBTema02" min="-2" pref="87" max="-2" attributes="0"/>
                           <Component id="jBTema01" min="-2" pref="87" max="-2" attributes="0"/>
                           <Component id="jBTema03" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
                       </Group>
                       <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
@@ -60,7 +66,11 @@
               <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
+                      <Component id="btnViewTema01" pref="29" max="32767" attributes="0"/>
+=======
                       <Component id="jBTema01" pref="29" max="32767" attributes="0"/>
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
                       <EmptySpace min="15" pref="15" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jScrollPane3" max="32767" attributes="0"/>
@@ -68,7 +78,11 @@
               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
+<<<<<<< HEAD
+                      <Component id="btnViewTema02" pref="29" max="32767" attributes="0"/>
+=======
                       <Component id="jBTema02" pref="29" max="32767" attributes="0"/>
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
                       <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
                   </Group>
                   <Component id="jScrollPane2" max="32767" attributes="0"/>
@@ -106,15 +120,26 @@
         <Property name="text" type="java.lang.String" value="Estructuras de Datos Est&#xe1;ticas"/>
       </Properties>
     </Component>
+<<<<<<< HEAD
+    <Component class="javax.swing.JButton" name="btnViewTema01">
+=======
     <Component class="javax.swing.JButton" name="jBTema01">
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
       <Properties>
         <Property name="text" type="java.lang.String" value="Tema 01"/>
       </Properties>
       <Events>
+<<<<<<< HEAD
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnViewTema01ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnViewTema02">
+=======
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBTema01ActionPerformed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JButton" name="jBTema02">
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
       <Properties>
         <Property name="text" type="java.lang.String" value="Tema 02"/>
       </Properties>

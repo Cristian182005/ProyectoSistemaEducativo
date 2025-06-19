@@ -2,7 +2,11 @@
 package unidades;
 
 import MenuPrincipal.VentanaPrincipal;
+<<<<<<< HEAD
+import View_Tema01.View_Tema01;
+=======
 import View_Tema03.View_Tema03;
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
 
 public class VentanaUnidad1 extends javax.swing.JFrame {
 
@@ -16,10 +20,17 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
     private void initComponents() {
 
         btnMenu = new javax.swing.JButton();
+<<<<<<< HEAD
+        jLabel1 = new javax.swing.JLabel();
+        btnViewTema01 = new javax.swing.JButton();
+        btnViewTema02 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+=======
         jLTitulo = new javax.swing.JLabel();
         jBTema01 = new javax.swing.JButton();
         jBTema02 = new javax.swing.JButton();
         jBTema03 = new javax.swing.JButton();
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
         jScrollPane2 = new javax.swing.JScrollPane();
         txtTema02 = new javax.swing.JTextArea();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -41,6 +52,16 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
         jLTitulo.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLTitulo.setText("Estructuras de Datos Estáticas");
 
+<<<<<<< HEAD
+        btnViewTema01.setText("Tema 01");
+        btnViewTema01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewTema01ActionPerformed(evt);
+            }
+        });
+
+        btnViewTema02.setText("Tema 02");
+=======
         jBTema01.setText("Tema 01");
         jBTema01.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -49,6 +70,7 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
         });
 
         jBTema02.setText("Tema 02");
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
 
         jBTema03.setText("Tema 03");
         jBTema03.addActionListener(new java.awt.event.ActionListener() {
@@ -87,9 +109,15 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
                     .addComponent(btnMenu)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+<<<<<<< HEAD
+                            .addComponent(btnViewTema02, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnViewTema01, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+=======
                             .addComponent(jBTema02, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jBTema01, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jBTema03, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING)
@@ -110,13 +138,21 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
                 .addGap(60, 60, 60)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
+                        .addComponent(btnViewTema01, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+=======
                         .addComponent(jBTema01, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
                         .addGap(15, 15, 15))
                     .addComponent(jScrollPane3))
                 .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
+                        .addComponent(btnViewTema02, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+=======
                         .addComponent(jBTema02, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
                         .addGap(11, 11, 11))
                     .addComponent(jScrollPane2))
                 .addGap(44, 44, 44)
@@ -137,6 +173,13 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnMenuActionPerformed
 
+<<<<<<< HEAD
+    private void btnViewTema01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnViewTema01ActionPerformed
+        View_Tema01 tema01 = new View_Tema01();
+        tema01.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnViewTema01ActionPerformed
+=======
     private void jBTema01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBTema01ActionPerformed
         
     }//GEN-LAST:event_jBTema01ActionPerformed
@@ -146,6 +189,7 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
         tema03.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jBTema03ActionPerformed
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
 
     public static void main(String args[]) {
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -180,10 +224,17 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnMenu;
+<<<<<<< HEAD
+    private javax.swing.JButton btnViewTema01;
+    private javax.swing.JButton btnViewTema02;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
+=======
     private javax.swing.JButton jBTema01;
     private javax.swing.JButton jBTema02;
     private javax.swing.JButton jBTema03;
     private javax.swing.JLabel jLTitulo;
+>>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

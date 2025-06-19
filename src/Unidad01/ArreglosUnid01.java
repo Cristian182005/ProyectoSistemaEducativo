@@ -10,6 +10,14 @@ public class ArreglosUnid01 {
         arreglo = new int[tamaño];
         elementos = 0;
     }
+    
+    public String recorrerHorizontal() {
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < elementos; i++) {
+        sb.append("[").append(i).append("]=").append(arreglo[i]).append("  ");
+    }
+    return sb.toString().trim();
+}
 
     public boolean insertar(int valor) {
         if (elementos < arreglo.length) {
