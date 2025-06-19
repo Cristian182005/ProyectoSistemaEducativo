@@ -2,6 +2,7 @@
 package unidades;
 
 import MenuPrincipal.VentanaPrincipal;
+import View_Tema03.View_Tema03;
 
 public class VentanaUnidad1 extends javax.swing.JFrame {
 
@@ -15,16 +16,16 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
     private void initComponents() {
 
         btnMenu = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jLTitulo = new javax.swing.JLabel();
+        jBTema01 = new javax.swing.JButton();
+        jBTema02 = new javax.swing.JButton();
+        jBTema03 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        txtTema02 = new javax.swing.JTextArea();
         jScrollPane3 = new javax.swing.JScrollPane();
-        javax.swing.JTextArea jTextArea3 = new javax.swing.JTextArea();
+        javax.swing.JTextArea txtTema01 = new javax.swing.JTextArea();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        txtTema03 = new javax.swing.JTextArea();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -37,34 +38,44 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setText("Estructuras de Datos Estáticas");
+        jLTitulo.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLTitulo.setText("Estructuras de Datos Estáticas");
 
-        jButton1.setText("Tema 01");
+        jBTema01.setText("Tema 01");
+        jBTema01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBTema01ActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("Tema 02");
+        jBTema02.setText("Tema 02");
 
-        jButton3.setText("Tema 03");
+        jBTema03.setText("Tema 03");
+        jBTema03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBTema03ActionPerformed(evt);
+            }
+        });
 
-        jTextArea2.setEditable(false);
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(2);
-        jTextArea2.setText("Operaciones con Arreglos Unidimensionales:  comparación, \nclonación, fusión.");
-        jTextArea2.setBorder(null);
-        jScrollPane2.setViewportView(jTextArea2);
+        txtTema02.setEditable(false);
+        txtTema02.setColumns(20);
+        txtTema02.setRows(2);
+        txtTema02.setText("Operaciones con Arreglos Unidimensionales:  comparación, \nclonación, fusión.");
+        txtTema02.setBorder(null);
+        jScrollPane2.setViewportView(txtTema02);
 
-        jTextArea3.setEditable(false);
-        jTextArea3.setColumns(20);
-        jTextArea3.setRows(2);
-        jTextArea3.setText("Operaciones con arreglos unidimensionales: inserción, \nactualización, eliminación, recorrido, copia.");
-        jScrollPane3.setViewportView(jTextArea3);
+        txtTema01.setEditable(false);
+        txtTema01.setColumns(20);
+        txtTema01.setRows(2);
+        txtTema01.setText("Operaciones con arreglos unidimensionales: inserción, \nactualización, eliminación, recorrido, copia.");
+        jScrollPane3.setViewportView(txtTema01);
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setTabSize(6);
-        jTextArea1.setText("Operaciones con Arreglos Bidimensionales:\n- Matrices cuadradas poco densas: Matriz triangular inferior, \n\tMatriz triangular superior, Matriz tridiagonal. \n\n- Matrices simétricas y asimétricas");
-        jScrollPane1.setViewportView(jTextArea1);
+        txtTema03.setEditable(false);
+        txtTema03.setColumns(20);
+        txtTema03.setRows(5);
+        txtTema03.setTabSize(6);
+        txtTema03.setText("Operaciones con Arreglos Bidimensionales:\n- Matrices cuadradas poco densas: Matriz triangular inferior, \n\tMatriz triangular superior, Matriz tridiagonal. \n\n- Matrices simétricas y asimétricas");
+        jScrollPane1.setViewportView(txtTema03);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -76,9 +87,9 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
                     .addComponent(btnMenu)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jBTema02, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBTema01, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jBTema03, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                             .addComponent(jScrollPane2, javax.swing.GroupLayout.Alignment.LEADING)
@@ -86,7 +97,7 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
                             .addComponent(jScrollPane1)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
-                                .addComponent(jLabel1)))))
+                                .addComponent(jLTitulo)))))
                 .addGap(24, 24, 24))
         );
         layout.setVerticalGroup(
@@ -95,23 +106,23 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(btnMenu)
                 .addGap(25, 25, 25)
-                .addComponent(jLabel1)
+                .addComponent(jLTitulo)
                 .addGap(60, 60, 60)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+                        .addComponent(jBTema01, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
                         .addGap(15, 15, 15))
                     .addComponent(jScrollPane3))
                 .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
+                        .addComponent(jBTema02, javax.swing.GroupLayout.DEFAULT_SIZE, 29, Short.MAX_VALUE)
                         .addGap(11, 11, 11))
                     .addComponent(jScrollPane2))
                 .addGap(44, 44, 44)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
+                        .addComponent(jBTema03, javax.swing.GroupLayout.DEFAULT_SIZE, 31, Short.MAX_VALUE)
                         .addGap(63, 63, 63))
                     .addComponent(jScrollPane1))
                 .addGap(64, 64, 64))
@@ -125,6 +136,16 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
         principal.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnMenuActionPerformed
+
+    private void jBTema01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBTema01ActionPerformed
+        
+    }//GEN-LAST:event_jBTema01ActionPerformed
+
+    private void jBTema03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBTema03ActionPerformed
+        View_Tema03 tema03 = new View_Tema03();
+        tema03.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jBTema03ActionPerformed
 
     public static void main(String args[]) {
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -159,14 +180,14 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnMenu;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JButton jBTema01;
+    private javax.swing.JButton jBTema02;
+    private javax.swing.JButton jBTema03;
+    private javax.swing.JLabel jLTitulo;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JTextArea txtTema02;
+    private javax.swing.JTextArea txtTema03;
     // End of variables declaration//GEN-END:variables
 }
