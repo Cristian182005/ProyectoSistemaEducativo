@@ -3,7 +3,6 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="resizable" type="boolean" value="false"/>
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
@@ -24,192 +23,13 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="btnMenu" alignment="0" min="-2" max="-2" attributes="0"/>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="1" attributes="0">
-<<<<<<< HEAD
-                          <Component id="btnViewTema02" min="-2" pref="87" max="-2" attributes="0"/>
-                          <Component id="btnViewTema01" min="-2" pref="87" max="-2" attributes="0"/>
-                          <Component id="jButton3" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
-=======
-                          <Component id="jBTema02" min="-2" pref="87" max="-2" attributes="0"/>
-                          <Component id="jBTema01" min="-2" pref="87" max="-2" attributes="0"/>
-                          <Component id="jBTema03" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
->>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
-                      </Group>
-                      <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="jScrollPane2" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jScrollPane3" alignment="0" pref="440" max="32767" attributes="0"/>
-                          <Component id="jScrollPane1" max="32767" attributes="0"/>
-                          <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                              <Component id="jLTitulo" min="-2" max="-2" attributes="0"/>
-                          </Group>
-                      </Group>
-                  </Group>
-              </Group>
-              <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
-          </Group>
+          <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" attributes="0">
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="btnMenu" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-              <Component id="jLTitulo" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
-                      <Component id="btnViewTema01" pref="29" max="32767" attributes="0"/>
-=======
-                      <Component id="jBTema01" pref="29" max="32767" attributes="0"/>
->>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
-                      <EmptySpace min="15" pref="15" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="jScrollPane3" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-<<<<<<< HEAD
-                      <Component id="btnViewTema02" pref="29" max="32767" attributes="0"/>
-=======
-                      <Component id="jBTema02" pref="29" max="32767" attributes="0"/>
->>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
-                      <EmptySpace min="11" pref="11" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="jScrollPane2" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <Component id="jBTema03" pref="31" max="32767" attributes="0"/>
-                      <EmptySpace min="63" pref="63" max="-2" attributes="0"/>
-                  </Group>
-                  <Component id="jScrollPane1" max="32767" attributes="0"/>
-              </Group>
-              <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
-          </Group>
+          <EmptySpace min="0" pref="300" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
-  <SubComponents>
-    <Component class="javax.swing.JButton" name="btnMenu">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="10" style="0"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Men&#xfa; Principal"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnMenuActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JLabel" name="jLTitulo">
-      <Properties>
-        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Segoe UI" size="24" style="1"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Estructuras de Datos Est&#xe1;ticas"/>
-      </Properties>
-    </Component>
-<<<<<<< HEAD
-    <Component class="javax.swing.JButton" name="btnViewTema01">
-=======
-    <Component class="javax.swing.JButton" name="jBTema01">
->>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Tema 01"/>
-      </Properties>
-      <Events>
-<<<<<<< HEAD
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnViewTema01ActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnViewTema02">
-=======
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBTema01ActionPerformed"/>
-      </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="jBTema02">
->>>>>>> 9e736ef9c4fe689f9f298eff99b6adc17e9008d5
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Tema 02"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JButton" name="jBTema03">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Tema 03"/>
-      </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jBTema03ActionPerformed"/>
-      </Events>
-    </Component>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextArea" name="txtTema02">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-            <Property name="columns" type="int" value="20"/>
-            <Property name="rows" type="int" value="2"/>
-            <Property name="text" type="java.lang.String" value="Operaciones con Arreglos Unidimensionales:  comparaci&#xf3;n, &#xa;clonaci&#xf3;n, fusi&#xf3;n."/>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="null"/>
-            </Property>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane3">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextArea" name="txtTema01">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-            <Property name="columns" type="int" value="20"/>
-            <Property name="rows" type="int" value="2"/>
-            <Property name="text" type="java.lang.String" value="Operaciones con arreglos unidimensionales: inserci&#xf3;n, &#xa;actualizaci&#xf3;n, eliminaci&#xf3;n, recorrido, copia."/>
-          </Properties>
-          <AuxValues>
-            <AuxValue name="JavaCodeGenerator_VariableLocal" type="java.lang.Boolean" value="true"/>
-            <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="0"/>
-          </AuxValues>
-        </Component>
-      </SubComponents>
-    </Container>
-    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
-      <AuxValues>
-        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
-      </AuxValues>
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
-      <SubComponents>
-        <Component class="javax.swing.JTextArea" name="txtTema03">
-          <Properties>
-            <Property name="editable" type="boolean" value="false"/>
-            <Property name="columns" type="int" value="20"/>
-            <Property name="rows" type="int" value="5"/>
-            <Property name="tabSize" type="int" value="6"/>
-            <Property name="text" type="java.lang.String" value="Operaciones con Arreglos Bidimensionales:&#xa;- Matrices cuadradas poco densas: Matriz triangular inferior, &#xa;&#x9;Matriz triangular superior, Matriz tridiagonal. &#xa;&#xa;- Matrices sim&#xe9;tricas y asim&#xe9;tricas"/>
-          </Properties>
-        </Component>
-      </SubComponents>
-    </Container>
-  </SubComponents>
 </Form>
