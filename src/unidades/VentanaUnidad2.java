@@ -4,7 +4,7 @@
  */
 package unidades;
 
-import MenuPrincipal.VentanaPrincipal;
+import SistemaEducativo.View.MenuPrincipal;
 import TEMA6.JFNotas;
 import TEMA7.JFAgenda;
 import View_Unidad02_Tema4.JFCartelera_Peliculas;
@@ -174,7 +174,7 @@ public class VentanaUnidad2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
-        VentanaPrincipal principal = new VentanaPrincipal();
+        MenuPrincipal principal = new MenuPrincipal();
         principal.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnMenuActionPerformed

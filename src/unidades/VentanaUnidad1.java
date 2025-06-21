@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package unidades;
-import MenuPrincipal.VentanaPrincipal;
+import SistemaEducativo.View.MenuPrincipal;
 import View_Tema01.View_Tema01;
 import View_Tema02.View_Tema02;
 /**
@@ -139,7 +139,7 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
-        VentanaPrincipal menu = new VentanaPrincipal();
+        MenuPrincipal menu = new MenuPrincipal();
         menu.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnMenuActionPerformed
