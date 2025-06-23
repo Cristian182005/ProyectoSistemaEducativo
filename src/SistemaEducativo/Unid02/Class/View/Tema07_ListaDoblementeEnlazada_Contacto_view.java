@@ -4,21 +4,21 @@
  */
 package SistemaEducativo.Unid02.Class.View;
 
-import SistemaEducativo.Unid02.Class.Tema07p1_ListaDoblementeEnlazada_Nodo;
-import SistemaEducativo.Unid02.Class.Tema07p2_ListaDoblementeEnlazada_Lista;
+import SistemaEducativo.Unid02.Class.Tema07p1_ListaDoblementeEnlazada_NodoContacto;
+import SistemaEducativo.Unid02.Class.Tema07p2_ListaDoblementeEnlazada_ListaContacto;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author usuario
  */
-public class Tema07_ListaDoblementeEnlazada_view extends javax.swing.JFrame {
+public class Tema07_ListaDoblementeEnlazada_Contacto_view extends javax.swing.JFrame {
 
-    private Tema07p2_ListaDoblementeEnlazada_Lista listaContactos;
+    private Tema07p2_ListaDoblementeEnlazada_ListaContacto listaContactos;
 
-    public Tema07_ListaDoblementeEnlazada_view() {
+    public Tema07_ListaDoblementeEnlazada_Contacto_view() {
         initComponents();
-        listaContactos = new Tema07p2_ListaDoblementeEnlazada_Lista();
+        listaContactos = new Tema07p2_ListaDoblementeEnlazada_ListaContacto();
         actualizarVista();
     }
 
@@ -278,7 +278,7 @@ public class Tema07_ListaDoblementeEnlazada_view extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     private void actualizarVista() {
-        Tema07p1_ListaDoblementeEnlazada_Nodo actual = listaContactos.getActual();
+        Tema07p1_ListaDoblementeEnlazada_NodoContacto actual = listaContactos.getActual();
 
         if (actual != null) {
             jLabel8.setText(actual.getNombre());
@@ -305,7 +305,7 @@ public class Tema07_ListaDoblementeEnlazada_view extends javax.swing.JFrame {
     if (listaContactos.getActual() == null) return 0;
     
     int posicion = 1;
-    Tema07p1_ListaDoblementeEnlazada_Nodo temp = listaContactos.getActual();
+    Tema07p1_ListaDoblementeEnlazada_NodoContacto temp = listaContactos.getActual();
     
     // Retroceder hasta el inicio para contar la posición
     while (temp.getAnterior() != null) {
@@ -337,14 +337,18 @@ public class Tema07_ListaDoblementeEnlazada_view extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_Contacto_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_Contacto_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_Contacto_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_Contacto_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -353,7 +357,7 @@ public class Tema07_ListaDoblementeEnlazada_view extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Tema07_ListaDoblementeEnlazada_view().setVisible(true);
+                new Tema07_ListaDoblementeEnlazada_Contacto_view().setVisible(true);
             }
         });
     }

@@ -2,10 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package View_Unidad02_Tema4;
+package SistemaEducativo.Unid02.Class.View;
 
-import Unidad02.listaAlumno;
-import Unidad02.nodoAlumno;
+import SistemaEducativo.Unid02.Class.View.Tema04_TipoAbstractoDeDatos_Alumnos_view;
+import SistemaEducativo.Unid02.Class.Tema04p2_TipoAbstractoDeDatos_ListaAlumno;
+import SistemaEducativo.Unid02.Class.Tema04p1_TipoAbstractoDeDatos_NodoAlumno;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
@@ -13,15 +14,15 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author USER
  */
-public class JFbuscarAlumno extends javax.swing.JFrame {
+public class Tema04_TipoAbstractoDeDatos_BuscarAlumno_view extends javax.swing.JFrame {
 
-    private static JFbuscarAlumno instance;
-    private final listaAlumno lista;
+    private static Tema04_TipoAbstractoDeDatos_BuscarAlumno_view instance;
+    private final Tema04p2_TipoAbstractoDeDatos_ListaAlumno lista;
     private final DefaultTableModel modeloTabla;
 
-    public static JFbuscarAlumno getInstance() {
+    public static Tema04_TipoAbstractoDeDatos_BuscarAlumno_view getInstance() {
         if (instance == null) {
-            instance = new JFbuscarAlumno();
+            instance = new Tema04_TipoAbstractoDeDatos_BuscarAlumno_view();
         }
         return instance;
     }
@@ -29,9 +30,9 @@ public class JFbuscarAlumno extends javax.swing.JFrame {
     /**
      * Creates new form NewJFrame
      */
-    public JFbuscarAlumno() {
+    public Tema04_TipoAbstractoDeDatos_BuscarAlumno_view() {
         initComponents();
-        lista = listaAlumno.getInstance();
+        lista = Tema04p2_TipoAbstractoDeDatos_ListaAlumno.getInstance();
 
         modeloTabla = new DefaultTableModel(
                 new Object[][]{},
@@ -250,7 +251,7 @@ public class JFbuscarAlumno extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNivelActionPerformed
 
     private void btnIrJFalumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIrJFalumnosActionPerformed
-        JFalumnos.getInstance().setVisible(true);
+        Tema04_TipoAbstractoDeDatos_Alumnos_view.getInstance().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnIrJFalumnosActionPerformed
 
@@ -280,8 +281,8 @@ public class JFbuscarAlumno extends javax.swing.JFrame {
                 mostrarInformacion("Alumno eliminado correctamente");
                 limpiarCampos();
 
-                if (JFalumnos.getInstance() != null) {
-                    JFalumnos.getInstance().actualizarTablas(); 
+                if (Tema04_TipoAbstractoDeDatos_Alumnos_view.getInstance() != null) {
+                    Tema04_TipoAbstractoDeDatos_Alumnos_view.getInstance().actualizarTablas(); 
                 }
             } else {
                 mostrarError("No se pudo eliminar el alumno");
@@ -298,7 +299,7 @@ public class JFbuscarAlumno extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         SwingUtilities.invokeLater(() -> {
-            JFbuscarAlumno.getInstance().setVisible(true);
+            Tema04_TipoAbstractoDeDatos_BuscarAlumno_view.getInstance().setVisible(true);
         });
     }
 
@@ -329,7 +330,7 @@ public class JFbuscarAlumno extends javax.swing.JFrame {
         return;
     }
     
-    nodoAlumno alumno = lista.buscarPorNombreCompleto(busqueda);
+    Tema04p1_TipoAbstractoDeDatos_NodoAlumno alumno = lista.buscarPorNombreCompleto(busqueda);
     
     if (alumno != null) {
         // Mostrar datos en los campos de texto

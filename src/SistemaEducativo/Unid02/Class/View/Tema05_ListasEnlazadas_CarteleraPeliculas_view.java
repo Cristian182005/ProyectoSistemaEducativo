@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package View_Unidad02_Tema4;
+package SistemaEducativo.Unid02.Class.View;
 
-import Unidad02.ListaCartelera;
-import Unidad02.NodoPelicula;
+import SistemaEducativo.Unid02.Class.Tema05p2_ListasEnlazadas_ListaCartelera;
+import SistemaEducativo.Unid02.Class.Tema05p1_ListasEnlazadas_NodoPelicula;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
@@ -13,17 +13,17 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author USER
  */
-public class JFCartelera_Peliculas extends javax.swing.JFrame {
+public class Tema05_ListasEnlazadas_CarteleraPeliculas_view extends javax.swing.JFrame {
 
-    private ListaCartelera cartelera;
+    private Tema05p2_ListasEnlazadas_ListaCartelera cartelera;
     private DefaultTableModel modeloTabla;
 
     /**
      * Creates new form JFCartelera_Peliculas
      */
-    public JFCartelera_Peliculas() {
+    public Tema05_ListasEnlazadas_CarteleraPeliculas_view() {
         initComponents();
-        cartelera = new ListaCartelera();
+        cartelera = new Tema05p2_ListasEnlazadas_ListaCartelera();
         modeloTabla = new DefaultTableModel(new Object[]{"ID", "TÍTULO", "GÉNERO", "DURACIÓN", "HORARIO"}, 0);
         tbPelicula.setModel(modeloTabla); // Asignar modelo a la tabla tbPelicula
         actualizarTabla();
@@ -187,20 +187,21 @@ public class JFCartelera_Peliculas extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JFCartelera_Peliculas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema05_ListasEnlazadas_CarteleraPeliculas_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JFCartelera_Peliculas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema05_ListasEnlazadas_CarteleraPeliculas_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JFCartelera_Peliculas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema05_ListasEnlazadas_CarteleraPeliculas_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JFCartelera_Peliculas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema05_ListasEnlazadas_CarteleraPeliculas_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JFCartelera_Peliculas().setVisible(true);
+                new Tema05_ListasEnlazadas_CarteleraPeliculas_view().setVisible(true);
             }
         });
     }
@@ -215,7 +216,7 @@ public class JFCartelera_Peliculas extends javax.swing.JFrame {
 
     private void actualizarTabla() {
         modeloTabla.setRowCount(0); // Limpiar la tabla tbPelicula
-        NodoPelicula peliculaActual = cartelera.getCabeza();
+        Tema05p1_ListasEnlazadas_NodoPelicula peliculaActual = cartelera.getCabeza();
 
         while (peliculaActual != null) {
             modeloTabla.addRow(new Object[]{

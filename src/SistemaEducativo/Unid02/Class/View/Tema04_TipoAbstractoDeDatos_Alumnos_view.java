@@ -2,9 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package View_Unidad02_Tema4;
+package SistemaEducativo.Unid02.Class.View;
 
-import Unidad02.listaAlumno;
+import SistemaEducativo.Unid02.Class.Tema04p2_TipoAbstractoDeDatos_ListaAlumno;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
@@ -14,14 +14,14 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author USER
  */
-public class JFalumnos extends javax.swing.JFrame {
+public class Tema04_TipoAbstractoDeDatos_Alumnos_view extends javax.swing.JFrame {
 
-    private static JFalumnos instance;
-    private final listaAlumno lista;
+    private static Tema04_TipoAbstractoDeDatos_Alumnos_view instance;
+    private final Tema04p2_TipoAbstractoDeDatos_ListaAlumno lista;
 
-    public static JFalumnos getInstance() {
+    public static Tema04_TipoAbstractoDeDatos_Alumnos_view getInstance() {
         if (instance == null) {
-            instance = new JFalumnos();
+            instance = new Tema04_TipoAbstractoDeDatos_Alumnos_view();
         }
         return instance;
     }
@@ -29,9 +29,9 @@ public class JFalumnos extends javax.swing.JFrame {
     /**
      * Creates new form JFalumnos
      */
-    public JFalumnos() {
+    public Tema04_TipoAbstractoDeDatos_Alumnos_view() {
         initComponents();
-        lista = listaAlumno.getInstance();
+        lista = Tema04p2_TipoAbstractoDeDatos_ListaAlumno.getInstance();
 
         // Configurar combo box
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(
@@ -303,7 +303,7 @@ public class JFalumnos extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
-        JFbuscarAlumno.getInstance().setVisible(true);
+        Tema04_TipoAbstractoDeDatos_BuscarAlumno_view.getInstance().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnRegresarActionPerformed
 
@@ -361,7 +361,7 @@ public class JFalumnos extends javax.swing.JFrame {
      */
     public static void main(String args[]) {
         SwingUtilities.invokeLater(() -> {
-            JFalumnos.getInstance().setVisible(true);
+            Tema04_TipoAbstractoDeDatos_Alumnos_view.getInstance().setVisible(true);
         });
     }
 

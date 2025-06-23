@@ -1,19 +1,19 @@
-package Unidad02;
+package SistemaEducativo.Unid02.Class;
 
-import Unidad02.nodoAlumno;
+import SistemaEducativo.Unid02.Class.Tema04p1_TipoAbstractoDeDatos_NodoAlumno;
 import javax.swing.table.DefaultTableModel;
 
-public class listaAlumno {
+public class Tema04p2_TipoAbstractoDeDatos_ListaAlumno {
 
-    private static listaAlumno instance;
-    private nodoAlumno cabeza;
-    private nodoAlumno cola;
+    private static Tema04p2_TipoAbstractoDeDatos_ListaAlumno instance;
+    private Tema04p1_TipoAbstractoDeDatos_NodoAlumno cabeza;
+    private Tema04p1_TipoAbstractoDeDatos_NodoAlumno cola;
     private int size;
     private int ultimoIdInicial;
     private int ultimoIdPrimaria;
     private int ultimoIdSecundaria;
 
-    listaAlumno() {
+    Tema04p2_TipoAbstractoDeDatos_ListaAlumno() {
         cabeza = null;
         cola = null;
         size = 0;
@@ -22,9 +22,9 @@ public class listaAlumno {
         ultimoIdSecundaria = 0;
     }
 
-    public static synchronized listaAlumno getInstance() {
+    public static synchronized Tema04p2_TipoAbstractoDeDatos_ListaAlumno getInstance() {
         if (instance == null) {
-            instance = new listaAlumno();
+            instance = new Tema04p2_TipoAbstractoDeDatos_ListaAlumno();
         }
         return instance;
     }
@@ -52,7 +52,7 @@ public class listaAlumno {
     public void agregarAlumno(String nombre, String apellido, int grado, String nivel) {
         String id = generarNuevoId(nivel);
         
-        nodoAlumno nuevoAlumno = new nodoAlumno(id, nombre, apellido, grado, nivel);
+        Tema04p1_TipoAbstractoDeDatos_NodoAlumno nuevoAlumno = new Tema04p1_TipoAbstractoDeDatos_NodoAlumno(id, nombre, apellido, grado, nivel);
 
         if (cabeza == null) {
             cabeza = nuevoAlumno;
@@ -77,7 +77,7 @@ public class listaAlumno {
         return true;
     }
 
-    nodoAlumno actual = cabeza;
+    Tema04p1_TipoAbstractoDeDatos_NodoAlumno actual = cabeza;
     while (actual.getSiguiente() != null) {
         if (actual.getSiguiente().getNombre().equalsIgnoreCase(nombre)
                 && actual.getSiguiente().getApellido().equalsIgnoreCase(apellido)) {
@@ -96,7 +96,7 @@ public class listaAlumno {
     return false; 
     }
 
-    public nodoAlumno buscarPorNombreCompleto(String nombreCompleto) {
+    public Tema04p1_TipoAbstractoDeDatos_NodoAlumno buscarPorNombreCompleto(String nombreCompleto) {
     if (nombreCompleto == null || nombreCompleto.trim().isEmpty()) {
         return null;
     }
@@ -109,7 +109,7 @@ public class listaAlumno {
         return null;
     }
     
-    nodoAlumno actual = cabeza;
+    Tema04p1_TipoAbstractoDeDatos_NodoAlumno actual = cabeza;
     while (actual != null) {
         String nombreAlumno = actual.getNombre().toLowerCase();
         String apellidoAlumno = actual.getApellido().toLowerCase();
@@ -147,7 +147,7 @@ public class listaAlumno {
         }
 
         int count = 0;
-        nodoAlumno actual = cabeza;
+        Tema04p1_TipoAbstractoDeDatos_NodoAlumno actual = cabeza;
         while (actual != null) {
             if (actual.getNivel().equalsIgnoreCase(nivel)) {
                 count++;

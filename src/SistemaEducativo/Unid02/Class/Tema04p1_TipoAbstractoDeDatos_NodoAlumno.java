@@ -1,15 +1,15 @@
-package Unidad02;
+package SistemaEducativo.Unid02.Class;
 
-public class nodoAlumno {
+public class Tema04p1_TipoAbstractoDeDatos_NodoAlumno {
 
     private String id;
     private String nombre;
     private String apellido;
     private int grado;
     private String nivel;
-    private nodoAlumno siguiente;
+    private Tema04p1_TipoAbstractoDeDatos_NodoAlumno siguiente;
 
-    public nodoAlumno(String id, String nombre, String apellido, int grado, String nivel) {
+    public Tema04p1_TipoAbstractoDeDatos_NodoAlumno(String id, String nombre, String apellido, int grado, String nivel) {
         if (id == null || nombre == null || apellido == null || nivel == null) {
             throw new IllegalArgumentException("Ningún campo puede ser nulo");
         }
@@ -42,11 +42,11 @@ public class nodoAlumno {
         return nivel;
     }
 
-    public nodoAlumno getSiguiente() {
+    public Tema04p1_TipoAbstractoDeDatos_NodoAlumno getSiguiente() {
         return siguiente;
     }
 
-    public void setSiguiente(nodoAlumno siguiente) {
+    public void setSiguiente(Tema04p1_TipoAbstractoDeDatos_NodoAlumno siguiente) {
         this.siguiente = siguiente;
     }
 

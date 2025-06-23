@@ -1,14 +1,14 @@
-package Unidad02;
+package SistemaEducativo.Unid02.Class;
 
-public class NodoPelicula {
+public class Tema05p1_ListasEnlazadas_NodoPelicula {
     private int id;
     private String titulo;
     private String genero;
     private int duracion;
     private String[] horarios;
-    private NodoPelicula siguiente;
+    private Tema05p1_ListasEnlazadas_NodoPelicula siguiente;
 
-    public NodoPelicula(int id, String titulo, String genero, int duracion, String[] horarios) {
+    public Tema05p1_ListasEnlazadas_NodoPelicula(int id, String titulo, String genero, int duracion, String[] horarios) {
         this.id = id;
         this.titulo = titulo;
         this.genero = genero;
@@ -57,11 +57,11 @@ public class NodoPelicula {
         this.horarios = horarios;
     }
 
-    public NodoPelicula getSiguiente() {
+    public Tema05p1_ListasEnlazadas_NodoPelicula getSiguiente() {
         return siguiente;
     }
 
-    public void setSiguiente(NodoPelicula siguiente) {
+    public void setSiguiente(Tema05p1_ListasEnlazadas_NodoPelicula siguiente) {
         this.siguiente = siguiente;
     }
 
