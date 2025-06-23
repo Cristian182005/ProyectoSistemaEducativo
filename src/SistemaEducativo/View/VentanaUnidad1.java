@@ -4,8 +4,8 @@
  */
 package SistemaEducativo.View;
 import SistemaEducativo.View.MenuPrincipal;
-import SistemaEducativo.Class.View.Tema01_ArregloUnidimensional_view;
-import SistemaEducativo.Class.View.Tema02_ArregloUnidimensional_view;
+import SistemaEducativo.Unid01.Class.View.Tema01_ArregloUnidimensional_view;
+import SistemaEducativo.Unid01.Class.View.Tema02_ArregloUnidimensional_view;
 /**
  *
  * @author Cesar

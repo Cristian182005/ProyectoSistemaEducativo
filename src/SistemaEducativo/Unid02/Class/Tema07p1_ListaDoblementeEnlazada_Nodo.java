@@ -1,18 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package TEMA7;
 
+package SistemaEducativo.Unid02.Class;
 
-public class NodoContacto {
+//Tema 07: Listas doblemente enlazadas: Operaciones básicas. Listas circulares: Operaciones básicas.
+
+public class Tema07p1_ListaDoblementeEnlazada_Nodo {
     private String nombre;
     private String telefono;
     private String correo;
-    private NodoContacto siguiente;
-    private NodoContacto anterior;
+    private Tema07p1_ListaDoblementeEnlazada_Nodo siguiente;
+    private Tema07p1_ListaDoblementeEnlazada_Nodo anterior;
 
-    public NodoContacto(String nombre, String telefono, String correo) {
+    public Tema07p1_ListaDoblementeEnlazada_Nodo(String nombre, String telefono, String correo) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.correo = correo;
@@ -44,19 +42,19 @@ public class NodoContacto {
         this.correo = correo;
     }
 
-    public NodoContacto getSiguiente() {
+    public Tema07p1_ListaDoblementeEnlazada_Nodo getSiguiente() {
         return siguiente;
     }
 
-    public void setSiguiente(NodoContacto siguiente) {
+    public void setSiguiente(Tema07p1_ListaDoblementeEnlazada_Nodo siguiente) {
         this.siguiente = siguiente;
     }
 
-    public NodoContacto getAnterior() {
+    public Tema07p1_ListaDoblementeEnlazada_Nodo getAnterior() {
         return anterior;
     }
 
-    public void setAnterior(NodoContacto anterior) {
+    public void setAnterior(Tema07p1_ListaDoblementeEnlazada_Nodo anterior) {
         this.anterior = anterior;
     }
 

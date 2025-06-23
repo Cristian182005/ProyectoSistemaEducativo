@@ -1,6 +1,6 @@
-package SistemaEducativo.Class.View;
+package SistemaEducativo.Unid01.Class.View;
 
-import SistemaEducativo.Class.Tema03_ArregloBidimensional_01;
+import SistemaEducativo.Unid01.Class.Tema03_ArregloBidimensional_01;
 
 public class Tema03_ArregloBidimensional01_view extends javax.swing.JFrame {
 

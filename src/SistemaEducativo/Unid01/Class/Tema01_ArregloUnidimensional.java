@@ -1,4 +1,4 @@
-package SistemaEducativo.Class;
+package SistemaEducativo.Unid01.Class;
 
 import java.util.Arrays;
 

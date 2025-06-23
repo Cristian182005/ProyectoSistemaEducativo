@@ -1,4 +1,4 @@
-package SistemaEducativo.Class;
+package SistemaEducativo.Unid01.Class;
 
 //Tema 03: Matrices Bidimensionales - Matrices simétricas y asimétricas.
 

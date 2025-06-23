@@ -2,21 +2,23 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package TEMA7;
+package SistemaEducativo.Unid02.Class.View;
 
+import SistemaEducativo.Unid02.Class.Tema07p1_ListaDoblementeEnlazada_Nodo;
+import SistemaEducativo.Unid02.Class.Tema07p2_ListaDoblementeEnlazada_Lista;
 import javax.swing.JOptionPane;
 
 /**
  *
  * @author usuario
  */
-public class JFAgenda extends javax.swing.JFrame {
+public class Tema07_ListaDoblementeEnlazada_view extends javax.swing.JFrame {
 
-    private ListaContactos listaContactos;
+    private Tema07p2_ListaDoblementeEnlazada_Lista listaContactos;
 
-    public JFAgenda() {
+    public Tema07_ListaDoblementeEnlazada_view() {
         initComponents();
-        listaContactos = new ListaContactos();
+        listaContactos = new Tema07p2_ListaDoblementeEnlazada_Lista();
         actualizarVista();
     }
 
@@ -182,9 +184,10 @@ public class JFAgenda extends javax.swing.JFrame {
                     .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -275,7 +278,7 @@ public class JFAgenda extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     private void actualizarVista() {
-        NodoContacto actual = listaContactos.getActual();
+        Tema07p1_ListaDoblementeEnlazada_Nodo actual = listaContactos.getActual();
 
         if (actual != null) {
             jLabel8.setText(actual.getNombre());
@@ -302,7 +305,7 @@ public class JFAgenda extends javax.swing.JFrame {
     if (listaContactos.getActual() == null) return 0;
     
     int posicion = 1;
-    NodoContacto temp = listaContactos.getActual();
+    Tema07p1_ListaDoblementeEnlazada_Nodo temp = listaContactos.getActual();
     
     // Retroceder hasta el inicio para contar la posición
     while (temp.getAnterior() != null) {
@@ -334,21 +337,23 @@ public class JFAgenda extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JFAgenda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JFAgenda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JFAgenda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JFAgenda.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JFAgenda().setVisible(true);
+                new Tema07_ListaDoblementeEnlazada_view().setVisible(true);
             }
         });
     }

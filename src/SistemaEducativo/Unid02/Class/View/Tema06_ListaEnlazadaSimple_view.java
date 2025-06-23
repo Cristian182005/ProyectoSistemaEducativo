@@ -2,21 +2,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package TEMA6;
+package SistemaEducativo.Unid02.Class.View;
 
+import SistemaEducativo.Unid02.Class.Tema06p2_ListaEnlazadaSimple_Lista;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JOptionPane;
 /**
  *
  * @author usuario
  */
-public class JFNotas extends javax.swing.JFrame {
+public class Tema06_ListaEnlazadaSimple_view extends javax.swing.JFrame {
 
-    private ListaEstudiantes listaEstudiantes;
+    private Tema06p2_ListaEnlazadaSimple_Lista listaEstudiantes;
 
-    public JFNotas() {
+    public Tema06_ListaEnlazadaSimple_view() {
         initComponents();
-        listaEstudiantes = new ListaEstudiantes((DefaultTableModel) jTable1.getModel());
+        listaEstudiantes = new Tema06p2_ListaEnlazadaSimple_Lista((DefaultTableModel) jTable1.getModel());
     }
 
     /**
@@ -261,20 +262,21 @@ public class JFNotas extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JFNotas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema06_ListaEnlazadaSimple_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JFNotas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema06_ListaEnlazadaSimple_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JFNotas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema06_ListaEnlazadaSimple_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JFNotas.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema06_ListaEnlazadaSimple_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JFNotas().setVisible(true);
+                new Tema06_ListaEnlazadaSimple_view().setVisible(true);
             }
         });
     }

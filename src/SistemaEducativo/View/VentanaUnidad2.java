@@ -5,8 +5,8 @@
 package SistemaEducativo.View;
 
 import SistemaEducativo.View.MenuPrincipal;
-import TEMA6.JFNotas;
-import TEMA7.JFAgenda;
+import SistemaEducativo.Unid02.Class.View.Tema06_ListaEnlazadaSimple_view;
+import SistemaEducativo.Unid02.Class.View.Tema07_ListaDoblementeEnlazada_view;
 import View_Unidad02_Tema4.JFCartelera_Peliculas;
 import View_Unidad02_Tema4.JFbuscarAlumno;
 
@@ -180,7 +180,7 @@ public class VentanaUnidad2 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMenuActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        JFAgenda tema07 = new JFAgenda();
+        Tema07_ListaDoblementeEnlazada_view tema07 = new Tema07_ListaDoblementeEnlazada_view();
         tema07.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -199,7 +199,7 @@ public class VentanaUnidad2 extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        JFNotas tema06 = new JFNotas();
+        Tema06_ListaEnlazadaSimple_view tema06 = new Tema06_ListaEnlazadaSimple_view();
         tema06.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed

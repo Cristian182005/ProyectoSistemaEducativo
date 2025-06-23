@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package SistemaEducativo.Class.View;
+package SistemaEducativo.Unid01.Class.View;
 
 import SistemaEducativo.View.VentanaUnidad1;
-import SistemaEducativo.Class.Tema02_ArregloUnidimensional;
+import SistemaEducativo.Unid01.Class.Tema02_ArregloUnidimensional;
 import javax.swing.JOptionPane;
 /**
  *

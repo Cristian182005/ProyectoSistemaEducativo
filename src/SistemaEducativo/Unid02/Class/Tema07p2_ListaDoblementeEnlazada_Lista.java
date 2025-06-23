@@ -1,22 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package TEMA7;
 
-public class ListaContactos {
-    private NodoContacto cabeza;
-    private NodoContacto cola;
-    private NodoContacto actual;
+package SistemaEducativo.Unid02.Class;
 
-    public ListaContactos() {
+//Tema 07: Listas doblemente enlazadas: Operaciones básicas. Listas circulares: Operaciones básicas.
+
+import SistemaEducativo.Unid02.Class.Tema07p1_ListaDoblementeEnlazada_Nodo;
+
+
+public class Tema07p2_ListaDoblementeEnlazada_Lista {
+    private Tema07p1_ListaDoblementeEnlazada_Nodo cabeza;
+    private Tema07p1_ListaDoblementeEnlazada_Nodo cola;
+    private Tema07p1_ListaDoblementeEnlazada_Nodo actual;
+
+    public Tema07p2_ListaDoblementeEnlazada_Lista() {
         cabeza = null;
         cola = null;
         actual = null;
     }
 
     public void agregarContacto(String nombre, String telefono, String correo) {
-    NodoContacto nuevo = new NodoContacto(nombre, telefono, correo);
+    Tema07p1_ListaDoblementeEnlazada_Nodo nuevo = new Tema07p1_ListaDoblementeEnlazada_Nodo(nombre, telefono, correo);
     
     if (cabeza == null) {
         cabeza = nuevo;
@@ -32,7 +34,7 @@ public class ListaContactos {
 
     public String mostrarTodos() {
     StringBuilder sb = new StringBuilder();
-    NodoContacto actual = cabeza;
+    Tema07p1_ListaDoblementeEnlazada_Nodo actual = cabeza;
     int contador = 1;
     
     if (cabeza == null) {
@@ -88,7 +90,7 @@ public class ListaContactos {
         }
     }
 
-    public NodoContacto getActual() {
+    public Tema07p1_ListaDoblementeEnlazada_Nodo getActual() {
         return actual;
     }
 

@@ -1,18 +1,17 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package TEMA6;
 
-public class NodoEstudiante {
+package SistemaEducativo.Unid02.Class;
+
+//Tema 06: Lista enlazada simple. Operaciones básicas: recorrido, búsqueda, ordenamiento.
+
+public class Tema06p1_ListaEnlazadaSimple_Nodo {
     private String nombre;
     private String apellido;
     private String curso;
     private double nota;
-    private NodoEstudiante siguiente;
+    private Tema06p1_ListaEnlazadaSimple_Nodo siguiente;
 
     // Constructor
-    public NodoEstudiante(String nombre, String apellido, String curso, double nota) {
+    public Tema06p1_ListaEnlazadaSimple_Nodo(String nombre, String apellido, String curso, double nota) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.curso = curso;
@@ -54,11 +53,11 @@ public class NodoEstudiante {
     }
 
 
-    public NodoEstudiante getSiguiente() {
+    public Tema06p1_ListaEnlazadaSimple_Nodo getSiguiente() {
         return siguiente;
     }
 
-    public void setSiguiente(NodoEstudiante siguiente) {
+    public void setSiguiente(Tema06p1_ListaEnlazadaSimple_Nodo siguiente) {
         this.siguiente = siguiente;
     }
 }

@@ -1,22 +1,22 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package TEMA6;
 
+package SistemaEducativo.Unid02.Class;
+
+//Tema 06: Lista enlazada simple. Operaciones básicas: recorrido, búsqueda, ordenamiento.
+
+import SistemaEducativo.Unid02.Class.Tema06p1_ListaEnlazadaSimple_Nodo;
 import javax.swing.table.DefaultTableModel;
 
-public class ListaEstudiantes {
-    private NodoEstudiante cabeza;
+public class Tema06p2_ListaEnlazadaSimple_Lista {
+    private Tema06p1_ListaEnlazadaSimple_Nodo cabeza;
     private DefaultTableModel modeloTabla;
 
-    public ListaEstudiantes(DefaultTableModel modeloTabla) {
+    public Tema06p2_ListaEnlazadaSimple_Lista(DefaultTableModel modeloTabla) {
         this.cabeza = null;
         this.modeloTabla = modeloTabla;
     }
 
     public void agregarEstudiante(String nombre, String apellido, String curso, double nota) {
-    NodoEstudiante nuevoNodo = new NodoEstudiante(nombre, apellido, curso, nota);
+    Tema06p1_ListaEnlazadaSimple_Nodo nuevoNodo = new Tema06p1_ListaEnlazadaSimple_Nodo(nombre, apellido, curso, nota);
     
     // Insertar al inicio de la lista
     nuevoNodo.setSiguiente(cabeza);
@@ -34,9 +34,9 @@ public class ListaEstudiantes {
         boolean intercambio;
         do {
             intercambio = false;
-            NodoEstudiante actual = cabeza;
-            NodoEstudiante anterior = null;
-            NodoEstudiante siguiente = cabeza.getSiguiente();
+            Tema06p1_ListaEnlazadaSimple_Nodo actual = cabeza;
+            Tema06p1_ListaEnlazadaSimple_Nodo anterior = null;
+            Tema06p1_ListaEnlazadaSimple_Nodo siguiente = cabeza.getSiguiente();
 
             while (siguiente != null) {
                 if (actual.getNota() < siguiente.getNota()) {
@@ -72,9 +72,9 @@ public class ListaEstudiantes {
     boolean intercambio;
     do {
         intercambio = false;
-        NodoEstudiante actual = cabeza;
-        NodoEstudiante anterior = null;
-        NodoEstudiante siguiente = cabeza.getSiguiente();
+        Tema06p1_ListaEnlazadaSimple_Nodo actual = cabeza;
+        Tema06p1_ListaEnlazadaSimple_Nodo anterior = null;
+        Tema06p1_ListaEnlazadaSimple_Nodo siguiente = cabeza.getSiguiente();
 
         while (siguiente != null) {
             // Comparación alfabética ignorando mayúsculas/minúsculas
@@ -107,7 +107,7 @@ public class ListaEstudiantes {
         modeloTabla.setRowCount(0);
         
         // Llenar la tabla con los datos ordenados
-        NodoEstudiante actual = cabeza;
+        Tema06p1_ListaEnlazadaSimple_Nodo actual = cabeza;
         while (actual != null) {
             modeloTabla.addRow(new Object[]{
                 actual.getNombre(),

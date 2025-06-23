@@ -1,4 +1,4 @@
-package SistemaEducativo.Class;
+package SistemaEducativo.Unid01.Class;
 
 //Tema 03: Arreglo Bidimensional - Matrices cuadradas poco densas: Matriz triangular inferior, Matriz triangular superior, Matriz tridiagonal.
 
