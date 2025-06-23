@@ -1,9 +1,11 @@
-package CLASES;
+package SistemaEducativo.Class;
+
+//Tema 03: Arreglo Bidimensional - Matrices cuadradas poco densas: Matriz triangular inferior, Matriz triangular superior, Matriz tridiagonal.
 
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-public class MatrizOperaciones {
+public class Tema03_ArregloBidimensional_01 {
 
     private JTable tablaEntrada;
     private JTable tablaResultado;

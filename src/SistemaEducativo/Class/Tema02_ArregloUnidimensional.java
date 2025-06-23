@@ -1,8 +1,10 @@
-package Unidad01;
+package SistemaEducativo.Class;
 
 import java.util.Arrays;
 
-public class ArreglosUnid02 {
+//Tema 02: Operaciones con Arreglos Unidimensionales: comparación, clonación, fusión.
+
+public class Tema02_ArregloUnidimensional {
     private int[] arreglo;
     private int elementos;
 

@@ -2,21 +2,21 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package View_Tema02;
+package SistemaEducativo.Class.View;
 
-import unidades.VentanaUnidad1;
-import Unidad01.ArreglosUnid02;
+import SistemaEducativo.View.VentanaUnidad1;
+import SistemaEducativo.Class.Tema02_ArregloUnidimensional;
 import javax.swing.JOptionPane;
 /**
  *
  * @author Cesar
  */
-public class View_Tema02 extends javax.swing.JFrame {
-private ArreglosUnid02 arreglo1 = new ArreglosUnid02();
-private ArreglosUnid02 arreglo2 = new ArreglosUnid02();
+public class Tema02_ArregloUnidimensional_view extends javax.swing.JFrame {
+private Tema02_ArregloUnidimensional arreglo1 = new Tema02_ArregloUnidimensional();
+private Tema02_ArregloUnidimensional arreglo2 = new Tema02_ArregloUnidimensional();
 private int arregloActivo = 1;
  
-private ArreglosUnid02 getArregloActivo() {
+private Tema02_ArregloUnidimensional getArregloActivo() {
     return arregloActivo == 1 ? arreglo1 : arreglo2;
     
 }
@@ -40,7 +40,7 @@ private void actualizarVistaDeArreglos() {
 
     txtAreaMuestra.setText(sb.toString());
 }
-    public View_Tema02() {
+    public Tema02_ArregloUnidimensional_view() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -257,7 +257,7 @@ private void actualizarVistaDeArreglos() {
                 return;
             }
 
-            ArreglosUnid02 arreglo = getArregloActivo();
+            Tema02_ArregloUnidimensional arreglo = getArregloActivo();
             boolean creado = arreglo.crearArreglo(tamaño);
 
             if (creado) {
@@ -291,7 +291,7 @@ private void actualizarVistaDeArreglos() {
     }//GEN-LAST:event_btnInsertarActionPerformed
 
     private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
-        ArreglosUnid02 arreglo = getArregloActivo();
+        Tema02_ArregloUnidimensional arreglo = getArregloActivo();
 
         if (arreglo.getCapacidad() == 0) {
             JOptionPane.showMessageDialog(null, "El arreglo " + arregloActivo + " no ha sido creado.", "Aviso", JOptionPane.WARNING_MESSAGE);
@@ -308,7 +308,7 @@ private void actualizarVistaDeArreglos() {
     }//GEN-LAST:event_btnBorrarActionPerformed
 
     private void btnClonarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClonarActionPerformed
-        ArreglosUnid02 arreglo = getArregloActivo();
+        Tema02_ArregloUnidimensional arreglo = getArregloActivo();
 
         if (arreglo.getCapacidad() == 0 || arreglo.getElementos() == 0) {
             JOptionPane.showMessageDialog(null, "No hay datos para clonar en el arreglo " + arregloActivo + ".", "Aviso", JOptionPane.WARNING_MESSAGE);
@@ -332,8 +332,8 @@ private void actualizarVistaDeArreglos() {
     }//GEN-LAST:event_btnClonarActionPerformed
 
     private void btnFusionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFusionarActionPerformed
-        ArreglosUnid02 a1 = arreglo1;
-        ArreglosUnid02 a2 = arreglo2;
+        Tema02_ArregloUnidimensional a1 = arreglo1;
+        Tema02_ArregloUnidimensional a2 = arreglo2;
 
         if (a1.getCapacidad() == 0 || a2.getCapacidad() == 0) {
             JOptionPane.showMessageDialog(null, "Ambos arreglos deben estar creados para fusionarlos.", "Advertencia", JOptionPane.WARNING_MESSAGE);
@@ -404,20 +404,21 @@ private void actualizarVistaDeArreglos() {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(View_Tema02.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema02_ArregloUnidimensional_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(View_Tema02.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema02_ArregloUnidimensional_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(View_Tema02.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema02_ArregloUnidimensional_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(View_Tema02.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema02_ArregloUnidimensional_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new View_Tema02().setVisible(true);
+                new Tema02_ArregloUnidimensional_view().setVisible(true);
             }
         });
     }

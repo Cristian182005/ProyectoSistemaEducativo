@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package unidades;
+package SistemaEducativo.View;
 import SistemaEducativo.View.MenuPrincipal;
-import View_Tema01.View_Tema01;
-import View_Tema02.View_Tema02;
+import SistemaEducativo.Class.View.Tema01_ArregloUnidimensional_view;
+import SistemaEducativo.Class.View.Tema02_ArregloUnidimensional_view;
 /**
  *
  * @author Cesar
@@ -145,13 +145,13 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMenuActionPerformed
 
     private void btnTema01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTema01ActionPerformed
-        View_Tema01 tema01 = new View_Tema01();
+        Tema01_ArregloUnidimensional_view tema01 = new Tema01_ArregloUnidimensional_view();
         tema01.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnTema01ActionPerformed
 
     private void btnTema02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTema02ActionPerformed
-        View_Tema02 tema02 = new View_Tema02();
+        Tema02_ArregloUnidimensional_view tema02 = new Tema02_ArregloUnidimensional_view();
         tema02.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnTema02ActionPerformed

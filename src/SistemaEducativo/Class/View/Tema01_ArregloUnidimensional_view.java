@@ -2,20 +2,20 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package View_Tema01;
+package SistemaEducativo.Class.View;
  
-import unidades.VentanaUnidad1;
-import Unidad01.ArreglosUnid01;
+import SistemaEducativo.View.VentanaUnidad1;
+import SistemaEducativo.Class.Tema01_ArregloUnidimensional;
 import javax.swing.JOptionPane;
 /**
  *
  * @author Cesar
  */
-public class View_Tema01 extends javax.swing.JFrame {
+public class Tema01_ArregloUnidimensional_view extends javax.swing.JFrame {
     
-    private ArreglosUnid01 arreglo;
+    private Tema01_ArregloUnidimensional arreglo;
     
-    public View_Tema01() {
+    public Tema01_ArregloUnidimensional_view() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -232,7 +232,7 @@ public class View_Tema01 extends javax.swing.JFrame {
         try {
             int tamaño = Integer.parseInt(txtTamaño.getText());
             if (tamaño > 0) {
-                arreglo = new ArreglosUnid01(tamaño);
+                arreglo = new Tema01_ArregloUnidimensional(tamaño);
                 JOptionPane.showMessageDialog(null, "Arreglo creado con tamaño " + tamaño);
             } else {
                 JOptionPane.showMessageDialog(null, "El tamaño debe ser mayor que 0.", "Error", JOptionPane.ERROR_MESSAGE);
@@ -344,20 +344,21 @@ public class View_Tema01 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(View_Tema01.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema01_ArregloUnidimensional_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(View_Tema01.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema01_ArregloUnidimensional_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(View_Tema01.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema01_ArregloUnidimensional_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(View_Tema01.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema01_ArregloUnidimensional_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new View_Tema01().setVisible(true);
+                new Tema01_ArregloUnidimensional_view().setVisible(true);
             }
         });
     }

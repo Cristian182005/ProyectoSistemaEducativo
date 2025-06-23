@@ -1,14 +1,13 @@
-package View_Tema03;
+package SistemaEducativo.Class.View;
 
-import CLASES.Tema03_Matriz;
+import SistemaEducativo.Class.Tema03_ArregloBidimensional_02;
 import javax.swing.JOptionPane;
-//import unidades.VentanaUnidad1;
 
-public class View_Tema03 extends javax.swing.JFrame {
+public class Tema03_ArregloBidimensional02_view extends javax.swing.JFrame {
 
-    private Tema03_Matriz matriz;
+    private Tema03_ArregloBidimensional_02 matriz;
 
-    public View_Tema03() {
+    public Tema03_ArregloBidimensional02_view() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -343,7 +342,7 @@ public class View_Tema03 extends javax.swing.JFrame {
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         int tamaño = Integer.parseInt(txtTamaño.getText());
 
-        matriz = new Tema03_Matriz(tamaño);
+        matriz = new Tema03_ArregloBidimensional_02(tamaño);
 
         String elementos = txtElementos.getText().trim();
         String[] valores = elementos.split("\\s+|,"); // permite espacios o comas
@@ -408,28 +407,30 @@ public class View_Tema03 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(View_Tema03.class
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional02_view.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(View_Tema03.class
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional02_view.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(View_Tema03.class
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional02_view.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(View_Tema03.class
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional02_view.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new View_Tema03().setVisible(true);
+                new Tema03_ArregloBidimensional02_view().setVisible(true);
             }
         });
     }

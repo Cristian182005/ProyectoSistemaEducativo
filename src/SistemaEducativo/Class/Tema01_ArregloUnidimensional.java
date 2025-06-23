@@ -1,12 +1,14 @@
-package Unidad01;
+package SistemaEducativo.Class;
 
 import java.util.Arrays;
 
-public class ArreglosUnid01 {
+//Tema 01: Operaciones con arreglos unidimensionales: inserción, actualización, eliminación, recorrido, copia.
+
+public class Tema01_ArregloUnidimensional {
     private int[] arreglo;
     private int elementos;
 
-    public ArreglosUnid01(int tamaño) {
+    public Tema01_ArregloUnidimensional(int tamaño) {
         arreglo = new int[tamaño];
         elementos = 0;
     }

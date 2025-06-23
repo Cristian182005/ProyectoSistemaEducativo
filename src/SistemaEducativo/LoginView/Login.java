@@ -1,6 +1,5 @@
 package SistemaEducativo.LoginView;
 
-
 import SistemaEducativo.View.MenuPrincipal;
 import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
@@ -12,7 +11,7 @@ public class Login extends javax.swing.JFrame {
         initComponents();
         txtUsuario.setText("Ingrese su nombre de usuario");
         txpPassword.setEchoChar((char) 0);
-        txpPassword.setText("********");
+        txpPassword.setText("******");
 
         this.setLocationRelativeTo(null);
     }
@@ -37,6 +36,8 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(102, 102, 102));
 
+        jPanel1.setMinimumSize(new java.awt.Dimension(1550, 750));
+        jPanel1.setPreferredSize(new java.awt.Dimension(1550, 750));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
@@ -47,23 +48,23 @@ public class Login extends javax.swing.JFrame {
         jlSesion.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jlSesion.setForeground(new java.awt.Color(51, 153, 255));
         jlSesion.setText("INICIAR SESIÓN");
-        jPanel2.add(jlSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 69, -1, -1));
+        jPanel2.add(jlSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 70, -1, -1));
 
         jlUsuario.setBackground(new java.awt.Color(51, 153, 255));
         jlUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jlUsuario.setForeground(new java.awt.Color(51, 153, 255));
         jlUsuario.setText("USUARIO");
-        jPanel2.add(jlUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 150, -1, -1));
+        jPanel2.add(jlUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 150, -1, -1));
 
         jlContraseña.setBackground(new java.awt.Color(51, 153, 255));
         jlContraseña.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jlContraseña.setForeground(new java.awt.Color(51, 153, 255));
         jlContraseña.setText("CONTRASEÑA");
-        jPanel2.add(jlContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 244, -1, -1));
+        jPanel2.add(jlContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 240, -1, -1));
 
         jSeparator1.setBackground(new java.awt.Color(51, 153, 255));
         jSeparator1.setForeground(new java.awt.Color(51, 153, 255));
-        jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 216, 321, 10));
+        jPanel2.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, 321, 10));
 
         txtUsuario.setBackground(new java.awt.Color(255, 255, 255));
         txtUsuario.setForeground(new java.awt.Color(51, 51, 51));
@@ -76,7 +77,7 @@ public class Login extends javax.swing.JFrame {
                 txtUsuarioFocusLost(evt);
             }
         });
-        jPanel2.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 176, 321, 34));
+        jPanel2.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 321, 34));
 
         txpPassword.setBackground(new java.awt.Color(255, 255, 255));
         txpPassword.setBorder(null);
@@ -93,11 +94,11 @@ public class Login extends javax.swing.JFrame {
                 txpPasswordActionPerformed(evt);
             }
         });
-        jPanel2.add(txpPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 272, 320, 30));
+        jPanel2.add(txpPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 280, 320, 30));
 
         jSeparator2.setBackground(new java.awt.Color(51, 153, 255));
         jSeparator2.setForeground(new java.awt.Color(51, 153, 255));
-        jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 310, 321, 10));
+        jPanel2.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 310, 321, 10));
 
         btnLogin.setBackground(new java.awt.Color(51, 153, 255));
         btnLogin.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
@@ -109,7 +110,7 @@ public class Login extends javax.swing.JFrame {
                 btnLoginActionPerformed(evt);
             }
         });
-        jPanel2.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 380, 321, 34));
+        jPanel2.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 380, 321, 34));
 
         chbMostrar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         chbMostrar.setForeground(new java.awt.Color(0, 0, 0));
@@ -119,13 +120,13 @@ public class Login extends javax.swing.JFrame {
                 chbMostrarActionPerformed(evt);
             }
         });
-        jPanel2.add(chbMostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, -1, -1));
+        jPanel2.add(chbMostrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 330, -1, -1));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 50, 480, 450));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 110, 530, 500));
 
         jlImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
         jlImagen.setText("jLabel4");
-        jPanel1.add(jlImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1000, 570));
+        jPanel1.add(jlImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1550, 780));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -158,22 +159,21 @@ public class Login extends javax.swing.JFrame {
         String clave = String.valueOf(txpPassword.getPassword());
 
         if (usuario.equals("admin") && clave.equals("1234")) {
-            JOptionPane.showMessageDialog(this, "Bienvenido, " + usuario);
-        } else {
-            JOptionPane.showMessageDialog(this, "Datos inválidos", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "BIENVENIDO, " + usuario);
+            MenuPrincipal login = new MenuPrincipal();
+            login.setVisible(true);
+            this.setVisible(false);
             txpPassword.setText("");
+            txtUsuario.setText("");
+        } else {
+            JOptionPane.showMessageDialog(this, "DATOS INVALIDOS", "ERROR", JOptionPane.ERROR_MESSAGE);
         }
-        txpPassword.setText("");
-        txtUsuario.setText("");
-        
-        MenuPrincipal login = new MenuPrincipal();
-        login.setVisible(true);
-        this.setVisible(false);
+
     }//GEN-LAST:event_btnLoginActionPerformed
 
     private void txpPasswordFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txpPasswordFocusGained
         String pass = String.valueOf(txpPassword.getPassword());
-        if (pass.equals("********")) {
+        if (pass.equals("******")) {
             txpPassword.setText("");
             txpPassword.setEchoChar('*');
         }
@@ -183,7 +183,7 @@ public class Login extends javax.swing.JFrame {
         String pass = String.valueOf(txpPassword.getPassword());
         if (pass.isEmpty()) {
             txpPassword.setEchoChar((char) 0);
-            txpPassword.setText("********");
+            txpPassword.setText("******");
         }
     }//GEN-LAST:event_txpPasswordFocusLost
 
@@ -193,7 +193,7 @@ public class Login extends javax.swing.JFrame {
 
     private void chbMostrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chbMostrarActionPerformed
         if (chbMostrar.isSelected()) {
-            txpPassword.setEchoChar((char) 0); 
+            txpPassword.setEchoChar((char) 0);
         } else {
             txpPassword.setEchoChar('*');
         }

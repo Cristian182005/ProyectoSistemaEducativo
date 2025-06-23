@@ -1,16 +1,14 @@
+package SistemaEducativo.Class.View;
 
-package View_Tema03;
+import SistemaEducativo.Class.Tema03_ArregloBidimensional_01;
 
-import CLASES.MatrizOperaciones;
+public class Tema03_ArregloBidimensional01_view extends javax.swing.JFrame {
 
-public class JFMatrizOperaciones extends javax.swing.JFrame {
+    public Tema03_ArregloBidimensional_01 matrizOperaciones;
 
-    public MatrizOperaciones matrizOperaciones;
-    
-    public JFMatrizOperaciones() {
-        initComponents();  
+    public Tema03_ArregloBidimensional01_view() {
+        initComponents();
     }
-
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -115,13 +113,12 @@ public class JFMatrizOperaciones extends javax.swing.JFrame {
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 330, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(59, 59, 59)
-                                .addComponent(btnCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(38, 38, 38))
+                                .addComponent(btnCrear, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(btnInferiorr, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(btnTridi, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(38, 38, 38))))
+                        .addComponent(btnTridi, javax.swing.GroupLayout.PREFERRED_SIZE, 195, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(38, 38, 38))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(176, 176, 176)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -170,31 +167,31 @@ public class JFMatrizOperaciones extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSuperiorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuperiorActionPerformed
-MatrizOperaciones op= new MatrizOperaciones();
-op.setTablaEntrada(TableIngresar);
-op.setTablaResultado(TableResultados);
-op.convertirSuperior();
+        Tema03_ArregloBidimensional_01 op = new Tema03_ArregloBidimensional_01();
+        op.setTablaEntrada(TableIngresar);
+        op.setTablaResultado(TableResultados);
+        op.convertirSuperior();
     }//GEN-LAST:event_btnSuperiorActionPerformed
 
     private void btnInferiorrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInferiorrActionPerformed
-MatrizOperaciones op= new MatrizOperaciones();
-op.setTablaEntrada(TableIngresar);
-op.setTablaResultado(TableResultados);
-op.convertirInferior();
+        Tema03_ArregloBidimensional_01 op = new Tema03_ArregloBidimensional_01();
+        op.setTablaEntrada(TableIngresar);
+        op.setTablaResultado(TableResultados);
+        op.convertirInferior();
     }//GEN-LAST:event_btnInferiorrActionPerformed
 
     private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed
         int n = Integer.parseInt(txtTamaño.getText());
-        
-        TableIngresar.setModel(MatrizOperaciones.crearModeloTabla(n));
-        TableResultados.setModel(MatrizOperaciones.crearModeloTabla(n));
-     
+
+        TableIngresar.setModel(Tema03_ArregloBidimensional_01.crearModeloTabla(n));
+        TableResultados.setModel(Tema03_ArregloBidimensional_01.crearModeloTabla(n));
+
     }//GEN-LAST:event_btnCrearActionPerformed
 
     private void btnTridiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTridiActionPerformed
-MatrizOperaciones op= new MatrizOperaciones();
-op.setTablaEntrada(TableIngresar);
-op.setTablaResultado(TableResultados);
+        Tema03_ArregloBidimensional_01 op = new Tema03_ArregloBidimensional_01();
+        op.setTablaEntrada(TableIngresar);
+        op.setTablaResultado(TableResultados);
 op.convertirTridiagonal();}//GEN-LAST:event_btnTridiActionPerformed
 
     /**
@@ -214,20 +211,23 @@ op.convertirTridiagonal();}//GEN-LAST:event_btnTridiActionPerformed
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(JFMatrizOperaciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional01_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(JFMatrizOperaciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional01_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(JFMatrizOperaciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional01_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(JFMatrizOperaciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional01_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new JFMatrizOperaciones().setVisible(true);
+                new Tema03_ArregloBidimensional01_view().setVisible(true);
             }
         });
     }
