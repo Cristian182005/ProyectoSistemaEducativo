@@ -1,8 +1,5 @@
-<<<<<<< HEAD:src/View_Tema03/View_Tema03.java
- package View_Tema03;
-=======
+
 package SistemaEducativo.Unid01.Class.View;
->>>>>>> 78ddaa5d43502a2e9a555d0d1e825c0967c4bce8:src/SistemaEducativo/Unid01/Class/View/Tema03_ArregloBidimensional02View.java
 
 import SistemaEducativo.Unid01.Class.Tema03_ArregloBidimensional_02;
 import javax.swing.JOptionPane;
