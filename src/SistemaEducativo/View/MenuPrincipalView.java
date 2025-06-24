@@ -236,7 +236,7 @@ public class MenuPrincipalView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUnidad04ActionPerformed
 
     private void btnUnidad01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad01ActionPerformed
-        Unidad01View unid1 = new Unidad01View();
+        Unidad01_TeoriaView unid1 = new Unidad01_TeoriaView();
         unid1.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnUnidad01ActionPerformed
