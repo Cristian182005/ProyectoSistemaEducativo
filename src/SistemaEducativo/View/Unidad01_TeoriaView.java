@@ -370,6 +370,11 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(255, 255, 51));
         jButton1.setText("EJEMPLO DE TEMA 01");
         jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 230, 270, 30));
 
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java (2).png"))); // NOI18N
@@ -490,6 +495,10 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         teoria01.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnUnidad01ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
