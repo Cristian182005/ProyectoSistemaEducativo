@@ -12,11 +12,11 @@ import javax.swing.JOptionPane;
  *
  * @author usuario
  */
-public class Tema07_ListaDoblementeEnlazada_Contacto_view extends javax.swing.JFrame {
+public class Tema07_ListaDoblementeEnlazada_ContactoView extends javax.swing.JFrame {
 
     private Tema07p2_ListaDoblementeEnlazada_ListaContacto listaContactos;
 
-    public Tema07_ListaDoblementeEnlazada_Contacto_view() {
+    public Tema07_ListaDoblementeEnlazada_ContactoView() {
         initComponents();
         listaContactos = new Tema07p2_ListaDoblementeEnlazada_ListaContacto();
         actualizarVista();
@@ -337,14 +337,22 @@ public class Tema07_ListaDoblementeEnlazada_Contacto_view extends javax.swing.JF
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_Contacto_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_ContactoView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_Contacto_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_ContactoView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_Contacto_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_ContactoView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_Contacto_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_ContactoView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -357,7 +365,7 @@ public class Tema07_ListaDoblementeEnlazada_Contacto_view extends javax.swing.JF
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Tema07_ListaDoblementeEnlazada_Contacto_view().setVisible(true);
+                new Tema07_ListaDoblementeEnlazada_ContactoView().setVisible(true);
             }
         });
     }

@@ -2,11 +2,11 @@ package SistemaEducativo.Unid01.Class.View;
 
 import SistemaEducativo.Unid01.Class.Tema03_ArregloBidimensional_01;
 
-public class Tema03_ArregloBidimensional01_view extends javax.swing.JFrame {
+public class Tema03_ArregloBidimensional01View extends javax.swing.JFrame {
 
     public Tema03_ArregloBidimensional_01 matrizOperaciones;
 
-    public Tema03_ArregloBidimensional01_view() {
+    public Tema03_ArregloBidimensional01View() {
         initComponents();
     }
 
@@ -211,14 +211,18 @@ op.convertirTridiagonal();}//GEN-LAST:event_btnTridiActionPerformed
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional01_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional01View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional01_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional01View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional01_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional01View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional01_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional01View.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -227,7 +231,7 @@ op.convertirTridiagonal();}//GEN-LAST:event_btnTridiActionPerformed
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Tema03_ArregloBidimensional01_view().setVisible(true);
+                new Tema03_ArregloBidimensional01View().setVisible(true);
             }
         });
     }

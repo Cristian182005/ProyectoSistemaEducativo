@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author USER
  */
-public class Tema05_ListasEnlazadas_CarteleraPeliculas_view extends javax.swing.JFrame {
+public class Tema05_ListasEnlazadas_CarteleraPeliculasView extends javax.swing.JFrame {
 
     private Tema05p2_ListasEnlazadas_ListaCartelera cartelera;
     private DefaultTableModel modeloTabla;
@@ -21,7 +21,7 @@ public class Tema05_ListasEnlazadas_CarteleraPeliculas_view extends javax.swing.
     /**
      * Creates new form JFCartelera_Peliculas
      */
-    public Tema05_ListasEnlazadas_CarteleraPeliculas_view() {
+    public Tema05_ListasEnlazadas_CarteleraPeliculasView() {
         initComponents();
         cartelera = new Tema05p2_ListasEnlazadas_ListaCartelera();
         modeloTabla = new DefaultTableModel(new Object[]{"ID", "TÍTULO", "GÉNERO", "DURACIÓN", "HORARIO"}, 0);
@@ -187,21 +187,23 @@ public class Tema05_ListasEnlazadas_CarteleraPeliculas_view extends javax.swing.
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tema05_ListasEnlazadas_CarteleraPeliculas_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema05_ListasEnlazadas_CarteleraPeliculasView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tema05_ListasEnlazadas_CarteleraPeliculas_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema05_ListasEnlazadas_CarteleraPeliculasView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tema05_ListasEnlazadas_CarteleraPeliculas_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema05_ListasEnlazadas_CarteleraPeliculasView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tema05_ListasEnlazadas_CarteleraPeliculas_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema05_ListasEnlazadas_CarteleraPeliculasView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Tema05_ListasEnlazadas_CarteleraPeliculas_view().setVisible(true);
+                new Tema05_ListasEnlazadas_CarteleraPeliculasView().setVisible(true);
             }
         });
     }

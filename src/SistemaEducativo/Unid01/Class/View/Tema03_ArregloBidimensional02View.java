@@ -3,11 +3,11 @@ package SistemaEducativo.Unid01.Class.View;
 import SistemaEducativo.Unid01.Class.Tema03_ArregloBidimensional_02;
 import javax.swing.JOptionPane;
 
-public class Tema03_ArregloBidimensional02_view extends javax.swing.JFrame {
+public class Tema03_ArregloBidimensional02View extends javax.swing.JFrame {
 
     private Tema03_ArregloBidimensional_02 matriz;
 
-    public Tema03_ArregloBidimensional02_view() {
+    public Tema03_ArregloBidimensional02View() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -407,21 +407,25 @@ public class Tema03_ArregloBidimensional02_view extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional02_view.class
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional02View.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional02_view.class
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional02View.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional02_view.class
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional02View.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional02_view.class
+            java.util.logging.Logger.getLogger(Tema03_ArregloBidimensional02View.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -430,7 +434,7 @@ public class Tema03_ArregloBidimensional02_view extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Tema03_ArregloBidimensional02_view().setVisible(true);
+                new Tema03_ArregloBidimensional02View().setVisible(true);
             }
         });
     }

@@ -11,11 +11,11 @@ import javax.swing.JOptionPane;
  *
  * @author usuario
  */
-public class Tema06_ListaEnlazadaSimple_Estudiante_view extends javax.swing.JFrame {
+public class Tema06_ListaEnlazadaSimple_EstudianteView extends javax.swing.JFrame {
 
     private Tema06p2_ListaEnlazadaSimple_ListaEstudiante listaEstudiantes;
 
-    public Tema06_ListaEnlazadaSimple_Estudiante_view() {
+    public Tema06_ListaEnlazadaSimple_EstudianteView() {
         initComponents();
         listaEstudiantes = new Tema06p2_ListaEnlazadaSimple_ListaEstudiante((DefaultTableModel) jTable1.getModel());
     }
@@ -262,14 +262,18 @@ public class Tema06_ListaEnlazadaSimple_Estudiante_view extends javax.swing.JFra
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tema06_ListaEnlazadaSimple_Estudiante_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema06_ListaEnlazadaSimple_EstudianteView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tema06_ListaEnlazadaSimple_Estudiante_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema06_ListaEnlazadaSimple_EstudianteView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tema06_ListaEnlazadaSimple_Estudiante_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema06_ListaEnlazadaSimple_EstudianteView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tema06_ListaEnlazadaSimple_Estudiante_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema06_ListaEnlazadaSimple_EstudianteView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
         //</editor-fold>
@@ -278,7 +282,7 @@ public class Tema06_ListaEnlazadaSimple_Estudiante_view extends javax.swing.JFra
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Tema06_ListaEnlazadaSimple_Estudiante_view().setVisible(true);
+                new Tema06_ListaEnlazadaSimple_EstudianteView().setVisible(true);
             }
         });
     }

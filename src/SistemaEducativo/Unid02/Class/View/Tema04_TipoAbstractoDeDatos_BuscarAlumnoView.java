@@ -4,7 +4,7 @@
  */
 package SistemaEducativo.Unid02.Class.View;
 
-import SistemaEducativo.Unid02.Class.View.Tema04_TipoAbstractoDeDatos_Alumnos_view;
+import SistemaEducativo.Unid02.Class.View.Tema04_TipoAbstractoDeDatos_AlumnosView;
 import SistemaEducativo.Unid02.Class.Tema04p2_TipoAbstractoDeDatos_ListaAlumno;
 import SistemaEducativo.Unid02.Class.Tema04p1_TipoAbstractoDeDatos_NodoAlumno;
 import javax.swing.*;
@@ -14,15 +14,15 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author USER
  */
-public class Tema04_TipoAbstractoDeDatos_BuscarAlumno_view extends javax.swing.JFrame {
+public class Tema04_TipoAbstractoDeDatos_BuscarAlumnoView extends javax.swing.JFrame {
 
-    private static Tema04_TipoAbstractoDeDatos_BuscarAlumno_view instance;
+    private static Tema04_TipoAbstractoDeDatos_BuscarAlumnoView instance;
     private final Tema04p2_TipoAbstractoDeDatos_ListaAlumno lista;
     private final DefaultTableModel modeloTabla;
 
-    public static Tema04_TipoAbstractoDeDatos_BuscarAlumno_view getInstance() {
+    public static Tema04_TipoAbstractoDeDatos_BuscarAlumnoView getInstance() {
         if (instance == null) {
-            instance = new Tema04_TipoAbstractoDeDatos_BuscarAlumno_view();
+            instance = new Tema04_TipoAbstractoDeDatos_BuscarAlumnoView();
         }
         return instance;
     }
@@ -30,7 +30,7 @@ public class Tema04_TipoAbstractoDeDatos_BuscarAlumno_view extends javax.swing.J
     /**
      * Creates new form NewJFrame
      */
-    public Tema04_TipoAbstractoDeDatos_BuscarAlumno_view() {
+    public Tema04_TipoAbstractoDeDatos_BuscarAlumnoView() {
         initComponents();
         lista = Tema04p2_TipoAbstractoDeDatos_ListaAlumno.getInstance();
 
@@ -251,7 +251,7 @@ public class Tema04_TipoAbstractoDeDatos_BuscarAlumno_view extends javax.swing.J
     }//GEN-LAST:event_txtNivelActionPerformed
 
     private void btnIrJFalumnosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIrJFalumnosActionPerformed
-        Tema04_TipoAbstractoDeDatos_Alumnos_view.getInstance().setVisible(true);
+        Tema04_TipoAbstractoDeDatos_AlumnosView.getInstance().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnIrJFalumnosActionPerformed
 
@@ -281,8 +281,8 @@ public class Tema04_TipoAbstractoDeDatos_BuscarAlumno_view extends javax.swing.J
                 mostrarInformacion("Alumno eliminado correctamente");
                 limpiarCampos();
 
-                if (Tema04_TipoAbstractoDeDatos_Alumnos_view.getInstance() != null) {
-                    Tema04_TipoAbstractoDeDatos_Alumnos_view.getInstance().actualizarTablas(); 
+                if (Tema04_TipoAbstractoDeDatos_AlumnosView.getInstance() != null) {
+                    Tema04_TipoAbstractoDeDatos_AlumnosView.getInstance().actualizarTablas(); 
                 }
             } else {
                 mostrarError("No se pudo eliminar el alumno");
@@ -299,7 +299,7 @@ public class Tema04_TipoAbstractoDeDatos_BuscarAlumno_view extends javax.swing.J
      */
     public static void main(String args[]) {
         SwingUtilities.invokeLater(() -> {
-            Tema04_TipoAbstractoDeDatos_BuscarAlumno_view.getInstance().setVisible(true);
+            Tema04_TipoAbstractoDeDatos_BuscarAlumnoView.getInstance().setVisible(true);
         });
     }
 

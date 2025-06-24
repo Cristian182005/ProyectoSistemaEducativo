@@ -4,11 +4,11 @@
  */
 package SistemaEducativo.View;
 
-import SistemaEducativo.View.MenuPrincipal;
-import SistemaEducativo.Unid02.Class.View.Tema06_ListaEnlazadaSimple_Estudiante_view;
-import SistemaEducativo.Unid02.Class.View.Tema07_ListaDoblementeEnlazada_Contacto_view;
-import SistemaEducativo.Unid02.Class.View.Tema05_ListasEnlazadas_CarteleraPeliculas_view;
-import SistemaEducativo.Unid02.Class.View.Tema04_TipoAbstractoDeDatos_BuscarAlumno_view;
+import SistemaEducativo.View.MenuPrincipalView;
+import SistemaEducativo.Unid02.Class.View.Tema06_ListaEnlazadaSimple_EstudianteView;
+import SistemaEducativo.Unid02.Class.View.Tema07_ListaDoblementeEnlazada_ContactoView;
+import SistemaEducativo.Unid02.Class.View.Tema05_ListasEnlazadas_CarteleraPeliculasView;
+import SistemaEducativo.Unid02.Class.View.Tema04_TipoAbstractoDeDatos_BuscarAlumnoView;
 
 /**
  *
@@ -174,32 +174,32 @@ public class VentanaUnidad2 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
-        MenuPrincipal principal = new MenuPrincipal();
+        MenuPrincipalView principal = new MenuPrincipalView();
         principal.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnMenuActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        Tema07_ListaDoblementeEnlazada_Contacto_view tema07 = new Tema07_ListaDoblementeEnlazada_Contacto_view();
+        Tema07_ListaDoblementeEnlazada_ContactoView tema07 = new Tema07_ListaDoblementeEnlazada_ContactoView();
         tema07.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Tema04_TipoAbstractoDeDatos_BuscarAlumno_view tema04 = new Tema04_TipoAbstractoDeDatos_BuscarAlumno_view();
+        Tema04_TipoAbstractoDeDatos_BuscarAlumnoView tema04 = new Tema04_TipoAbstractoDeDatos_BuscarAlumnoView();
         tema04.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Tema05_ListasEnlazadas_CarteleraPeliculas_view tema05 = new Tema05_ListasEnlazadas_CarteleraPeliculas_view();
+        Tema05_ListasEnlazadas_CarteleraPeliculasView tema05 = new Tema05_ListasEnlazadas_CarteleraPeliculasView();
         tema05.setVisible(true);
         this.setVisible(false);
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        Tema06_ListaEnlazadaSimple_Estudiante_view tema06 = new Tema06_ListaEnlazadaSimple_Estudiante_view();
+        Tema06_ListaEnlazadaSimple_EstudianteView tema06 = new Tema06_ListaEnlazadaSimple_EstudianteView();
         tema06.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed

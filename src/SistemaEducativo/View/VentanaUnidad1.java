@@ -3,9 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package SistemaEducativo.View;
-import SistemaEducativo.View.MenuPrincipal;
-import SistemaEducativo.Unid01.Class.View.Tema01_ArregloUnidimensional_view;
-import SistemaEducativo.Unid01.Class.View.Tema02_ArregloUnidimensional_view;
+import SistemaEducativo.View.MenuPrincipalView;
+import SistemaEducativo.Unid01.Class.View.Tema01_ArregloUnidimensionalView;
+import SistemaEducativo.Unid01.Class.View.Tema02_ArregloUnidimensionalView;
 /**
  *
  * @author Cesar
@@ -139,19 +139,19 @@ public class VentanaUnidad1 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
-        MenuPrincipal menu = new MenuPrincipal();
+        MenuPrincipalView menu = new MenuPrincipalView();
         menu.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnMenuActionPerformed
 
     private void btnTema01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTema01ActionPerformed
-        Tema01_ArregloUnidimensional_view tema01 = new Tema01_ArregloUnidimensional_view();
+        Tema01_ArregloUnidimensionalView tema01 = new Tema01_ArregloUnidimensionalView();
         tema01.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnTema01ActionPerformed
 
     private void btnTema02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTema02ActionPerformed
-        Tema02_ArregloUnidimensional_view tema02 = new Tema02_ArregloUnidimensional_view();
+        Tema02_ArregloUnidimensionalView tema02 = new Tema02_ArregloUnidimensionalView();
         tema02.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnTema02ActionPerformed

@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author Cesar
  */
-public class Tema02_ArregloUnidimensional_view extends javax.swing.JFrame {
+public class Tema02_ArregloUnidimensionalView extends javax.swing.JFrame {
 private Tema02_ArregloUnidimensional arreglo1 = new Tema02_ArregloUnidimensional();
 private Tema02_ArregloUnidimensional arreglo2 = new Tema02_ArregloUnidimensional();
 private int arregloActivo = 1;
@@ -40,7 +40,7 @@ private void actualizarVistaDeArreglos() {
 
     txtAreaMuestra.setText(sb.toString());
 }
-    public Tema02_ArregloUnidimensional_view() {
+    public Tema02_ArregloUnidimensionalView() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -404,21 +404,23 @@ private void actualizarVistaDeArreglos() {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tema02_ArregloUnidimensional_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema02_ArregloUnidimensionalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tema02_ArregloUnidimensional_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema02_ArregloUnidimensionalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tema02_ArregloUnidimensional_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema02_ArregloUnidimensionalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tema02_ArregloUnidimensional_view.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema02_ArregloUnidimensionalView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Tema02_ArregloUnidimensional_view().setVisible(true);
+                new Tema02_ArregloUnidimensionalView().setVisible(true);
             }
         });
     }

@@ -14,14 +14,14 @@ import javax.swing.table.DefaultTableModel;
  *
  * @author USER
  */
-public class Tema04_TipoAbstractoDeDatos_Alumnos_view extends javax.swing.JFrame {
+public class Tema04_TipoAbstractoDeDatos_AlumnosView extends javax.swing.JFrame {
 
-    private static Tema04_TipoAbstractoDeDatos_Alumnos_view instance;
+    private static Tema04_TipoAbstractoDeDatos_AlumnosView instance;
     private final Tema04p2_TipoAbstractoDeDatos_ListaAlumno lista;
 
-    public static Tema04_TipoAbstractoDeDatos_Alumnos_view getInstance() {
+    public static Tema04_TipoAbstractoDeDatos_AlumnosView getInstance() {
         if (instance == null) {
-            instance = new Tema04_TipoAbstractoDeDatos_Alumnos_view();
+            instance = new Tema04_TipoAbstractoDeDatos_AlumnosView();
         }
         return instance;
     }
@@ -29,7 +29,7 @@ public class Tema04_TipoAbstractoDeDatos_Alumnos_view extends javax.swing.JFrame
     /**
      * Creates new form JFalumnos
      */
-    public Tema04_TipoAbstractoDeDatos_Alumnos_view() {
+    public Tema04_TipoAbstractoDeDatos_AlumnosView() {
         initComponents();
         lista = Tema04p2_TipoAbstractoDeDatos_ListaAlumno.getInstance();
 
@@ -303,7 +303,7 @@ public class Tema04_TipoAbstractoDeDatos_Alumnos_view extends javax.swing.JFrame
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
-        Tema04_TipoAbstractoDeDatos_BuscarAlumno_view.getInstance().setVisible(true);
+        Tema04_TipoAbstractoDeDatos_BuscarAlumnoView.getInstance().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnRegresarActionPerformed
 
@@ -361,7 +361,7 @@ public class Tema04_TipoAbstractoDeDatos_Alumnos_view extends javax.swing.JFrame
      */
     public static void main(String args[]) {
         SwingUtilities.invokeLater(() -> {
-            Tema04_TipoAbstractoDeDatos_Alumnos_view.getInstance().setVisible(true);
+            Tema04_TipoAbstractoDeDatos_AlumnosView.getInstance().setVisible(true);
         });
     }
 
