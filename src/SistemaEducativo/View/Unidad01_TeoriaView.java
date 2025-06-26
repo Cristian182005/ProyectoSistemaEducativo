@@ -64,7 +64,6 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
@@ -81,6 +80,7 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         jButton3 = new javax.swing.JButton();
         jLabel34 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
+        jLabel35 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -189,6 +189,11 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         btnUnidad02.setForeground(new java.awt.Color(255, 255, 255));
         btnUnidad02.setText("UNIDAD 02");
         btnUnidad02.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 153, 255), 2));
+        btnUnidad02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUnidad02ActionPerformed(evt);
+            }
+        });
         BarraLateral.add(btnUnidad02, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 180, 41));
 
         btnUnidad03.setBackground(new java.awt.Color(51, 153, 255));
@@ -319,7 +324,7 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/Unidad01.jpg"))); // NOI18N
         jLabel15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 430, 560, -1));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 430, 560, 260));
 
         jSeparator2.setBackground(new java.awt.Color(255, 255, 255));
         jSeparator2.setForeground(new java.awt.Color(255, 255, 255));
@@ -351,7 +356,7 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         jLabel19.setText("  de datos ordenados en programación.");
         jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 190, -1, -1));
 
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java (1).png"))); // NOI18N
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
         jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 230, -1, 30));
 
         jButton1.setBackground(new java.awt.Color(51, 153, 255));
@@ -365,9 +370,6 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 230, 270, 30));
-
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java (2).png"))); // NOI18N
-        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
 
         jLabel22.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 51));
@@ -394,7 +396,7 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         jLabel26.setText("  estructuras de datos.");
         jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 370, -1, -1));
 
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java (1).png"))); // NOI18N
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
         jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 400, -1, 30));
 
         jButton2.setBackground(new java.awt.Color(51, 153, 255));
@@ -429,7 +431,7 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         jLabel32.setText("  el almacenamiento y el análisis de datos en dos dimensiones.");
         jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 540, -1, -1));
 
-        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java (1).png"))); // NOI18N
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
         jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 570, -1, 30));
 
         jButton3.setBackground(new java.awt.Color(51, 153, 255));
@@ -439,7 +441,7 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         jButton3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 570, 270, 30));
 
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java (1).png"))); // NOI18N
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
         jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 610, -1, 30));
 
         jButton4.setBackground(new java.awt.Color(51, 153, 255));
@@ -448,6 +450,9 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         jButton4.setText("EJEMPLO 2 DE TEMA 03");
         jButton4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 610, 270, 30));
+
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java.png"))); // NOI18N
+        jPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -488,6 +493,12 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btnUnidad02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad02ActionPerformed
+        Unidad02_TeoriaView teoria02 = new Unidad02_TeoriaView();
+        teoria02.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnUnidad02ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -549,7 +560,6 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
@@ -564,6 +574,7 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
