@@ -7,6 +7,8 @@ public class MenuPrincipalView extends javax.swing.JFrame {
 
     public MenuPrincipalView() {
         initComponents();
+        
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
 

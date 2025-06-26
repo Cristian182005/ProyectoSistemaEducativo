@@ -3,12 +3,10 @@ package SistemaEducativo.View;
 
 import SistemaEducativo.LoginView.LoginView;
 
-public class Unidad01_TeoriaView extends javax.swing.JFrame {
+public class Unidad02_TeoriaView extends javax.swing.JFrame {
 
-    public Unidad01_TeoriaView() {
+    public Unidad02_TeoriaView() {
         initComponents();
-        
-        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     @SuppressWarnings("unchecked")
@@ -85,8 +83,6 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setMinimumSize(new java.awt.Dimension(1550, 750));
-        jPanel1.setPreferredSize(new java.awt.Dimension(1550, 750));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         BarraLateral.setBackground(new java.awt.Color(51, 153, 255));
@@ -252,7 +248,7 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 153, 51));
-        jLabel2.setText("¡ BIENVENIDO A LA UNIDAD 01 !");
+        jLabel2.setText("¡ BIENVENIDO A LA UNIDAD 02 !");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, -1, -1));
 
         jSeparator1.setBackground(new java.awt.Color(255, 153, 51));
@@ -264,37 +260,37 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel3.setText(" Unidad de Aprendizaje 1: Estructuras de datos lineales");
+        jLabel3.setText(" Unidad de Aprendizaje 2: Estructuras de datos dinámicas");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel4.setText(" ¡Bienvenido a la Unidad 01!");
+        jLabel4.setText(" ¡Bienvenido a la Unidad 02!");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 130, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText(" En esta unidad exploraremos los fundamentos de las estructuras ");
+        jLabel5.setText(" En esta unidad exploraremos las estructuras dinámicas, ideales ");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, -1, 20));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText(" de datos lineales, herramientas esenciales en el desarrollo de ");
+        jLabel6.setText(" para trabajar con datos que pueden crecer o reducirse durante la ");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText(" algoritmos y la organización eficiente de la información en la ");
+        jLabel7.setText(" ejecución del programa. A diferencia de las estructuras estáticas, ");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText(" programación.");
+        jLabel8.setText(" aquí usaremos nodos y apuntadores para construir y manipular ");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText(" Aquí aprenderás a trabajar con arreglos unidimensionales y ");
+        jLabel9.setText(" listas simples, dobles y circulares. Además, aplicaremos el enfoque");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 280, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
@@ -304,8 +300,8 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
         jLabel11.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText(" inserción, eliminación, recorrido, fusión, comparación y mucho más.");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 340, -1, -1));
+        jLabel11.setText(" del Tipo Abstracto de Datos (TAD), que permite crear estructuras ");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 340, 550, -1));
 
         jLabel12.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
@@ -314,12 +310,12 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
         jLabel13.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText(" aplicando estructuras ordenadas y lógicas en tus programas.");
+        jLabel13.setText(" más flexibles y adaptables. ");
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, -1, -1));
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/Unidad01.jpg"))); // NOI18N
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/MapaEstructuraDeDatos.png"))); // NOI18N
         jLabel15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 430, 560, -1));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 430, -1, -1));
 
         jSeparator2.setBackground(new java.awt.Color(255, 255, 255));
         jSeparator2.setForeground(new java.awt.Color(255, 255, 255));
@@ -506,20 +502,21 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Unidad01_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Unidad02_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Unidad01_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Unidad02_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Unidad01_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Unidad02_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Unidad01_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Unidad02_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Unidad01_TeoriaView().setVisible(true);
+                new Unidad02_TeoriaView().setVisible(true);
             }
         });
     }

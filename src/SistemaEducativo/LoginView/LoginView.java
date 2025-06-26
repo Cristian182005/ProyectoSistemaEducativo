@@ -13,7 +13,7 @@ public class LoginView extends javax.swing.JFrame {
         txpPassword.setEchoChar((char) 0);
         txpPassword.setText("******");
 
-        this.setLocationRelativeTo(null);
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     @SuppressWarnings("unchecked")
