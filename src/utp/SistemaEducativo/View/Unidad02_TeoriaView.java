@@ -372,7 +372,7 @@ public class Unidad02_TeoriaView extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(51, 153, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 51));
-        jButton1.setText("EJEMPLO DE TEMA 04");
+        jButton1.setText("EJERCICIO DE TEMA 04");
         jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -407,7 +407,7 @@ public class Unidad02_TeoriaView extends javax.swing.JFrame {
         jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 51));
-        jButton2.setText("EJEMPLO DE TEMA 05");
+        jButton2.setText("EJERCICIO DE TEMA 05");
         jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 360, 270, 30));
 
@@ -437,7 +437,7 @@ public class Unidad02_TeoriaView extends javax.swing.JFrame {
         jButton3.setBackground(new java.awt.Color(51, 153, 255));
         jButton3.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 51));
-        jButton3.setText("EJEMPLO DE TEMA 06");
+        jButton3.setText("EJERCICIO DE TEMA 06");
         jButton3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 500, 270, 30));
 
@@ -467,7 +467,7 @@ public class Unidad02_TeoriaView extends javax.swing.JFrame {
         jButton4.setBackground(new java.awt.Color(51, 153, 255));
         jButton4.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 51));
-        jButton4.setText("EJEMPLO DE TEMA 07");
+        jButton4.setText("EJERCICIOS DE TEMA 07");
         jButton4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 640, 270, 30));
 

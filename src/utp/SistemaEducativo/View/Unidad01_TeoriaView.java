@@ -2,6 +2,8 @@
 package utp.SistemaEducativo.View;
 
 import utp.SistemaEducativo.LoginView.LoginView;
+import utp.SistemaEducativo.Unid01.Class.Tema01_ArregloUnidimensional;
+import utp.SistemaEducativo.Unid01.Class.View.Tema01_ArregloUnidimensionalView;
 
 public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
@@ -63,29 +65,30 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         jLabel18 = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
         jLabel20 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnEjercicioTema01 = new javax.swing.JButton();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
         jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
+        btnEjercicioTema02 = new javax.swing.JButton();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        btnEjercicio01Tema03 = new javax.swing.JButton();
         jLabel34 = new javax.swing.JLabel();
-        jButton4 = new javax.swing.JButton();
+        btnEjercicio02Tema03 = new javax.swing.JButton();
         jLabel35 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setMinimumSize(new java.awt.Dimension(1550, 750));
+        jPanel1.setName(""); // NOI18N
         jPanel1.setPreferredSize(new java.awt.Dimension(1550, 750));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -369,17 +372,17 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
         jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 230, -1, 30));
 
-        jButton1.setBackground(new java.awt.Color(51, 153, 255));
-        jButton1.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 255, 51));
-        jButton1.setText("EJEMPLO DE TEMA 01");
-        jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnEjercicioTema01.setBackground(new java.awt.Color(51, 153, 255));
+        btnEjercicioTema01.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        btnEjercicioTema01.setForeground(new java.awt.Color(255, 255, 51));
+        btnEjercicioTema01.setText("EJERCICIO DE TEMA 01");
+        btnEjercicioTema01.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        btnEjercicioTema01.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnEjercicioTema01ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 230, 270, 30));
+        jPanel1.add(btnEjercicioTema01, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 230, 270, 30));
 
         jLabel22.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 51));
@@ -409,12 +412,17 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
         jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 400, -1, 30));
 
-        jButton2.setBackground(new java.awt.Color(51, 153, 255));
-        jButton2.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 51));
-        jButton2.setText("EJEMPLO DE TEMA 02");
-        jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 400, 270, 30));
+        btnEjercicioTema02.setBackground(new java.awt.Color(51, 153, 255));
+        btnEjercicioTema02.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        btnEjercicioTema02.setForeground(new java.awt.Color(255, 255, 51));
+        btnEjercicioTema02.setText("EJERCICIO DE TEMA 02");
+        btnEjercicioTema02.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        btnEjercicioTema02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEjercicioTema02ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnEjercicioTema02, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 400, 270, 30));
 
         jLabel28.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 51));
@@ -444,22 +452,32 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
         jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 570, -1, 30));
 
-        jButton3.setBackground(new java.awt.Color(51, 153, 255));
-        jButton3.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 51));
-        jButton3.setText("EJEMPLO 1 DE TEMA 03");
-        jButton3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 570, 270, 30));
+        btnEjercicio01Tema03.setBackground(new java.awt.Color(51, 153, 255));
+        btnEjercicio01Tema03.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        btnEjercicio01Tema03.setForeground(new java.awt.Color(255, 255, 51));
+        btnEjercicio01Tema03.setText("EJERCICIO 1 DE TEMA 03");
+        btnEjercicio01Tema03.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        btnEjercicio01Tema03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEjercicio01Tema03ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnEjercicio01Tema03, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 570, 270, 30));
 
         jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
         jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 610, -1, 30));
 
-        jButton4.setBackground(new java.awt.Color(51, 153, 255));
-        jButton4.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
-        jButton4.setForeground(new java.awt.Color(255, 255, 51));
-        jButton4.setText("EJEMPLO 2 DE TEMA 03");
-        jButton4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 610, 270, 30));
+        btnEjercicio02Tema03.setBackground(new java.awt.Color(51, 153, 255));
+        btnEjercicio02Tema03.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        btnEjercicio02Tema03.setForeground(new java.awt.Color(255, 255, 51));
+        btnEjercicio02Tema03.setText("EJERCICIO 2 DE TEMA 03");
+        btnEjercicio02Tema03.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        btnEjercicio02Tema03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEjercicio02Tema03ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnEjercicio02Tema03, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 610, 270, 30));
 
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java.png"))); // NOI18N
         jPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
@@ -500,9 +518,11 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnUnidad01ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void btnEjercicioTema01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjercicioTema01ActionPerformed
+        Tema01_ArregloUnidimensionalView exercise01 = new Tema01_ArregloUnidimensionalView();
+        exercise01.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnEjercicioTema01ActionPerformed
 
     private void btnUnidad02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad02ActionPerformed
         Unidad02_TeoriaView teoria02 = new Unidad02_TeoriaView();
@@ -522,9 +542,18 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnUnidad04ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void btnEjercicio01Tema03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjercicio01Tema03ActionPerformed
+        
+    }//GEN-LAST:event_btnEjercicio01Tema03ActionPerformed
+
+    private void btnEjercicioTema02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjercicioTema02ActionPerformed
+        
+    }//GEN-LAST:event_btnEjercicioTema02ActionPerformed
+
+    private void btnEjercicio02Tema03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjercicio02Tema03ActionPerformed
+        
+    }//GEN-LAST:event_btnEjercicio02Tema03ActionPerformed
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -559,16 +588,16 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel BarraLateral;
+    private javax.swing.JButton btnEjercicio01Tema03;
+    private javax.swing.JButton btnEjercicio02Tema03;
+    private javax.swing.JButton btnEjercicioTema01;
+    private javax.swing.JButton btnEjercicioTema02;
     private javax.swing.JButton btnLogin;
     private javax.swing.JButton btnMenuPrincipal;
     private javax.swing.JButton btnUnidad01;
     private javax.swing.JButton btnUnidad02;
     private javax.swing.JButton btnUnidad03;
     private javax.swing.JButton btnUnidad04;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
