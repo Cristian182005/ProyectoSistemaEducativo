@@ -230,11 +230,15 @@ public class MenuPrincipalView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnUnidad03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad03ActionPerformed
-        
+        Unidad03_TeoriaView teoria03 = new Unidad03_TeoriaView();
+        teoria03.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnUnidad03ActionPerformed
 
     private void btnUnidad04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad04ActionPerformed
-        
+        Unidad04_TeoriaView teoria04 = new Unidad04_TeoriaView();
+        teoria04.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnUnidad04ActionPerformed
 
     private void btnUnidad01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad01ActionPerformed
@@ -244,7 +248,9 @@ public class MenuPrincipalView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUnidad01ActionPerformed
 
     private void btnUnidad02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad02ActionPerformed
-        
+        Unidad02_TeoriaView teoria02 = new Unidad02_TeoriaView();
+        teoria02.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnUnidad02ActionPerformed
 
     public static void main(String args[]) {

@@ -213,6 +213,11 @@ public class Unidad02_TeoriaView extends javax.swing.JFrame {
         btnUnidad04.setForeground(new java.awt.Color(255, 255, 255));
         btnUnidad04.setText("UNIDAD 04");
         btnUnidad04.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 153, 255), 2));
+        btnUnidad04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUnidad04ActionPerformed(evt);
+            }
+        });
         BarraLateral.add(btnUnidad04, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 494, 180, 41));
 
         sprRedes.setBackground(new java.awt.Color(255, 255, 255));
@@ -520,6 +525,12 @@ public class Unidad02_TeoriaView extends javax.swing.JFrame {
         teoria03.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnUnidad03ActionPerformed
+
+    private void btnUnidad04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad04ActionPerformed
+        Unidad04_TeoriaView teoria04 = new Unidad04_TeoriaView();
+        teoria04.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnUnidad04ActionPerformed
 
     /**
      * @param args the command line arguments

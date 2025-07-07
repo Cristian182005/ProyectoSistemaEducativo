@@ -3,9 +3,11 @@ package utp.SistemaEducativo.View;
 
 import utp.SistemaEducativo.LoginView.LoginView;
 
-public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
-    public Unidad01_TeoriaView() {
+public class Unidad04_TeoriaView extends javax.swing.JFrame {
+
+
+    public Unidad04_TeoriaView() {
         initComponents();
         
         this.setExtendedState(MAXIMIZED_BOTH);
@@ -55,38 +57,46 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        jLabel45 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jSeparator2 = new javax.swing.JSeparator();
         jLabel14 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
         jLabel27 = new javax.swing.JLabel();
         jButton2 = new javax.swing.JButton();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
         jLabel30 = new javax.swing.JLabel();
         jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
         jLabel33 = new javax.swing.JLabel();
         jButton3 = new javax.swing.JButton();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
         jLabel34 = new javax.swing.JLabel();
         jButton4 = new javax.swing.JButton();
-        jLabel35 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setMinimumSize(new java.awt.Dimension(1550, 750));
-        jPanel1.setPreferredSize(new java.awt.Dimension(1550, 750));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         BarraLateral.setBackground(new java.awt.Color(51, 153, 255));
@@ -267,7 +277,7 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 153, 51));
-        jLabel2.setText("¡ BIENVENIDO A LA UNIDAD 01 !");
+        jLabel2.setText("¡ BIENVENIDO A LA UNIDAD 04 !");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, -1, -1));
 
         jSeparator1.setBackground(new java.awt.Color(255, 153, 51));
@@ -279,190 +289,240 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel3.setText(" Unidad de Aprendizaje 1: Estructuras de datos lineales");
+        jLabel3.setText(" Unidad de Aprendizaje 4: Estructuras de Datos No Lineales");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 100, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel4.setText(" ¡Bienvenido a la Unidad 01!");
+        jLabel4.setText(" ¡Bienvenido a la Unidad 04!");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 130, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText(" En esta unidad exploraremos los fundamentos de las estructuras ");
+        jLabel5.setText(" En esta unidad te adentrarás en el estudio de las estructuras de ");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, -1, 20));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText(" de datos lineales, herramientas esenciales en el desarrollo de ");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, -1, -1));
+        jLabel6.setText(" datos no lineales, fundamentales para organizar y procesar");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 190, -1, 20));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setText(" algoritmos y la organización eficiente de la información en la ");
+        jLabel7.setText(" información en forma jerárquica. A diferencia de las estructuras ");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 220, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText(" programación.");
+        jLabel8.setText(" secuenciales, aquí los ");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 250, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel9.setText(" Aquí aprenderás a trabajar con arreglos unidimensionales y ");
+        jLabel9.setText(" elementos pueden tener");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 280, -1, -1));
 
         jLabel10.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel10.setText(" bidimensionales, dominando las operaciones más comunes como ");
+        jLabel10.setText(" múltiples relaciones.");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 310, -1, -1));
 
         jLabel11.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText(" inserción, eliminación, recorrido, fusión, comparación y mucho más.");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 340, -1, -1));
+        jLabel11.setText(" Aprenderás sobre árboles");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 340, 240, -1));
 
         jLabel12.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel12.setText(" Esta unidad te brindará la base para resolver problemas reales  ");
+        jLabel12.setText(" generales, árboles binarios,");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 370, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel13.setText(" aplicando estructuras ordenadas y lógicas en tus programas.");
+        jLabel13.setText(" árboles binarios de ");
         jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, -1, -1));
 
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/Unidad01.jpg"))); // NOI18N
+        jLabel37.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        jLabel37.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel37.setText(" de búsqueda (ABB) y árboles ");
+        jPanel1.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 430, -1, -1));
+
+        jLabel38.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        jLabel38.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel38.setText(" AVL, explorando cómo se ");
+        jPanel1.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 460, -1, -1));
+
+        jLabel39.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel39.setText(" construyen, recorren y");
+        jPanel1.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 490, -1, -1));
+
+        jLabel40.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        jLabel40.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel40.setText(" modifican mediante");
+        jPanel1.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 520, -1, -1));
+
+        jLabel41.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        jLabel41.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel41.setText(" operaciones clave. Estas ");
+        jPanel1.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 550, -1, -1));
+
+        jLabel42.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        jLabel42.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel42.setText(" estructuras son esenciales");
+        jPanel1.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 580, -1, -1));
+
+        jLabel43.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        jLabel43.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel43.setText(" para tareas como búsquedas");
+        jPanel1.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 610, -1, -1));
+
+        jLabel44.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel44.setText(" eficientes, clasificación");
+        jPanel1.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 640, -1, -1));
+
+        jLabel45.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel45.setText(" jerárquica y manejo avanzado de datos.");
+        jPanel1.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 670, -1, -1));
+
+        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/Unidad04.png"))); // NOI18N
         jLabel15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 430, 560, 260));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 250, 320, 410));
 
         jSeparator2.setBackground(new java.awt.Color(255, 255, 255));
         jSeparator2.setForeground(new java.awt.Color(255, 255, 255));
         jSeparator2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(775, 90, 5, 610));
 
-        jLabel14.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel14.setText("  Tema 01: Arreglos Unidimensionales");
+        jLabel14.setText("  Tema 10: Árboles generales y binarios – Definición y recorridos");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 100, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Segoe UI Black", 1, 13)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("  Se estudian las operaciones fundamentales que se pueden aplicar ");
+        jLabel16.setText("  Se introduce la estructura de árbol, su terminología, características y tipos.");
         jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 130, -1, -1));
 
-        jLabel17.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Segoe UI Black", 1, 13)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel17.setText("  a un arreglo de una sola dimensión: insertar, eliminar, actualizar, ");
+        jLabel17.setText("  Se explica cómo se representan y recorren los árboles binarios usando los métodos ");
         jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 150, -1, -1));
 
-        jLabel18.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Segoe UI Black", 1, 13)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel18.setText("  recorrer y copiar elementos. Son esenciales para el manejo básico");
+        jLabel18.setText("  preorden, inorden y postorden, fundamentales para procesar datos jerárquicos.");
         jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 170, -1, -1));
 
-        jLabel19.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("  de datos ordenados en programación.");
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 190, -1, -1));
-
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
-        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 230, -1, 30));
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
+        jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 210, -1, 30));
 
         jButton1.setBackground(new java.awt.Color(51, 153, 255));
         jButton1.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 51));
-        jButton1.setText("EJEMPLO DE TEMA 01");
+        jButton1.setText("EJERCICIO DE TEMA 10");
         jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 230, 270, 30));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 210, 270, 30));
 
-        jLabel22.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel22.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel22.setText("  Tema 02: Arreglos Unidimensionales");
-        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 280, -1, -1));
+        jLabel22.setText("  Tema 11: Árboles binarios – Operaciones básicas");
+        jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 260, -1, -1));
 
-        jLabel23.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("Segoe UI Black", 1, 13)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel23.setText("  Se profundiza en operaciones como la comparación de arreglos,");
-        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 310, -1, -1));
+        jLabel23.setText("  Se enfocan las operaciones esenciales sobre árboles binarios: insertar, recorrer, ");
+        jPanel1.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 290, -1, 20));
 
-        jLabel24.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jLabel24.setFont(new java.awt.Font("Segoe UI Black", 1, 13)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel24.setText("  su clonación (duplicado exacto) y la fusión de varios arreglos en");
-        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 330, -1, -1));
+        jLabel24.setText("  eliminar y buscar. Estas acciones permiten gestionar la estructura y el contenido");
+        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 310, -1, 20));
 
-        jLabel25.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jLabel25.setFont(new java.awt.Font("Segoe UI Black", 1, 13)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel25.setText("  uno solo. Estas acciones son útiles para combinar y reutilizar ");
-        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 350, -1, -1));
-
-        jLabel26.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel26.setText("  estructuras de datos.");
-        jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 370, -1, -1));
+        jLabel25.setText("  del árbol de forma ordenada y eficiente.");
+        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 330, -1, -1));
 
         jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
-        jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 400, -1, 30));
+        jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 360, -1, 30));
 
         jButton2.setBackground(new java.awt.Color(51, 153, 255));
         jButton2.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 51));
-        jButton2.setText("EJEMPLO DE TEMA 02");
+        jButton2.setText("EJERCICIO DE TEMA 11");
         jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
-        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 400, 270, 30));
+        jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 360, 270, 30));
 
-        jLabel28.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel28.setFont(new java.awt.Font("Segoe UI Black", 1, 15)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel28.setText("  Tema 03: Arreglos Bidimensionales");
-        jPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 450, -1, -1));
+        jLabel28.setText("  Tema 12: Árbol binario de búsqueda (ABB)");
+        jPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 400, -1, -1));
 
-        jLabel29.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jLabel29.setFont(new java.awt.Font("Segoe UI Black", 1, 13)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel29.setText("  Se trabaja con matrices especiales como la triangular superior,");
-        jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 480, -1, -1));
+        jLabel29.setText("  El ABB es una estructura ordenada que facilita búsquedas rápidas. Se analizan");
+        jPanel1.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 430, -1, -1));
 
-        jLabel30.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jLabel30.setFont(new java.awt.Font("Segoe UI Black", 1, 13)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel30.setText("  triangular inferior y tridiagonal, además de clasificar matrices ");
-        jPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 500, -1, -1));
+        jLabel30.setText("  sus principales operaciones: inserción, eliminación y búsqueda, respetando ");
+        jPanel1.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 450, -1, -1));
 
-        jLabel31.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jLabel31.setFont(new java.awt.Font("Segoe UI Black", 1, 13)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel31.setText("  como simétricas o asimétricas. Estas formas permiten optimizar");
-        jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 520, -1, -1));
-
-        jLabel32.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel32.setText("  el almacenamiento y el análisis de datos en dos dimensiones.");
-        jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 540, -1, -1));
+        jLabel31.setText("  el orden lógico de los nodos.");
+        jPanel1.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 470, -1, 20));
 
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
-        jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 570, -1, 30));
+        jPanel1.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 500, -1, 30));
 
         jButton3.setBackground(new java.awt.Color(51, 153, 255));
         jButton3.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 51));
-        jButton3.setText("EJEMPLO 1 DE TEMA 03");
+        jButton3.setText("EJERCICIO DE TEMA 12");
         jButton3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
-        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 570, 270, 30));
+        jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 500, 270, 30));
+
+        jLabel26.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(255, 255, 51));
+        jLabel26.setText("  Tema 13: Árboles AVL – Balanceo y rotaciones");
+        jPanel1.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 540, -1, -1));
+
+        jLabel32.setFont(new java.awt.Font("Segoe UI Black", 1, 13)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel32.setText("  Los árboles AVL son una versión equilibrada de los ABB. Este tema trata sobre ");
+        jPanel1.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 570, -1, -1));
+
+        jLabel35.setFont(new java.awt.Font("Segoe UI Black", 1, 13)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel35.setText("  cómo mantener el equilibrio mediante rotaciones simples y dobles al insertar");
+        jPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 590, -1, -1));
+
+        jLabel36.setFont(new java.awt.Font("Segoe UI Black", 1, 13)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel36.setText("  o eliminar nodos, asegurando un rendimiento óptimo en las búsquedas.");
+        jPanel1.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 610, -1, -1));
 
         jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
-        jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 610, -1, 30));
+        jPanel1.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 640, -1, 30));
 
         jButton4.setBackground(new java.awt.Color(51, 153, 255));
         jButton4.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 51));
-        jButton4.setText("EJEMPLO 2 DE TEMA 03");
+        jButton4.setText("EJERCICIO DE TEMA 13");
         jButton4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 610, 270, 30));
+        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 640, 270, 30));
 
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java.png"))); // NOI18N
-        jPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java.png"))); // NOI18N
+        jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -500,10 +560,6 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnUnidad01ActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void btnUnidad02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad02ActionPerformed
         Unidad02_TeoriaView teoria02 = new Unidad02_TeoriaView();
         teoria02.setVisible(true);
@@ -515,6 +571,10 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
         teoria03.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnUnidad03ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnUnidad04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad04ActionPerformed
         Unidad04_TeoriaView teoria04 = new Unidad04_TeoriaView();
@@ -539,20 +599,20 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Unidad01_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Unidad04_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Unidad01_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Unidad04_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Unidad01_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Unidad04_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Unidad01_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Unidad04_TeoriaView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Unidad01_TeoriaView().setVisible(true);
+                new Unidad04_TeoriaView().setVisible(true);
             }
         });
     }
@@ -579,9 +639,9 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
@@ -597,7 +657,17 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
