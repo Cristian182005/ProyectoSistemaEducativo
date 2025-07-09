@@ -16,7 +16,8 @@ public class Tema01_ArregloUnidimensionalView extends javax.swing.JFrame {
     
     public Tema01_ArregloUnidimensionalView() {
         initComponents();
-        this.setLocationRelativeTo(null);
+        
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     @SuppressWarnings("unchecked")
@@ -68,7 +69,6 @@ public class Tema01_ArregloUnidimensionalView extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(1550, 750));
-        setPreferredSize(new java.awt.Dimension(1550, 750));
 
         jPanel1.setMinimumSize(new java.awt.Dimension(1550, 750));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());

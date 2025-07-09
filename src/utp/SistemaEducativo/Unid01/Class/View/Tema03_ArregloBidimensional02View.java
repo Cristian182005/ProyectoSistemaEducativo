@@ -17,7 +17,6 @@ public class Tema03_ArregloBidimensional02View extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jTabbedPane3 = new javax.swing.JTabbedPane();
         jPanel2 = new javax.swing.JPanel();
         jLTitutoTema03 = new javax.swing.JLabel();
         lbTamaño = new javax.swing.JLabel();
@@ -35,11 +34,6 @@ public class Tema03_ArregloBidimensional02View extends javax.swing.JFrame {
         txaMetrica = new javax.swing.JTextArea();
         btnMetrica = new javax.swing.JButton();
         btnMostraMatriz = new javax.swing.JButton();
-        btnAtras = new javax.swing.JButton();
-        btnUnidad02 = new javax.swing.JButton();
-        btnUnidad03 = new javax.swing.JButton();
-        btnUnidad01 = new javax.swing.JButton();
-        btnUnidad04 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -98,41 +92,6 @@ public class Tema03_ArregloBidimensional02View extends javax.swing.JFrame {
             }
         });
 
-        btnAtras.setText("ATRAS");
-        btnAtras.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAtrasActionPerformed(evt);
-            }
-        });
-
-        btnUnidad02.setText("UNIDAD 02");
-        btnUnidad02.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUnidad02ActionPerformed(evt);
-            }
-        });
-
-        btnUnidad03.setText("UNIDAD 03");
-        btnUnidad03.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUnidad03ActionPerformed(evt);
-            }
-        });
-
-        btnUnidad01.setText("UNIDAD 01");
-        btnUnidad01.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUnidad01ActionPerformed(evt);
-            }
-        });
-
-        btnUnidad04.setText("UNIDAD 04");
-        btnUnidad04.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnUnidad04ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -179,30 +138,13 @@ public class Tema03_ArregloBidimensional02View extends javax.swing.JFrame {
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(btnMetrica, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(97, 97, 97))))
-                            .addGroup(jPanel2Layout.createSequentialGroup()
-                                .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnUnidad01, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnUnidad02, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnUnidad03, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(btnUnidad04, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addGap(97, 97, 97)))))))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnAtras, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnUnidad02, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnUnidad03, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnUnidad01, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnUnidad04, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(19, 19, 19)
+                .addGap(77, 77, 77)
                 .addComponent(jLTitutoTema03)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel2Layout.createSequentialGroup()
@@ -237,33 +179,25 @@ public class Tema03_ArregloBidimensional02View extends javax.swing.JFrame {
                         .addGap(23, 23, 23))))
         );
 
-        jTabbedPane3.addTab("Arreglo Bidimensional", jPanel2);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 616, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(0, 6, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 6, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jTabbedPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 670, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 22, Short.MAX_VALUE)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 23, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnAtrasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAtrasActionPerformed
-        /*VentanaUnidad1 unidad01 = new VentanaUnidad1();
-        unidad01.setVisible(true);
-        this.setVisible(false);*/
-    }//GEN-LAST:event_btnAtrasActionPerformed
 
     private void btnMostraMatrizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMostraMatrizActionPerformed
         if (matriz == null || matriz.getMatriz() == null || matriz.getMatriz().length == 0) {
@@ -313,8 +247,8 @@ public class Tema03_ArregloBidimensional02View extends javax.swing.JFrame {
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 sb.append("[").append(i).append("][").append(j).append("] = ").append(datos[i][j])
-                        .append("  vs  ")
-                        .append("[").append(j).append("][").append(i).append("] = ").append(datos[j][i]);
+                .append("  vs  ")
+                .append("[").append(j).append("][").append(i).append("] = ").append(datos[j][i]);
 
                 if (datos[i][j] != datos[j][i]) {
                     sb.append("  ❌\n");
@@ -366,33 +300,15 @@ public class Tema03_ArregloBidimensional02View extends javax.swing.JFrame {
 
         matriz.llenar(datos);
         txaMostrar.setText("\n"
-                + "Tamaño de la matriz: " + tamaño + "x" + tamaño + "\n"
-                + "\n"
-                + "Los elementos de \n"
-                + "la matriz son: " + elementos);
+            + "Tamaño de la matriz: " + tamaño + "x" + tamaño + "\n"
+            + "\n"
+            + "Los elementos de \n"
+            + "la matriz son: " + elementos);
     }//GEN-LAST:event_btnAgregarActionPerformed
 
     private void txtTamañoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTamañoActionPerformed
 
     }//GEN-LAST:event_txtTamañoActionPerformed
-
-    private void btnUnidad01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad01ActionPerformed
-        /*VentanaUnidad1 unidad01 = new VentanaUnidad1();
-        unidad01.setVisible(true);
-        this.setVisible(false);*/
-    }//GEN-LAST:event_btnUnidad01ActionPerformed
-
-    private void btnUnidad02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad02ActionPerformed
-
-    }//GEN-LAST:event_btnUnidad02ActionPerformed
-
-    private void btnUnidad03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad03ActionPerformed
-
-    }//GEN-LAST:event_btnUnidad03ActionPerformed
-
-    private void btnUnidad04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad04ActionPerformed
-
-    }//GEN-LAST:event_btnUnidad04ActionPerformed
 
     public static void main(String args[]) {
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -442,20 +358,14 @@ public class Tema03_ArregloBidimensional02View extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAgregar;
-    private javax.swing.JButton btnAtras;
     private javax.swing.JButton btnLimpiar;
     private javax.swing.JButton btnMetrica;
     private javax.swing.JButton btnMostraMatriz;
-    private javax.swing.JButton btnUnidad01;
-    private javax.swing.JButton btnUnidad02;
-    private javax.swing.JButton btnUnidad03;
-    private javax.swing.JButton btnUnidad04;
     private javax.swing.JLabel jLTitutoTema03;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTabbedPane jTabbedPane3;
     private javax.swing.JLabel jbMetrica;
     private javax.swing.JLabel lbElementos;
     private javax.swing.JLabel lbTamaño;

@@ -2,8 +2,8 @@
 package utp.SistemaEducativo.View;
 
 import utp.SistemaEducativo.LoginView.LoginView;
-import utp.SistemaEducativo.Unid01.Class.Tema01_ArregloUnidimensional;
 import utp.SistemaEducativo.Unid01.Class.View.Tema01_ArregloUnidimensionalView;
+import utp.SistemaEducativo.Unid01.Class.View.Tema02_ArregloUnidimensionalView;
 
 public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
@@ -547,7 +547,9 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEjercicio01Tema03ActionPerformed
 
     private void btnEjercicioTema02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjercicioTema02ActionPerformed
-        
+        Tema02_ArregloUnidimensionalView exercise02 = new Tema02_ArregloUnidimensionalView();
+        exercise02.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnEjercicioTema02ActionPerformed
 
     private void btnEjercicio02Tema03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjercicio02Tema03ActionPerformed
