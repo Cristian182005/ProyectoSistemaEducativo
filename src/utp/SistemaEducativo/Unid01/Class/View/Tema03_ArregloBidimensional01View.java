@@ -95,6 +95,8 @@ public class Tema03_ArregloBidimensional01View extends javax.swing.JFrame {
         });
         jPanel1.add(btnCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 140, 180, 40));
 
+        jScrollPane1.setBackground(new java.awt.Color(255, 255, 255));
+
         TableResultados.setBackground(new java.awt.Color(255, 255, 255));
         TableResultados.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         TableResultados.setModel(new javax.swing.table.DefaultTableModel(
@@ -112,6 +114,7 @@ public class Tema03_ArregloBidimensional01View extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 200, -1, -1));
 
+        jScrollPane2.setBackground(new java.awt.Color(255, 255, 255));
         jScrollPane2.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
 
         TableIngresar.setBackground(new java.awt.Color(255, 255, 255));
