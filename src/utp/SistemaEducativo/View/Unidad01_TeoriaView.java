@@ -4,6 +4,8 @@ package utp.SistemaEducativo.View;
 import utp.SistemaEducativo.LoginView.LoginView;
 import utp.SistemaEducativo.Unid01.Class.View.Tema01_ArregloUnidimensionalView;
 import utp.SistemaEducativo.Unid01.Class.View.Tema02_ArregloUnidimensionalView;
+import utp.SistemaEducativo.Unid01.Class.View.Tema03_ArregloBidimensional01View;
+import utp.SistemaEducativo.Unid01.Class.View.Tema03_ArregloBidimensional02View;
 
 public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
@@ -346,7 +348,7 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
         jLabel14.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel14.setText("  Tema 01: Arreglos Unidimensionales");
+        jLabel14.setText("  Tema 01: Arreglos Unidimensionales - Basico");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 100, -1, -1));
 
         jLabel16.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
@@ -386,7 +388,7 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
 
         jLabel22.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel22.setText("  Tema 02: Arreglos Unidimensionales");
+        jLabel22.setText("  Tema 02: Arreglos Unidimensionales -Avanzado");
         jPanel1.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 280, -1, -1));
 
         jLabel23.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
@@ -543,7 +545,9 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUnidad04ActionPerformed
 
     private void btnEjercicio01Tema03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjercicio01Tema03ActionPerformed
-        
+        Tema03_ArregloBidimensional01View exercise03_01 = new Tema03_ArregloBidimensional01View();
+        exercise03_01.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnEjercicio01Tema03ActionPerformed
 
     private void btnEjercicioTema02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjercicioTema02ActionPerformed
@@ -553,7 +557,9 @@ public class Unidad01_TeoriaView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnEjercicioTema02ActionPerformed
 
     private void btnEjercicio02Tema03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEjercicio02Tema03ActionPerformed
-        
+        Tema03_ArregloBidimensional02View exercise03_02 = new Tema03_ArregloBidimensional02View();
+        exercise03_02.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_btnEjercicio02Tema03ActionPerformed
     
     public static void main(String args[]) {
