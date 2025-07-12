@@ -2,6 +2,9 @@
 package utp.SistemaEducativo.View;
 
 import utp.SistemaEducativo.LoginView.LoginView;
+import utp.SistemaEducativo.Unid02.Class.View.Tema05_ListasEnlazadas_ListaView;
+import utp.SistemaEducativo.Unid02.Class.View.Tema06_ListaEnlazadaSimple_EstudianteView;
+import utp.SistemaEducativo.Unid02.Class.View.Tema07_ListaDoblementeEnlazada_ContactoView;
 
 public class Unidad02_TeoriaView extends javax.swing.JFrame {
 
@@ -409,6 +412,11 @@ public class Unidad02_TeoriaView extends javax.swing.JFrame {
         jButton2.setForeground(new java.awt.Color(255, 255, 51));
         jButton2.setText("EJERCICIO DE TEMA 05");
         jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 360, 270, 30));
 
         jLabel28.setFont(new java.awt.Font("Segoe UI Black", 1, 15)); // NOI18N
@@ -439,6 +447,11 @@ public class Unidad02_TeoriaView extends javax.swing.JFrame {
         jButton3.setForeground(new java.awt.Color(255, 255, 51));
         jButton3.setText("EJERCICIO DE TEMA 06");
         jButton3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 500, 270, 30));
 
         jLabel26.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
@@ -469,6 +482,11 @@ public class Unidad02_TeoriaView extends javax.swing.JFrame {
         jButton4.setForeground(new java.awt.Color(255, 255, 51));
         jButton4.setText("EJERCICIOS DE TEMA 07");
         jButton4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 640, 270, 30));
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/java.png"))); // NOI18N
@@ -532,9 +550,24 @@ public class Unidad02_TeoriaView extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnUnidad04ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Tema05_ListasEnlazadas_ListaView lista = new Tema05_ListasEnlazadas_ListaView();
+        lista.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        Tema06_ListaEnlazadaSimple_EstudianteView estudiante = new Tema06_ListaEnlazadaSimple_EstudianteView();
+        estudiante.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        Tema07_ListaDoblementeEnlazada_ContactoView contacto = new Tema07_ListaDoblementeEnlazada_ContactoView();
+        contacto.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
