@@ -247,9 +247,8 @@
         <Component class="javax.swing.JLabel" name="jlImagen">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/SistemaEducativo/Images/ImageDarkBlue.jpg"/>
+              <Image iconType="3" name="/utp/SistemaEducativo/Images/ImageDarkBlue.jpg"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="jLabel4"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">

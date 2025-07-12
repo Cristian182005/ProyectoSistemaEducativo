@@ -124,8 +124,7 @@ public class LoginView extends javax.swing.JFrame {
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 110, 530, 500));
 
-        jlImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
-        jlImagen.setText("jLabel4");
+        jlImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
         jPanel1.add(jlImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 1550, 780));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

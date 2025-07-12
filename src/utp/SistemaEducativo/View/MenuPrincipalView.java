@@ -18,7 +18,7 @@ public class MenuPrincipalView extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jlLogoImage = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
         btnUnidad04 = new javax.swing.JButton();
         btnUnidad01 = new javax.swing.JButton();
         btnUnidad02 = new javax.swing.JButton();
@@ -39,8 +39,8 @@ public class MenuPrincipalView extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,8 +51,8 @@ public class MenuPrincipalView extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(51, 153, 255));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jlLogoImage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/LogoImage.png"))); // NOI18N
-        jPanel2.add(jlLogoImage, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 100, 100));
+        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/LogoImage.png"))); // NOI18N
+        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, -1, -1));
 
         btnUnidad04.setBackground(new java.awt.Color(51, 153, 255));
         btnUnidad04.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
@@ -208,12 +208,11 @@ public class MenuPrincipalView extends javax.swing.JFrame {
         jLabel12.setText("Explora, aprende y prepárate para dominar cada tema. ");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, 680, 40));
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/LogoJava.jpg"))); // NOI18N
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 130, 430, 460));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/LogoJava.jpg"))); // NOI18N
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 130, 430, 460));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1550, -1));
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
+        jPanel1.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 1550, 480));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -298,6 +297,7 @@ public class MenuPrincipalView extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -309,7 +309,6 @@ public class MenuPrincipalView extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JLabel jlLogoImage;
     private javax.swing.JLabel jlTitulo01;
     private javax.swing.JLabel jlTitulo02;
     // End of variables declaration//GEN-END:variables

@@ -102,7 +102,7 @@ public class Unidad03_TeoriaView extends javax.swing.JFrame {
 
         btnMenuPrincipal.setBackground(new java.awt.Color(51, 153, 255));
         btnMenuPrincipal.setForeground(new java.awt.Color(51, 153, 255));
-        btnMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/LogoImage.png"))); // NOI18N
+        btnMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/LogoImage.png"))); // NOI18N
         btnMenuPrincipal.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
         btnMenuPrincipal.setContentAreaFilled(false);
         btnMenuPrincipal.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -230,21 +230,21 @@ public class Unidad03_TeoriaView extends javax.swing.JFrame {
         sprSubtituloRedes.setForeground(new java.awt.Color(255, 255, 255));
         BarraLateral.add(sprSubtituloRedes, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 575, 123, 10));
 
-        jlLogoFB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/FB.png"))); // NOI18N
+        jlLogoFB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/FB.png"))); // NOI18N
         BarraLateral.add(jlLogoFB, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 591, -1, -1));
 
-        jlLogoTwitter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/Twitter.png"))); // NOI18N
+        jlLogoTwitter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/Twitter.png"))); // NOI18N
         BarraLateral.add(jlLogoTwitter, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 591, -1, -1));
 
         jlLogoYoutube.setBackground(new java.awt.Color(255, 255, 255));
         jlLogoYoutube.setForeground(new java.awt.Color(255, 255, 255));
-        jlLogoYoutube.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/YT.png"))); // NOI18N
+        jlLogoYoutube.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/YT.png"))); // NOI18N
         BarraLateral.add(jlLogoYoutube, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 591, -1, -1));
 
-        jlLogoInstagram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/IG.png"))); // NOI18N
+        jlLogoInstagram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/IG.png"))); // NOI18N
         BarraLateral.add(jlLogoInstagram, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 647, -1, -1));
 
-        jlLogoCorreo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/Correo.png"))); // NOI18N
+        jlLogoCorreo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/Correo.png"))); // NOI18N
         BarraLateral.add(jlLogoCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 647, -1, -1));
 
         jlCorreo01.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
@@ -262,14 +262,14 @@ public class Unidad03_TeoriaView extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Rockwell Extra Bold", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 153, 51));
         jLabel2.setText("¡ BIENVENIDO A LA UNIDAD 03 !");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 30, -1, -1));
 
         jSeparator1.setBackground(new java.awt.Color(255, 153, 51));
         jSeparator1.setForeground(new java.awt.Color(255, 153, 51));
         jSeparator1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 153, 51), 2));
         jSeparator1.setMinimumSize(new java.awt.Dimension(0, 2));
         jSeparator1.setPreferredSize(new java.awt.Dimension(0, 2));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 80, 670, 3));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 80, 670, 3));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 19)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 51));
@@ -317,8 +317,7 @@ public class Unidad03_TeoriaView extends javax.swing.JFrame {
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 550, -1));
 
         jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/Unidad03.png"))); // NOI18N
-        jLabel15.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
-        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 410, 560, 270));
+        jPanel1.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 390, 560, 290));
 
         jSeparator2.setBackground(new java.awt.Color(255, 255, 255));
         jSeparator2.setForeground(new java.awt.Color(255, 255, 255));
@@ -355,7 +354,7 @@ public class Unidad03_TeoriaView extends javax.swing.JFrame {
         jLabel18.setText("  datos de forma ordenada y dinámica.");
         jPanel1.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 250, -1, -1));
 
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/java black.png"))); // NOI18N
         jPanel1.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 290, -1, 30));
 
         jButton1.setBackground(new java.awt.Color(51, 153, 255));
@@ -415,7 +414,7 @@ public class Unidad03_TeoriaView extends javax.swing.JFrame {
         jLabel28.setText("  útiles para gestionar tareas según niveles de importancia.");
         jPanel1.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 550, -1, -1));
 
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java black.png"))); // NOI18N
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/java black.png"))); // NOI18N
         jPanel1.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 590, -1, 30));
 
         jButton2.setBackground(new java.awt.Color(51, 153, 255));
@@ -435,11 +434,10 @@ public class Unidad03_TeoriaView extends javax.swing.JFrame {
         jButton4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 630, 270, 30));
 
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java.png"))); // NOI18N
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/java.png"))); // NOI18N
         jPanel1.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, -1, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
-        jLabel1.setText("jLabel1");
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 1350, 750));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

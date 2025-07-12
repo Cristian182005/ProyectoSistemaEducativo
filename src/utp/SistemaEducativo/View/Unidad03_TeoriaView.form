@@ -112,7 +112,7 @@
                   <Color blue="ff" green="99" red="33" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/SistemaEducativo/Images/LogoImage.png"/>
+                  <Image iconType="3" name="/utp/SistemaEducativo/Images/LogoImage.png"/>
                 </Property>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                   <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -486,7 +486,7 @@
             <Component class="javax.swing.JLabel" name="jlLogoFB">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/SistemaEducativo/Images/FB.png"/>
+                  <Image iconType="3" name="/utp/SistemaEducativo/Images/FB.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -498,7 +498,7 @@
             <Component class="javax.swing.JLabel" name="jlLogoTwitter">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/SistemaEducativo/Images/Twitter.png"/>
+                  <Image iconType="3" name="/utp/SistemaEducativo/Images/Twitter.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -516,7 +516,7 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/SistemaEducativo/Images/YT.png"/>
+                  <Image iconType="3" name="/utp/SistemaEducativo/Images/YT.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -528,7 +528,7 @@
             <Component class="javax.swing.JLabel" name="jlLogoInstagram">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/SistemaEducativo/Images/IG.png"/>
+                  <Image iconType="3" name="/utp/SistemaEducativo/Images/IG.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -540,7 +540,7 @@
             <Component class="javax.swing.JLabel" name="jlLogoCorreo">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/SistemaEducativo/Images/Correo.png"/>
+                  <Image iconType="3" name="/utp/SistemaEducativo/Images/Correo.png"/>
                 </Property>
               </Properties>
               <Constraints>
@@ -595,7 +595,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="520" y="30" width="-1" height="-1"/>
+              <AbsoluteConstraints x="450" y="30" width="-1" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -623,7 +623,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="520" y="80" width="670" height="3"/>
+              <AbsoluteConstraints x="450" y="80" width="670" height="3"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -776,15 +776,10 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/utp/SistemaEducativo/Images/Unidad03.png"/>
             </Property>
-            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                <LineBorder roundedCorners="true"/>
-              </Border>
-            </Property>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="210" y="410" width="560" height="270"/>
+              <AbsoluteConstraints x="210" y="390" width="560" height="290"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -909,7 +904,7 @@
         <Component class="javax.swing.JLabel" name="jLabel21">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/SistemaEducativo/Images/java black.png"/>
+              <Image iconType="3" name="/utp/SistemaEducativo/Images/java black.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -1087,7 +1082,7 @@
         <Component class="javax.swing.JLabel" name="jLabel27">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/SistemaEducativo/Images/java black.png"/>
+              <Image iconType="3" name="/utp/SistemaEducativo/Images/java black.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -1163,7 +1158,7 @@
         <Component class="javax.swing.JLabel" name="jLabel20">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/SistemaEducativo/Images/java.png"/>
+              <Image iconType="3" name="/utp/SistemaEducativo/Images/java.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -1175,9 +1170,8 @@
         <Component class="javax.swing.JLabel" name="jLabel1">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/SistemaEducativo/Images/ImageDarkBlue.jpg"/>
+              <Image iconType="3" name="/utp/SistemaEducativo/Images/ImageDarkBlue.jpg"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="jLabel1"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
