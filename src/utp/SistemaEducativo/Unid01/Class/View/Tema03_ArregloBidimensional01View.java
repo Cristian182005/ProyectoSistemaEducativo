@@ -190,7 +190,7 @@ public class Tema03_ArregloBidimensional01View extends javax.swing.JFrame {
 
         btnMenuPrincipal.setBackground(new java.awt.Color(51, 153, 255));
         btnMenuPrincipal.setForeground(new java.awt.Color(51, 153, 255));
-        btnMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/LogoImage.png"))); // NOI18N
+        btnMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/LogoImage.png"))); // NOI18N
         btnMenuPrincipal.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
         btnMenuPrincipal.setContentAreaFilled(false);
         btnMenuPrincipal.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -318,21 +318,21 @@ public class Tema03_ArregloBidimensional01View extends javax.swing.JFrame {
         sprSubtituloRedes.setForeground(new java.awt.Color(255, 255, 255));
         BarraLateral.add(sprSubtituloRedes, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 575, 123, 10));
 
-        jlLogoFB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/FB.png"))); // NOI18N
+        jlLogoFB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/FB.png"))); // NOI18N
         BarraLateral.add(jlLogoFB, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 591, -1, -1));
 
-        jlLogoTwitter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/Twitter.png"))); // NOI18N
+        jlLogoTwitter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/Twitter.png"))); // NOI18N
         BarraLateral.add(jlLogoTwitter, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 591, -1, -1));
 
         jlLogoYoutube.setBackground(new java.awt.Color(255, 255, 255));
         jlLogoYoutube.setForeground(new java.awt.Color(255, 255, 255));
-        jlLogoYoutube.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/YT.png"))); // NOI18N
+        jlLogoYoutube.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/YT.png"))); // NOI18N
         BarraLateral.add(jlLogoYoutube, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 591, -1, -1));
 
-        jlLogoInstagram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/IG.png"))); // NOI18N
+        jlLogoInstagram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/IG.png"))); // NOI18N
         BarraLateral.add(jlLogoInstagram, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 647, -1, -1));
 
-        jlLogoCorreo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/Correo.png"))); // NOI18N
+        jlLogoCorreo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/Correo.png"))); // NOI18N
         BarraLateral.add(jlLogoCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 647, -1, -1));
 
         jlCorreo01.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
@@ -359,7 +359,7 @@ public class Tema03_ArregloBidimensional01View extends javax.swing.JFrame {
         });
         jPanel1.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 120, 40));
 
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/SistemaEducativo/Images/java.png"))); // NOI18N
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/java.png"))); // NOI18N
         jPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 20, -1, -1));
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
