@@ -3,14 +3,14 @@ package utp.SistemaEducativo.Unid02.Class;
 
 //Tema 07: Listas doblemente enlazadas: Operaciones básicas. Listas circulares: Operaciones básicas.
 
-public class Tema07p1_ListaDoblementeEnlazada_NodoContacto {
+public class Tema07p1_LDE_NodoContacto {
     private String nombre;
     private String telefono;
     private String correo;
-    private Tema07p1_ListaDoblementeEnlazada_NodoContacto siguiente;
-    private Tema07p1_ListaDoblementeEnlazada_NodoContacto anterior;
+    private Tema07p1_LDE_NodoContacto siguiente;
+    private Tema07p1_LDE_NodoContacto anterior;
 
-    public Tema07p1_ListaDoblementeEnlazada_NodoContacto(String nombre, String telefono, String correo) {
+    public Tema07p1_LDE_NodoContacto(String nombre, String telefono, String correo) {
         this.nombre = nombre;
         this.telefono = telefono;
         this.correo = correo;
@@ -42,19 +42,19 @@ public class Tema07p1_ListaDoblementeEnlazada_NodoContacto {
         this.correo = correo;
     }
 
-    public Tema07p1_ListaDoblementeEnlazada_NodoContacto getSiguiente() {
+    public Tema07p1_LDE_NodoContacto getSiguiente() {
         return siguiente;
     }
 
-    public void setSiguiente(Tema07p1_ListaDoblementeEnlazada_NodoContacto siguiente) {
+    public void setSiguiente(Tema07p1_LDE_NodoContacto siguiente) {
         this.siguiente = siguiente;
     }
 
-    public Tema07p1_ListaDoblementeEnlazada_NodoContacto getAnterior() {
+    public Tema07p1_LDE_NodoContacto getAnterior() {
         return anterior;
     }
 
-    public void setAnterior(Tema07p1_ListaDoblementeEnlazada_NodoContacto anterior) {
+    public void setAnterior(Tema07p1_LDE_NodoContacto anterior) {
         this.anterior = anterior;
     }
 

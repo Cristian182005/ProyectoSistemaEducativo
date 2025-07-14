@@ -1,19 +1,19 @@
 package utp.SistemaEducativo.Unid02.Class;
 
-import utp.SistemaEducativo.Unid02.Class.Tema04p1_TipoAbstractoDeDatos_NodoAlumno;
+import utp.SistemaEducativo.Unid02.Class.Tema04p1_TAD_NodoAlumno;
 import javax.swing.table.DefaultTableModel;
 
-public class Tema04p2_TipoAbstractoDeDatos_ListaAlumno {
+public class Tema04p2_TAD_ListaAlumno {
 
-    private static Tema04p2_TipoAbstractoDeDatos_ListaAlumno instance;
-    private Tema04p1_TipoAbstractoDeDatos_NodoAlumno cabeza;
-    private Tema04p1_TipoAbstractoDeDatos_NodoAlumno cola;
+    private static Tema04p2_TAD_ListaAlumno instance;
+    private Tema04p1_TAD_NodoAlumno cabeza;
+    private Tema04p1_TAD_NodoAlumno cola;
     private int size;
     private int ultimoIdInicial;
     private int ultimoIdPrimaria;
     private int ultimoIdSecundaria;
 
-    Tema04p2_TipoAbstractoDeDatos_ListaAlumno() {
+    Tema04p2_TAD_ListaAlumno() {
         cabeza = null;
         cola = null;
         size = 0;
@@ -22,9 +22,9 @@ public class Tema04p2_TipoAbstractoDeDatos_ListaAlumno {
         ultimoIdSecundaria = 0;
     }
 
-    public static synchronized Tema04p2_TipoAbstractoDeDatos_ListaAlumno getInstance() {
+    public static synchronized Tema04p2_TAD_ListaAlumno getInstance() {
         if (instance == null) {
-            instance = new Tema04p2_TipoAbstractoDeDatos_ListaAlumno();
+            instance = new Tema04p2_TAD_ListaAlumno();
         }
         return instance;
     }
@@ -52,7 +52,7 @@ public class Tema04p2_TipoAbstractoDeDatos_ListaAlumno {
     public void agregarAlumno(String nombre, String apellido, int grado, String nivel) {
         String id = generarNuevoId(nivel);
         
-        Tema04p1_TipoAbstractoDeDatos_NodoAlumno nuevoAlumno = new Tema04p1_TipoAbstractoDeDatos_NodoAlumno(id, nombre, apellido, grado, nivel);
+        Tema04p1_TAD_NodoAlumno nuevoAlumno = new Tema04p1_TAD_NodoAlumno(id, nombre, apellido, grado, nivel);
 
         if (cabeza == null) {
             cabeza = nuevoAlumno;
@@ -77,7 +77,7 @@ public class Tema04p2_TipoAbstractoDeDatos_ListaAlumno {
         return true;
     }
 
-    Tema04p1_TipoAbstractoDeDatos_NodoAlumno actual = cabeza;
+    Tema04p1_TAD_NodoAlumno actual = cabeza;
     while (actual.getSiguiente() != null) {
         if (actual.getSiguiente().getNombre().equalsIgnoreCase(nombre)
                 && actual.getSiguiente().getApellido().equalsIgnoreCase(apellido)) {
@@ -96,7 +96,7 @@ public class Tema04p2_TipoAbstractoDeDatos_ListaAlumno {
     return false; 
     }
 
-    public Tema04p1_TipoAbstractoDeDatos_NodoAlumno buscarPorNombreCompleto(String nombreCompleto) {
+    public Tema04p1_TAD_NodoAlumno buscarPorNombreCompleto(String nombreCompleto) {
     if (nombreCompleto == null || nombreCompleto.trim().isEmpty()) {
         return null;
     }
@@ -109,7 +109,7 @@ public class Tema04p2_TipoAbstractoDeDatos_ListaAlumno {
         return null;
     }
     
-    Tema04p1_TipoAbstractoDeDatos_NodoAlumno actual = cabeza;
+    Tema04p1_TAD_NodoAlumno actual = cabeza;
     while (actual != null) {
         String nombreAlumno = actual.getNombre().toLowerCase();
         String apellidoAlumno = actual.getApellido().toLowerCase();
@@ -147,7 +147,7 @@ public class Tema04p2_TipoAbstractoDeDatos_ListaAlumno {
         }
 
         int count = 0;
-        Tema04p1_TipoAbstractoDeDatos_NodoAlumno actual = cabeza;
+        Tema04p1_TAD_NodoAlumno actual = cabeza;
         while (actual != null) {
             if (actual.getNivel().equalsIgnoreCase(nivel)) {
                 count++;

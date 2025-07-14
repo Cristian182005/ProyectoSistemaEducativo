@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 //Tema 02: Operaciones con Arreglos Unidimensionales: comparación, clonación, fusión.
 
-public class Tema02_ArregloUnidimensional {
+public class Tema02_AU {
     private int[] arreglo;
     private int elementos;
 

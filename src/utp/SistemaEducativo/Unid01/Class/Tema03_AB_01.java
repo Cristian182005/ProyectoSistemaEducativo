@@ -5,7 +5,7 @@ package utp.SistemaEducativo.Unid01.Class;
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
-public class Tema03_ArregloBidimensional_01 {
+public class Tema03_AB_01 {
 
     private JTable tablaEntrada;
     private JTable tablaResultado;

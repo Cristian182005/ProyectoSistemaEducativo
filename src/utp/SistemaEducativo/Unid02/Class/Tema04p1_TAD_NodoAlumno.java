@@ -1,15 +1,15 @@
 package utp.SistemaEducativo.Unid02.Class;
 
-public class Tema04p1_TipoAbstractoDeDatos_NodoAlumno {
+public class Tema04p1_TAD_NodoAlumno {
 
     private String id;
     private String nombre;
     private String apellido;
     private int grado;
     private String nivel;
-    private Tema04p1_TipoAbstractoDeDatos_NodoAlumno siguiente;
+    private Tema04p1_TAD_NodoAlumno siguiente;
 
-    public Tema04p1_TipoAbstractoDeDatos_NodoAlumno(String id, String nombre, String apellido, int grado, String nivel) {
+    public Tema04p1_TAD_NodoAlumno(String id, String nombre, String apellido, int grado, String nivel) {
         if (id == null || nombre == null || apellido == null || nivel == null) {
             throw new IllegalArgumentException("Ningún campo puede ser nulo");
         }
@@ -42,11 +42,11 @@ public class Tema04p1_TipoAbstractoDeDatos_NodoAlumno {
         return nivel;
     }
 
-    public Tema04p1_TipoAbstractoDeDatos_NodoAlumno getSiguiente() {
+    public Tema04p1_TAD_NodoAlumno getSiguiente() {
         return siguiente;
     }
 
-    public void setSiguiente(Tema04p1_TipoAbstractoDeDatos_NodoAlumno siguiente) {
+    public void setSiguiente(Tema04p1_TAD_NodoAlumno siguiente) {
         this.siguiente = siguiente;
     }
 

@@ -1,18 +1,18 @@
 package utp.SistemaEducativo.Unid02.Class;
 
-import utp.SistemaEducativo.Unid02.Class.Tema05p1_ListasEnlazadas_Nodo;
+import utp.SistemaEducativo.Unid02.Class.Tema05p1_LE_Nodo;
 
-public class Tema05p2_ListasEnlazadas_Lista {
+public class Tema05p2_LE_Lista {
 
-    Tema05p1_ListasEnlazadas_Nodo cabeza;
+    Tema05p1_LE_Nodo cabeza;
 
     public void insertar(int dato) {
         
-        Tema05p1_ListasEnlazadas_Nodo nuevo = new Tema05p1_ListasEnlazadas_Nodo(dato);
+        Tema05p1_LE_Nodo nuevo = new Tema05p1_LE_Nodo(dato);
         if (cabeza == null) {
             cabeza = nuevo;
         } else {
-            Tema05p1_ListasEnlazadas_Nodo actual = cabeza;
+            Tema05p1_LE_Nodo actual = cabeza;
             while (actual.siguiente != null) {
                 actual = actual.siguiente;
             }
@@ -30,7 +30,7 @@ public class Tema05p2_ListasEnlazadas_Lista {
     public String mostrar() {
         
         StringBuilder resultado = new StringBuilder();
-        Tema05p1_ListasEnlazadas_Nodo actual = cabeza;
+        Tema05p1_LE_Nodo actual = cabeza;
         while (actual != null) {
             resultado.append(actual.dato).append(" -> ");
             actual = actual.siguiente;

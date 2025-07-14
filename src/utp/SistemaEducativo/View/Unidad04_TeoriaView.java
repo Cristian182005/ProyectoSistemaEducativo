@@ -2,6 +2,10 @@
 package utp.SistemaEducativo.View;
 
 import utp.SistemaEducativo.LoginView.LoginView;
+import utp.SistemaEducativo.Unid04.Class.View.Tema10_AGB_ArbolBinarioView;
+import utp.SistemaEducativo.Unid04.Class.View.Tema11_AB_OperacionesBasicasView;
+import utp.SistemaEducativo.Unid04.Class.View.Tema12_ABB_BusquedaView;
+import utp.SistemaEducativo.Unid04.Class.View.Tema13_AAVL_ArbolAVLView;
 
 
 public class Unidad04_TeoriaView extends javax.swing.JFrame {
@@ -458,6 +462,11 @@ public class Unidad04_TeoriaView extends javax.swing.JFrame {
         jButton2.setForeground(new java.awt.Color(255, 255, 51));
         jButton2.setText("EJERCICIO DE TEMA 11");
         jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 360, 270, 30));
 
         jLabel28.setFont(new java.awt.Font("Segoe UI Black", 1, 15)); // NOI18N
@@ -488,6 +497,11 @@ public class Unidad04_TeoriaView extends javax.swing.JFrame {
         jButton3.setForeground(new java.awt.Color(255, 255, 51));
         jButton3.setText("EJERCICIO DE TEMA 12");
         jButton3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 500, 270, 30));
 
         jLabel26.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
@@ -518,6 +532,11 @@ public class Unidad04_TeoriaView extends javax.swing.JFrame {
         jButton4.setForeground(new java.awt.Color(255, 255, 51));
         jButton4.setText("EJERCICIO DE TEMA 13");
         jButton4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 640, 270, 30));
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/java.png"))); // NOI18N
@@ -571,7 +590,9 @@ public class Unidad04_TeoriaView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUnidad03ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        Tema10_AGB_ArbolBinarioView arb = new Tema10_AGB_ArbolBinarioView();
+        arb.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnUnidad04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad04ActionPerformed
@@ -580,9 +601,24 @@ public class Unidad04_TeoriaView extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnUnidad04ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Tema11_AB_OperacionesBasicasView ab = new Tema11_AB_OperacionesBasicasView();
+        ab.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        Tema12_ABB_BusquedaView abb = new Tema12_ABB_BusquedaView();
+        abb.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        Tema13_AAVL_ArbolAVLView avl = new Tema13_AAVL_ArbolAVLView();
+        avl.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
+    
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

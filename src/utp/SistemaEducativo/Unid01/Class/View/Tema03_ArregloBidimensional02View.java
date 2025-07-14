@@ -1,7 +1,7 @@
 
 package utp.SistemaEducativo.Unid01.Class.View;
 
-import utp.SistemaEducativo.Unid01.Class.Tema03_ArregloBidimensional_02;
+import utp.SistemaEducativo.Unid01.Class.Tema03_AB_02;
 import javax.swing.JOptionPane;
 import utp.SistemaEducativo.LoginView.LoginView;
 import utp.SistemaEducativo.View.MenuPrincipalView;
@@ -12,7 +12,7 @@ import utp.SistemaEducativo.View.Unidad04_TeoriaView;
 
 public class Tema03_ArregloBidimensional02View extends javax.swing.JFrame {
 
-    private Tema03_ArregloBidimensional_02 matriz;
+    private Tema03_AB_02 matriz;
 
     public Tema03_ArregloBidimensional02View() {
         initComponents();
@@ -470,7 +470,7 @@ public class Tema03_ArregloBidimensional02View extends javax.swing.JFrame {
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         int tamaño = Integer.parseInt(txtTamaño.getText());
 
-        matriz = new Tema03_ArregloBidimensional_02(tamaño);
+        matriz = new Tema03_AB_02(tamaño);
 
         String elementos = txtElementos.getText().trim();
         String[] valores = elementos.split("\\s+|,"); // permite espacios o comas

@@ -1,7 +1,7 @@
 package utp.SistemaEducativo.Unid01.Class.View;
 
 import utp.SistemaEducativo.LoginView.LoginView;
-import utp.SistemaEducativo.Unid01.Class.Tema03_ArregloBidimensional_01;
+import utp.SistemaEducativo.Unid01.Class.Tema03_AB_01;
 import utp.SistemaEducativo.View.MenuPrincipalView;
 import utp.SistemaEducativo.View.Unidad01_TeoriaView;
 import utp.SistemaEducativo.View.Unidad02_TeoriaView;
@@ -10,7 +10,7 @@ import utp.SistemaEducativo.View.Unidad04_TeoriaView;
 
 public class Tema03_ArregloBidimensional01View extends javax.swing.JFrame {
 
-    public Tema03_ArregloBidimensional_01 matrizOperaciones;
+    public Tema03_AB_01 matrizOperaciones;
 
     public Tema03_ArregloBidimensional01View() {
         initComponents();
@@ -381,14 +381,14 @@ public class Tema03_ArregloBidimensional01View extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSuperiorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuperiorActionPerformed
-        Tema03_ArregloBidimensional_01 op = new Tema03_ArregloBidimensional_01();
+        Tema03_AB_01 op = new Tema03_AB_01();
         op.setTablaEntrada(TableIngresar);
         op.setTablaResultado(TableResultados);
         op.convertirSuperior();
     }//GEN-LAST:event_btnSuperiorActionPerformed
 
     private void btnInferiorrActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInferiorrActionPerformed
-        Tema03_ArregloBidimensional_01 op = new Tema03_ArregloBidimensional_01();
+        Tema03_AB_01 op = new Tema03_AB_01();
         op.setTablaEntrada(TableIngresar);
         op.setTablaResultado(TableResultados);
         op.convertirInferior();
@@ -397,13 +397,13 @@ public class Tema03_ArregloBidimensional01View extends javax.swing.JFrame {
     private void btnCrearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrearActionPerformed
         int n = Integer.parseInt(txtTamaño.getText());
 
-        TableIngresar.setModel(Tema03_ArregloBidimensional_01.crearModeloTabla(n));
-        TableResultados.setModel(Tema03_ArregloBidimensional_01.crearModeloTabla(n));
+        TableIngresar.setModel(Tema03_AB_01.crearModeloTabla(n));
+        TableResultados.setModel(Tema03_AB_01.crearModeloTabla(n));
 
     }//GEN-LAST:event_btnCrearActionPerformed
 
     private void btnTridiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTridiActionPerformed
-        Tema03_ArregloBidimensional_01 op = new Tema03_ArregloBidimensional_01();
+        Tema03_AB_01 op = new Tema03_AB_01();
         op.setTablaEntrada(TableIngresar);
         op.setTablaResultado(TableResultados);
 op.convertirTridiagonal();}//GEN-LAST:event_btnTridiActionPerformed

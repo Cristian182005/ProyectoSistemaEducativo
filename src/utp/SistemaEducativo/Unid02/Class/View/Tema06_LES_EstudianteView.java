@@ -4,8 +4,8 @@
  */
 package utp.SistemaEducativo.Unid02.Class.View;
 
-import utp.SistemaEducativo.Unid02.Class.Tema07p1_ListaDoblementeEnlazada_NodoContacto;
-import utp.SistemaEducativo.Unid02.Class.Tema07p2_ListaDoblementeEnlazada_ListaContacto;
+import utp.SistemaEducativo.Unid02.Class.Tema06p2_LES_ListaEstudiante;
+import javax.swing.table.DefaultTableModel;
 import javax.swing.JOptionPane;
 import utp.SistemaEducativo.LoginView.LoginView;
 import utp.SistemaEducativo.View.MenuPrincipalView;
@@ -13,19 +13,17 @@ import utp.SistemaEducativo.View.Unidad01_TeoriaView;
 import utp.SistemaEducativo.View.Unidad02_TeoriaView;
 import utp.SistemaEducativo.View.Unidad03_TeoriaView;
 import utp.SistemaEducativo.View.Unidad04_TeoriaView;
-
 /**
  *
  * @author usuario
  */
-public class Tema07_ListaDoblementeEnlazada_ContactoView extends javax.swing.JFrame {
+public class Tema06_LES_EstudianteView extends javax.swing.JFrame {
 
-    private Tema07p2_ListaDoblementeEnlazada_ListaContacto listaContactos;
+    private Tema06p2_LES_ListaEstudiante listaEstudiantes;
 
-    public Tema07_ListaDoblementeEnlazada_ContactoView() {
+    public Tema06_LES_EstudianteView() {
         initComponents();
-        listaContactos = new Tema07p2_ListaDoblementeEnlazada_ListaContacto();
-        actualizarVista();
+        listaEstudiantes = new Tema06p2_LES_ListaEstudiante((DefaultTableModel) jTable1.getModel());
         
         this.setExtendedState(MAXIMIZED_BOTH);
     }
@@ -34,26 +32,21 @@ public class Tema07_ListaDoblementeEnlazada_ContactoView extends javax.swing.JFr
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        Nombre = new javax.swing.JLabel();
-        Telefono = new javax.swing.JLabel();
-        Correo = new javax.swing.JLabel();
-        txtNombre = new javax.swing.JTextField();
-        txtTelf = new javax.swing.JTextField();
-        txtCorreo = new javax.swing.JTextField();
-        btnAgregar = new javax.swing.JButton();
-        btnEliminar = new javax.swing.JButton();
-        btnTodos = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        btnAnte = new javax.swing.JButton();
-        btnSigui = new javax.swing.JButton();
+        Nombre1 = new javax.swing.JLabel();
+        Apellido1 = new javax.swing.JLabel();
+        Curso1 = new javax.swing.JLabel();
+        Nota1 = new javax.swing.JLabel();
+        txtNombre = new javax.swing.JTextField();
+        txtApellido = new javax.swing.JTextField();
+        txtNota = new javax.swing.JTextField();
+        cbxCurso = new javax.swing.JComboBox<>();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        btnRegistrar = new javax.swing.JButton();
+        btnOrdenar = new javax.swing.JButton();
+        btnOrdenar1 = new javax.swing.JButton();
         BarraLateral = new javax.swing.JPanel();
         jlTitulo01 = new javax.swing.JLabel();
         jlTitulo02 = new javax.swing.JLabel();
@@ -83,27 +76,32 @@ public class Tema07_ListaDoblementeEnlazada_ContactoView extends javax.swing.JFr
         jLabel1 = new javax.swing.JLabel();
         btnVolver = new javax.swing.JButton();
         jLabel35 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel3.setMinimumSize(new java.awt.Dimension(1550, 750));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jPanel1.setMinimumSize(new java.awt.Dimension(1550, 750));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(51, 153, 255));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "AGENDA DE CONTACTOS", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 18), new java.awt.Color(255, 255, 51))); // NOI18N
+        jPanel2.setBackground(new java.awt.Color(51, 153, 255));
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "REGISTRO DE NOTAS", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI Black", 1, 20), new java.awt.Color(255, 255, 51))); // NOI18N
+        jPanel2.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
 
-        Nombre.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        Nombre.setForeground(new java.awt.Color(255, 255, 51));
-        Nombre.setText("NOMBRE");
+        Nombre1.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        Nombre1.setForeground(new java.awt.Color(255, 255, 51));
+        Nombre1.setText("NOMBRE");
 
-        Telefono.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        Telefono.setForeground(new java.awt.Color(255, 255, 51));
-        Telefono.setText("TELEFONO");
+        Apellido1.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        Apellido1.setForeground(new java.awt.Color(255, 255, 51));
+        Apellido1.setText("APELLIDO");
 
-        Correo.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        Correo.setForeground(new java.awt.Color(255, 255, 51));
-        Correo.setText("CORREO");
+        Curso1.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        Curso1.setForeground(new java.awt.Color(255, 255, 51));
+        Curso1.setText("CURSO");
+
+        Nota1.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        Nota1.setForeground(new java.awt.Color(255, 255, 51));
+        Nota1.setText("NOTA");
 
         txtNombre.setBackground(new java.awt.Color(255, 255, 255));
         txtNombre.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
@@ -113,181 +111,128 @@ public class Tema07_ListaDoblementeEnlazada_ContactoView extends javax.swing.JFr
             }
         });
 
-        txtTelf.setBackground(new java.awt.Color(255, 255, 255));
-        txtTelf.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-
-        txtCorreo.setBackground(new java.awt.Color(255, 255, 255));
-        txtCorreo.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-
-        btnAgregar.setBackground(new java.awt.Color(51, 153, 255));
-        btnAgregar.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        btnAgregar.setForeground(new java.awt.Color(255, 255, 51));
-        btnAgregar.setText("AGREGAR");
-        btnAgregar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
-        btnAgregar.addActionListener(new java.awt.event.ActionListener() {
+        txtApellido.setBackground(new java.awt.Color(255, 255, 255));
+        txtApellido.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        txtApellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAgregarActionPerformed(evt);
+                txtApellidoActionPerformed(evt);
             }
         });
 
-        btnEliminar.setBackground(new java.awt.Color(51, 153, 255));
-        btnEliminar.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        btnEliminar.setForeground(new java.awt.Color(255, 255, 51));
-        btnEliminar.setText("ELIMINAR");
-        btnEliminar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
-        btnEliminar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnEliminarActionPerformed(evt);
-            }
-        });
+        txtNota.setBackground(new java.awt.Color(255, 255, 255));
+        txtNota.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
 
-        btnTodos.setBackground(new java.awt.Color(51, 153, 255));
-        btnTodos.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        btnTodos.setForeground(new java.awt.Color(255, 255, 51));
-        btnTodos.setText("CONTACTOS");
-        btnTodos.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
-        btnTodos.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnTodosActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(Telefono, javax.swing.GroupLayout.DEFAULT_SIZE, 110, Short.MAX_VALUE)
-                            .addComponent(Correo, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Nombre, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(80, 80, 80)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtTelf, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
-                            .addComponent(txtNombre)
-                            .addComponent(txtCorreo)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnTodos, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(17, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtNombre))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Telefono, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtTelf))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Correo, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtCorreo))
-                .addGap(28, 28, 28)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnTodos, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnAgregar, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(28, 28, 28))
-        );
-
-        jPanel3.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 150, -1, -1));
-
-        jPanel2.setBackground(new java.awt.Color(51, 153, 255));
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "CONTACTO ACTUAL", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 18), new java.awt.Color(255, 255, 51))); // NOI18N
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel4.setText("NOMBRE");
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel5.setText("TELEFONO");
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 51));
-        jLabel6.setText("CORREO");
-
-        jLabel7.setBackground(new java.awt.Color(51, 153, 255));
-        jLabel7.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-
-        jLabel8.setBackground(new java.awt.Color(51, 153, 255));
-        jLabel8.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-
-        jLabel9.setBackground(new java.awt.Color(51, 153, 255));
-        jLabel9.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        cbxCurso.setBackground(new java.awt.Color(51, 153, 255));
+        cbxCurso.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        cbxCurso.setForeground(new java.awt.Color(255, 255, 51));
+        cbxCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Matematica", "Comunicacion", "Ingles", "Arte" }));
+        cbxCurso.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 2, true));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
+                .addGap(25, 25, 25)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(34, 34, 34)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, 166, Short.MAX_VALUE)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(59, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(Curso1, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(65, 65, 65))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(Nombre1, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Apellido1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(Nota1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtApellido)
+                        .addComponent(cbxCurso, 0, 183, Short.MAX_VALUE))
+                    .addComponent(txtNota, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(13, 13, 13)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Nombre1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Apellido1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Curso1)
+                    .addComponent(cbxCurso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 38, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Nota1, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtNota, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(44, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 450, -1, -1));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 140, 380, 270));
+        jPanel2.getAccessibleContext().setAccessibleName("");
+        jPanel2.getAccessibleContext().setAccessibleDescription("");
 
-        btnAnte.setBackground(new java.awt.Color(51, 153, 255));
-        btnAnte.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        btnAnte.setForeground(new java.awt.Color(51, 51, 51));
-        btnAnte.setText("ANTERIOR");
-        btnAnte.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
-        btnAnte.addActionListener(new java.awt.event.ActionListener() {
+        jTable1.setBackground(new java.awt.Color(255, 255, 255));
+        jTable1.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Nombre", "Apellido", "Curso", "Nota"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 430, 630, 260));
+
+        btnRegistrar.setBackground(new java.awt.Color(51, 153, 255));
+        btnRegistrar.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        btnRegistrar.setForeground(new java.awt.Color(255, 255, 51));
+        btnRegistrar.setText("INSERTAR");
+        btnRegistrar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnAnteActionPerformed(evt);
+                btnRegistrarActionPerformed(evt);
             }
         });
-        jPanel3.add(btnAnte, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 490, 140, 50));
+        jPanel1.add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 160, 230, 50));
 
-        btnSigui.setBackground(new java.awt.Color(51, 153, 255));
-        btnSigui.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        btnSigui.setForeground(new java.awt.Color(51, 51, 51));
-        btnSigui.setText("SIGUIENTE");
-        btnSigui.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
-        btnSigui.addActionListener(new java.awt.event.ActionListener() {
+        btnOrdenar.setBackground(new java.awt.Color(51, 153, 255));
+        btnOrdenar.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        btnOrdenar.setForeground(new java.awt.Color(255, 255, 51));
+        btnOrdenar.setText("ORDENAR POR NOMBRE");
+        btnOrdenar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        btnOrdenar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnSiguiActionPerformed(evt);
+                btnOrdenarActionPerformed(evt);
             }
         });
-        jPanel3.add(btnSigui, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 490, 140, 50));
+        jPanel1.add(btnOrdenar, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 240, -1, 50));
+
+        btnOrdenar1.setBackground(new java.awt.Color(51, 153, 255));
+        btnOrdenar1.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        btnOrdenar1.setForeground(new java.awt.Color(255, 255, 51));
+        btnOrdenar1.setText("ORDENAR POR NOTA");
+        btnOrdenar1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        btnOrdenar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnOrdenar1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnOrdenar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 320, 230, 50));
 
         BarraLateral.setBackground(new java.awt.Color(51, 153, 255));
         BarraLateral.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
@@ -463,12 +408,12 @@ public class Tema07_ListaDoblementeEnlazada_ContactoView extends javax.swing.JFr
         jlCorreo02.setText("tivo@gmail.com");
         BarraLateral.add(jlCorreo02, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 683, -1, -1));
 
-        jPanel3.add(BarraLateral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 760));
+        jPanel1.add(BarraLateral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 760));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 40)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 32)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 153, 51));
-        jLabel1.setText("Listas Doblemente Enlazadas y Circulares");
-        jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 80, 850, -1));
+        jLabel1.setText("Listas Enlazadas Simples – Recorrido, Búsqueda y Ordenamiento");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, -1, -1));
 
         btnVolver.setBackground(new java.awt.Color(51, 153, 255));
         btnVolver.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
@@ -480,77 +425,71 @@ public class Tema07_ListaDoblementeEnlazada_ContactoView extends javax.swing.JFr
                 btnVolverActionPerformed(evt);
             }
         });
-        jPanel3.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 120, 40));
+        jPanel1.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 120, 40));
 
         jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/java.png"))); // NOI18N
-        jPanel3.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 20, -1, -1));
+        jPanel1.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 10, -1, -1));
 
-        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
-        jLabel10.setText("jLabel4");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 1370, 770));
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 1360, 760));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1566, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1556, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 762, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNombreActionPerformed
+    private void btnOrdenarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrdenarActionPerformed
+        listaEstudiantes.ordenarPorNombre();      
+    }//GEN-LAST:event_btnOrdenarActionPerformed
 
-    private void btnSiguiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSiguiActionPerformed
-        listaContactos.siguiente();
-    }//GEN-LAST:event_btnSiguiActionPerformed
+    private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
+        try {
+            String nombre = txtNombre.getText().trim();
+            String apellido = txtApellido.getText().trim();
+            String curso = cbxCurso.getSelectedItem().toString();
+            double nota = Double.parseDouble(txtNota.getText());
+            if (nombre.isEmpty() || apellido.isEmpty()) {
+                JOptionPane.showMessageDialog(this, "Nombre y apellido son obligatorios", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
 
-    private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
-        String nombre = txtNombre.getText().trim();
-        String telefono = txtTelf.getText().trim();
-        String correo = txtCorreo.getText().trim();
+            if (nota < 0 || nota > 20) {
+                JOptionPane.showMessageDialog(this, "La nota debe estar entre 0 y 20", "Error", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
 
-        if (!nombre.isEmpty()) {
-            listaContactos.agregarContacto(nombre, telefono, correo);
-            actualizarVista();
-            limpiarCampos();
+            // Agregar estudiante
+            listaEstudiantes.agregarEstudiante(nombre, apellido, curso, nota);
 
-            // Mostrar mensaje de éxito
-            JOptionPane.showMessageDialog(this,
-                    "Contacto agregado exitosamente",
-                    "Éxito",
-                    JOptionPane.INFORMATION_MESSAGE);
-        } else {
-            JOptionPane.showMessageDialog(this,
-                    "El nombre es obligatorio",
-                    "Error",
-                    JOptionPane.ERROR_MESSAGE);
+            // Limpiar campos
+            txtNombre.setText("");
+            txtApellido.setText("");
+            txtNota.setText("");
+            txtNombre.requestFocus();
+        } catch (NumberFormatException ex) {
+            JOptionPane.showMessageDialog(this, "Ingrese un valor numérico válido para la nota", "Error", JOptionPane.ERROR_MESSAGE);
+            txtNota.requestFocus();
+            txtNota.selectAll();
+        } catch (Exception ex) {
+            JOptionPane.showMessageDialog(this, "Ocurrió un error inesperado: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
-    }//GEN-LAST:event_btnAgregarActionPerformed
+    }//GEN-LAST:event_btnRegistrarActionPerformed
 
-    private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
-        listaContactos.eliminarActual();
-        actualizarVista();
-    }//GEN-LAST:event_btnEliminarActionPerformed
-
-    private void btnAnteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAnteActionPerformed
-        listaContactos.anterior();
-        actualizarVista();
-    }//GEN-LAST:event_btnAnteActionPerformed
-
-    private void btnTodosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTodosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnTodosActionPerformed
+    private void btnOrdenar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnOrdenar1ActionPerformed
+       listaEstudiantes.ordenarPorNota();
+    }//GEN-LAST:event_btnOrdenar1ActionPerformed
 
     private void btnMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuPrincipalActionPerformed
         MenuPrincipalView menu = new MenuPrincipalView();
@@ -594,55 +533,14 @@ public class Tema07_ListaDoblementeEnlazada_ContactoView extends javax.swing.JFr
         this.setVisible(false);
     }//GEN-LAST:event_btnVolverActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
-    private void actualizarVista() {
-        Tema07p1_ListaDoblementeEnlazada_NodoContacto actual = listaContactos.getActual();
+    private void txtApellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtApellidoActionPerformed
+        
+    }//GEN-LAST:event_txtApellidoActionPerformed
 
-        if (actual != null) {
-            jLabel8.setText(actual.getNombre());
-            jLabel7.setText(actual.getTelefono());
-            jLabel9.setText(actual.getCorreo());
-
-            // Actualizar estado de los botones de navegación
-            btnAnte.setEnabled(actual.getAnterior() != null);
-            btnSigui.setEnabled(actual.getSiguiente() != null);
-
-            // Mostrar posición actual en la lista
-            int posicion = obtenerPosicionActual();
-            this.setTitle("AGENDA DE CONTACTOS - Contacto " + posicion);
-        } else {
-            jLabel8.setText("---");
-            jLabel7.setText("---");
-            jLabel9.setText("---");
-            btnAnte.setEnabled(false);
-            btnSigui.setEnabled(false);
-            this.setTitle("AGENDA DE CONTACTOS - Sin contactos");
-        }
-    }
-    private int obtenerPosicionActual() {
-    if (listaContactos.getActual() == null) return 0;
+    private void txtNombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNombreActionPerformed
+        
+    }//GEN-LAST:event_txtNombreActionPerformed
     
-    int posicion = 1;
-    Tema07p1_ListaDoblementeEnlazada_NodoContacto temp = listaContactos.getActual();
-    
-    // Retroceder hasta el inicio para contar la posición
-    while (temp.getAnterior() != null) {
-        temp = temp.getAnterior();
-        posicion++;
-    }
-    
-    return posicion;
-}
-
-    private void limpiarCampos() {
-        txtNombre.setText("");
-        txtTelf.setText("");
-        txtCorreo.setText("");
-        txtNombre.requestFocus();
-    }
-
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -657,68 +555,50 @@ public class Tema07_ListaDoblementeEnlazada_ContactoView extends javax.swing.JFr
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_ContactoView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema06_LES_EstudianteView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_ContactoView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema06_LES_EstudianteView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_ContactoView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema06_LES_EstudianteView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Tema07_ListaDoblementeEnlazada_ContactoView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Tema06_LES_EstudianteView.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
+        
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Tema07_ListaDoblementeEnlazada_ContactoView().setVisible(true);
+                new Tema06_LES_EstudianteView().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Apellido1;
     private javax.swing.JPanel BarraLateral;
-    private javax.swing.JLabel Correo;
-    private javax.swing.JLabel Nombre;
-    private javax.swing.JLabel Telefono;
-    private javax.swing.JButton btnAgregar;
-    private javax.swing.JButton btnAnte;
-    private javax.swing.JButton btnEliminar;
+    private javax.swing.JLabel Curso1;
+    private javax.swing.JLabel Nombre1;
+    private javax.swing.JLabel Nota1;
     private javax.swing.JButton btnLogin;
     private javax.swing.JButton btnMenuPrincipal;
-    private javax.swing.JButton btnSigui;
-    private javax.swing.JButton btnTodos;
+    private javax.swing.JButton btnOrdenar;
+    private javax.swing.JButton btnOrdenar1;
+    private javax.swing.JButton btnRegistrar;
     private javax.swing.JButton btnUnidad01;
     private javax.swing.JButton btnUnidad02;
     private javax.swing.JButton btnUnidad03;
     private javax.swing.JButton btnUnidad04;
     private javax.swing.JButton btnVolver;
+    private javax.swing.JComboBox<String> cbxCurso;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     private javax.swing.JLabel jlCorreo01;
     private javax.swing.JLabel jlCorreo02;
     private javax.swing.JLabel jlLogoCorreo;
@@ -738,8 +618,8 @@ public class Tema07_ListaDoblementeEnlazada_ContactoView extends javax.swing.JFr
     private javax.swing.JSeparator sprSubtituloUnidades;
     private javax.swing.JSeparator sprTeoria;
     private javax.swing.JSeparator sprUnidades;
-    private javax.swing.JTextField txtCorreo;
+    private javax.swing.JTextField txtApellido;
     private javax.swing.JTextField txtNombre;
-    private javax.swing.JTextField txtTelf;
+    private javax.swing.JTextField txtNota;
     // End of variables declaration//GEN-END:variables
 }

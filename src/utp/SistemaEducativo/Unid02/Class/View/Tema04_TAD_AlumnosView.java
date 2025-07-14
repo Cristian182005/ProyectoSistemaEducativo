@@ -1,7 +1,7 @@
 
 package utp.SistemaEducativo.Unid02.Class.View;
 
-import utp.SistemaEducativo.Unid02.Class.Tema04p2_TipoAbstractoDeDatos_ListaAlumno;
+import utp.SistemaEducativo.Unid02.Class.Tema04p2_TAD_ListaAlumno;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
@@ -13,21 +13,21 @@ import utp.SistemaEducativo.View.Unidad02_TeoriaView;
 import utp.SistemaEducativo.View.Unidad03_TeoriaView;
 import utp.SistemaEducativo.View.Unidad04_TeoriaView;
 
-public class Tema04_TipoAbstractoDeDatos_AlumnosView extends javax.swing.JFrame {
+public class Tema04_TAD_AlumnosView extends javax.swing.JFrame {
 
-    private static Tema04_TipoAbstractoDeDatos_AlumnosView instance;
-    private final Tema04p2_TipoAbstractoDeDatos_ListaAlumno lista;
+    private static Tema04_TAD_AlumnosView instance;
+    private final Tema04p2_TAD_ListaAlumno lista;
 
-    public static Tema04_TipoAbstractoDeDatos_AlumnosView getInstance() {
+    public static Tema04_TAD_AlumnosView getInstance() {
         if (instance == null) {
-            instance = new Tema04_TipoAbstractoDeDatos_AlumnosView();
+            instance = new Tema04_TAD_AlumnosView();
         }
         return instance;
     }
 
-    public Tema04_TipoAbstractoDeDatos_AlumnosView() {
+    public Tema04_TAD_AlumnosView() {
         initComponents();
-        lista = Tema04p2_TipoAbstractoDeDatos_ListaAlumno.getInstance();
+        lista = Tema04p2_TAD_ListaAlumno.getInstance();
 
         // Configurar combo box
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(
@@ -534,7 +534,7 @@ public class Tema04_TipoAbstractoDeDatos_AlumnosView extends javax.swing.JFrame 
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegresarActionPerformed
-        Tema04_TipoAbstractoDeDatos_BuscarAlumnoView.getInstance().setVisible(true);
+        Tema04_TAD_BuscarAlumnoView.getInstance().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnRegresarActionPerformed
 
@@ -634,7 +634,7 @@ public class Tema04_TipoAbstractoDeDatos_AlumnosView extends javax.swing.JFrame 
      */
     public static void main(String args[]) {
         SwingUtilities.invokeLater(() -> {
-            Tema04_TipoAbstractoDeDatos_AlumnosView.getInstance().setVisible(true);
+            Tema04_TAD_AlumnosView.getInstance().setVisible(true);
         });
     }
 

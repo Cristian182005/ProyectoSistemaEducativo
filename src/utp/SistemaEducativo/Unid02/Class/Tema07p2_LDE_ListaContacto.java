@@ -3,22 +3,22 @@ package utp.SistemaEducativo.Unid02.Class;
 
 //Tema 07: Listas doblemente enlazadas: Operaciones básicas. Listas circulares: Operaciones básicas.
 
-import utp.SistemaEducativo.Unid02.Class.Tema07p1_ListaDoblementeEnlazada_NodoContacto;
+import utp.SistemaEducativo.Unid02.Class.Tema07p1_LDE_NodoContacto;
 
 
-public class Tema07p2_ListaDoblementeEnlazada_ListaContacto {
-    private Tema07p1_ListaDoblementeEnlazada_NodoContacto cabeza;
-    private Tema07p1_ListaDoblementeEnlazada_NodoContacto cola;
-    private Tema07p1_ListaDoblementeEnlazada_NodoContacto actual;
+public class Tema07p2_LDE_ListaContacto {
+    private Tema07p1_LDE_NodoContacto cabeza;
+    private Tema07p1_LDE_NodoContacto cola;
+    private Tema07p1_LDE_NodoContacto actual;
 
-    public Tema07p2_ListaDoblementeEnlazada_ListaContacto() {
+    public Tema07p2_LDE_ListaContacto() {
         cabeza = null;
         cola = null;
         actual = null;
     }
 
     public void agregarContacto(String nombre, String telefono, String correo) {
-    Tema07p1_ListaDoblementeEnlazada_NodoContacto nuevo = new Tema07p1_ListaDoblementeEnlazada_NodoContacto(nombre, telefono, correo);
+    Tema07p1_LDE_NodoContacto nuevo = new Tema07p1_LDE_NodoContacto(nombre, telefono, correo);
     
     if (cabeza == null) {
         cabeza = nuevo;
@@ -34,7 +34,7 @@ public class Tema07p2_ListaDoblementeEnlazada_ListaContacto {
 
     public String mostrarTodos() {
     StringBuilder sb = new StringBuilder();
-    Tema07p1_ListaDoblementeEnlazada_NodoContacto actual = cabeza;
+    Tema07p1_LDE_NodoContacto actual = cabeza;
     int contador = 1;
     
     if (cabeza == null) {
@@ -90,7 +90,7 @@ public class Tema07p2_ListaDoblementeEnlazada_ListaContacto {
         }
     }
 
-    public Tema07p1_ListaDoblementeEnlazada_NodoContacto getActual() {
+    public Tema07p1_LDE_NodoContacto getActual() {
         return actual;
     }
 

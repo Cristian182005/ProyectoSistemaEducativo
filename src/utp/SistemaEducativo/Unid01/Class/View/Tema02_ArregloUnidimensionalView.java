@@ -4,7 +4,7 @@
  */
 package utp.SistemaEducativo.Unid01.Class.View;
 
-import utp.SistemaEducativo.Unid01.Class.Tema02_ArregloUnidimensional;
+import utp.SistemaEducativo.Unid01.Class.Tema02_AU;
 import javax.swing.JOptionPane;
 import utp.SistemaEducativo.LoginView.LoginView;
 import utp.SistemaEducativo.View.MenuPrincipalView;
@@ -17,11 +17,11 @@ import utp.SistemaEducativo.View.Unidad04_TeoriaView;
  * @author Cesar
  */
 public class Tema02_ArregloUnidimensionalView extends javax.swing.JFrame {
-private Tema02_ArregloUnidimensional arreglo1 = new Tema02_ArregloUnidimensional();
-private Tema02_ArregloUnidimensional arreglo2 = new Tema02_ArregloUnidimensional();
+private Tema02_AU arreglo1 = new Tema02_AU();
+private Tema02_AU arreglo2 = new Tema02_AU();
 private int arregloActivo = 1;
  
-private Tema02_ArregloUnidimensional getArregloActivo() {
+private Tema02_AU getArregloActivo() {
     return arregloActivo == 1 ? arreglo1 : arreglo2;
     
 }
@@ -482,7 +482,7 @@ private void actualizarVistaDeArreglos() {
                 return;
             }
 
-            Tema02_ArregloUnidimensional arreglo = getArregloActivo();
+            Tema02_AU arreglo = getArregloActivo();
             boolean creado = arreglo.crearArreglo(tamaño);
 
             if (creado) {
@@ -516,7 +516,7 @@ private void actualizarVistaDeArreglos() {
     }//GEN-LAST:event_btnInsertarActionPerformed
 
     private void btnBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrarActionPerformed
-        Tema02_ArregloUnidimensional arreglo = getArregloActivo();
+        Tema02_AU arreglo = getArregloActivo();
 
         if (arreglo.getCapacidad() == 0) {
             JOptionPane.showMessageDialog(null, "El arreglo " + arregloActivo + " no ha sido creado.", "Aviso", JOptionPane.WARNING_MESSAGE);
@@ -533,7 +533,7 @@ private void actualizarVistaDeArreglos() {
     }//GEN-LAST:event_btnBorrarActionPerformed
 
     private void btnClonarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClonarActionPerformed
-        Tema02_ArregloUnidimensional arreglo = getArregloActivo();
+        Tema02_AU arreglo = getArregloActivo();
 
         if (arreglo.getCapacidad() == 0 || arreglo.getElementos() == 0) {
             JOptionPane.showMessageDialog(null, "No hay datos para clonar en el arreglo " + arregloActivo + ".", "Aviso", JOptionPane.WARNING_MESSAGE);
@@ -557,8 +557,8 @@ private void actualizarVistaDeArreglos() {
     }//GEN-LAST:event_btnClonarActionPerformed
 
     private void btnFusionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFusionarActionPerformed
-        Tema02_ArregloUnidimensional a1 = arreglo1;
-        Tema02_ArregloUnidimensional a2 = arreglo2;
+        Tema02_AU a1 = arreglo1;
+        Tema02_AU a2 = arreglo2;
 
         if (a1.getCapacidad() == 0 || a2.getCapacidad() == 0) {
             JOptionPane.showMessageDialog(null, "Ambos arreglos deben estar creados para fusionarlos.", "Advertencia", JOptionPane.WARNING_MESSAGE);

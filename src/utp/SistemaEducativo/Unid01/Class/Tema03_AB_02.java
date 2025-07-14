@@ -2,13 +2,13 @@ package utp.SistemaEducativo.Unid01.Class;
 
 //Tema 03: Matrices Bidimensionales - Matrices simétricas y asimétricas.
 
-public class Tema03_ArregloBidimensional_02 {
+public class Tema03_AB_02 {
 
     private int[][] matriz;
     private int[][] inversa;
     private int tamaño;
 
-    public Tema03_ArregloBidimensional_02(int tamaño) {
+    public Tema03_AB_02(int tamaño) {
         this.tamaño = tamaño;
         this.matriz = new int[tamaño][tamaño];
         this.inversa = new int[tamaño][tamaño];

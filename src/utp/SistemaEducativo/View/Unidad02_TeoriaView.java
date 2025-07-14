@@ -2,10 +2,10 @@
 package utp.SistemaEducativo.View;
 
 import utp.SistemaEducativo.LoginView.LoginView;
-import utp.SistemaEducativo.Unid02.Class.View.Tema04_TipoAbstractoDeDatos_AlumnosView;
-import utp.SistemaEducativo.Unid02.Class.View.Tema05_ListasEnlazadas_ListaView;
-import utp.SistemaEducativo.Unid02.Class.View.Tema06_ListaEnlazadaSimple_EstudianteView;
-import utp.SistemaEducativo.Unid02.Class.View.Tema07_ListaDoblementeEnlazada_ContactoView;
+import utp.SistemaEducativo.Unid02.Class.View.Tema04_TAD_AlumnosView;
+import utp.SistemaEducativo.Unid02.Class.View.Tema05_LE_ListaView;
+import utp.SistemaEducativo.Unid02.Class.View.Tema06_LES_EstudianteView;
+import utp.SistemaEducativo.Unid02.Class.View.Tema07_LDE_ContactoView;
 
 public class Unidad02_TeoriaView extends javax.swing.JFrame {
 
@@ -530,7 +530,7 @@ public class Unidad02_TeoriaView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUnidad01ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Tema04_TipoAbstractoDeDatos_AlumnosView alumno = new Tema04_TipoAbstractoDeDatos_AlumnosView();
+        Tema04_TAD_AlumnosView alumno = new Tema04_TAD_AlumnosView();
         alumno.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -554,19 +554,19 @@ public class Unidad02_TeoriaView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUnidad04ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        Tema05_ListasEnlazadas_ListaView lista = new Tema05_ListasEnlazadas_ListaView();
+        Tema05_LE_ListaView lista = new Tema05_LE_ListaView();
         lista.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        Tema06_ListaEnlazadaSimple_EstudianteView estudiante = new Tema06_ListaEnlazadaSimple_EstudianteView();
+        Tema06_LES_EstudianteView estudiante = new Tema06_LES_EstudianteView();
         estudiante.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        Tema07_ListaDoblementeEnlazada_ContactoView contacto = new Tema07_ListaDoblementeEnlazada_ContactoView();
+        Tema07_LDE_ContactoView contacto = new Tema07_LDE_ContactoView();
         contacto.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed

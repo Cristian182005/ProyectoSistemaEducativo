@@ -3,15 +3,15 @@ package utp.SistemaEducativo.Unid02.Class;
 
 //Tema 06: Lista enlazada simple. Operaciones básicas: recorrido, búsqueda, ordenamiento.
 
-public class Tema06p1_ListaEnlazadaSimple_NodoEstudiante {
+public class Tema06p1_LES_NodoEstudiante {
     private String nombre;
     private String apellido;
     private String curso;
     private double nota;
-    private Tema06p1_ListaEnlazadaSimple_NodoEstudiante siguiente;
+    private Tema06p1_LES_NodoEstudiante siguiente;
 
     // Constructor
-    public Tema06p1_ListaEnlazadaSimple_NodoEstudiante(String nombre, String apellido, String curso, double nota) {
+    public Tema06p1_LES_NodoEstudiante(String nombre, String apellido, String curso, double nota) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.curso = curso;
@@ -53,11 +53,11 @@ public class Tema06p1_ListaEnlazadaSimple_NodoEstudiante {
     }
 
 
-    public Tema06p1_ListaEnlazadaSimple_NodoEstudiante getSiguiente() {
+    public Tema06p1_LES_NodoEstudiante getSiguiente() {
         return siguiente;
     }
 
-    public void setSiguiente(Tema06p1_ListaEnlazadaSimple_NodoEstudiante siguiente) {
+    public void setSiguiente(Tema06p1_LES_NodoEstudiante siguiente) {
         this.siguiente = siguiente;
     }
 }
