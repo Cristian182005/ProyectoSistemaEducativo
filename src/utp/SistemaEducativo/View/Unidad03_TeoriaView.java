@@ -2,6 +2,10 @@
 package utp.SistemaEducativo.View;
 
 import utp.SistemaEducativo.LoginView.LoginView;
+import utp.SistemaEducativo.Unid03.Class.View.Tema09_Colas_Cliente01View;
+import utp.SistemaEducativo.Unid03.Class.View.Tema09_Colas_Pelicula02View;
+import utp.SistemaEducativo.Unid03.Tema08_ChatVirtual.VentanaChat;
+import utp.SistemaEducativo.Unid03.Tema08_Reproductor.Interfaz;
 
 
 public class Unidad03_TeoriaView extends javax.swing.JFrame {
@@ -422,6 +426,11 @@ public class Unidad03_TeoriaView extends javax.swing.JFrame {
         jButton2.setForeground(new java.awt.Color(255, 255, 51));
         jButton2.setText("EJERCICIO 01 DE TEMA 09");
         jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 590, 270, 30));
 
         jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/java black.png"))); // NOI18N
@@ -432,6 +441,11 @@ public class Unidad03_TeoriaView extends javax.swing.JFrame {
         jButton4.setForeground(new java.awt.Color(255, 255, 51));
         jButton4.setText("EJERCICIO 02 DE TEMA 09");
         jButton4.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 630, 270, 30));
 
         jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/java.png"))); // NOI18N
@@ -479,11 +493,15 @@ public class Unidad03_TeoriaView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUnidad02ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        VentanaChat chat = new VentanaChat();
+        chat.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        Interfaz reproductor = new Interfaz();
+        reproductor.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void btnUnidad03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad03ActionPerformed
@@ -497,6 +515,18 @@ public class Unidad03_TeoriaView extends javax.swing.JFrame {
         teoria04.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_btnUnidad04ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Tema09_Colas_Cliente01View clienteCola = new Tema09_Colas_Cliente01View();
+        clienteCola.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        Tema09_Colas_Pelicula02View peliculaCola = new Tema09_Colas_Pelicula02View();
+        peliculaCola.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
