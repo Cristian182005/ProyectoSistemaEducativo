@@ -2,6 +2,7 @@
 package utp.SistemaEducativo.View;
 
 import utp.SistemaEducativo.LoginView.LoginView;
+import utp.SistemaEducativo.Unid02.Class.View.Tema04_TipoAbstractoDeDatos_AlumnosView;
 import utp.SistemaEducativo.Unid02.Class.View.Tema05_ListasEnlazadas_ListaView;
 import utp.SistemaEducativo.Unid02.Class.View.Tema06_ListaEnlazadaSimple_EstudianteView;
 import utp.SistemaEducativo.Unid02.Class.View.Tema07_ListaDoblementeEnlazada_ContactoView;
@@ -529,7 +530,9 @@ public class Unidad02_TeoriaView extends javax.swing.JFrame {
     }//GEN-LAST:event_btnUnidad01ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        Tema04_TipoAbstractoDeDatos_AlumnosView alumno = new Tema04_TipoAbstractoDeDatos_AlumnosView();
+        alumno.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnUnidad02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad02ActionPerformed

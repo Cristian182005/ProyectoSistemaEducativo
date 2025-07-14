@@ -70,7 +70,7 @@
           </AccessibilityProperties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="440" y="140" width="380" height="240"/>
+              <AbsoluteConstraints x="440" y="140" width="380" height="270"/>
             </Constraint>
           </Constraints>
 
@@ -79,29 +79,31 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                               <Component id="Curso1" min="-2" pref="76" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="65" max="-2" attributes="0"/>
                           </Group>
-                          <Group type="102" alignment="1" attributes="0">
-                              <Component id="Apellido1" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <Group type="103" groupAlignment="1" attributes="0">
-                                  <Component id="Nota1" alignment="0" min="-2" pref="73" max="-2" attributes="0"/>
                                   <Component id="Nombre1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="Apellido1" alignment="0" min="-2" pref="108" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="Nota1" min="-2" pref="73" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                          </Group>
                       </Group>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="txtNombre" min="-2" pref="182" max="-2" attributes="0"/>
-                          <Component id="txtApellido" max="32767" attributes="0"/>
-                          <Component id="cbxCurso" alignment="0" pref="183" max="32767" attributes="0"/>
-                          <Component id="txtNota" alignment="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="txtNombre" min="-2" pref="182" max="-2" attributes="0"/>
+                              <Component id="txtApellido" max="32767" attributes="0"/>
+                              <Component id="cbxCurso" alignment="0" pref="183" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="txtNota" min="-2" pref="183" max="-2" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
                   </Group>
@@ -110,17 +112,17 @@
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="13" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="Nombre1" alignment="3" min="-2" pref="29" max="-2" attributes="0"/>
                           <Component id="txtNombre" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="Apellido1" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
                           <Component id="txtApellido" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="11" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="Curso1" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="cbxCurso" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -130,7 +132,7 @@
                           <Component id="Nota1" alignment="3" min="-2" pref="22" max="-2" attributes="0"/>
                           <Component id="txtNota" alignment="3" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <EmptySpace pref="44" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -255,7 +257,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="440" y="390" width="630" height="290"/>
+              <AbsoluteConstraints x="440" y="430" width="630" height="260"/>
             </Constraint>
           </Constraints>
 

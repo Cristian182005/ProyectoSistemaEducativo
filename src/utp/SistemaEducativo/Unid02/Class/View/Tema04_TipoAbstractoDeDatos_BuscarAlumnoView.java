@@ -9,6 +9,12 @@ import utp.SistemaEducativo.Unid02.Class.Tema04p2_TipoAbstractoDeDatos_ListaAlum
 import utp.SistemaEducativo.Unid02.Class.Tema04p1_TipoAbstractoDeDatos_NodoAlumno;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import utp.SistemaEducativo.LoginView.LoginView;
+import utp.SistemaEducativo.View.MenuPrincipalView;
+import utp.SistemaEducativo.View.Unidad01_TeoriaView;
+import utp.SistemaEducativo.View.Unidad02_TeoriaView;
+import utp.SistemaEducativo.View.Unidad03_TeoriaView;
+import utp.SistemaEducativo.View.Unidad04_TeoriaView;
 
 /**
  *
@@ -50,6 +56,8 @@ public class Tema04_TipoAbstractoDeDatos_BuscarAlumnoView extends javax.swing.JF
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         txtBuscar.requestFocus();
+        
+        this.setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -62,6 +70,7 @@ public class Tema04_TipoAbstractoDeDatos_BuscarAlumnoView extends javax.swing.JF
     private void initComponents() {
 
         Nombre = new javax.swing.JLabel();
+        jPanel3 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         Nombre1 = new javax.swing.JLabel();
@@ -77,45 +86,105 @@ public class Tema04_TipoAbstractoDeDatos_BuscarAlumnoView extends javax.swing.JF
         txtApellido = new javax.swing.JTextField();
         btnIrJFalumnos = new javax.swing.JButton();
         btnEliminar = new javax.swing.JToggleButton();
+        jLabel3 = new javax.swing.JLabel();
+        BarraLateral = new javax.swing.JPanel();
+        jlTitulo01 = new javax.swing.JLabel();
+        jlTitulo02 = new javax.swing.JLabel();
+        btnMenuPrincipal = new javax.swing.JButton();
+        jlTitulo03 = new javax.swing.JLabel();
+        btnLogin = new javax.swing.JButton();
+        btnUnidad01 = new javax.swing.JButton();
+        sprUnidades = new javax.swing.JSeparator();
+        jlSubtituloTeoria = new javax.swing.JLabel();
+        sprSubtituloTeoria = new javax.swing.JSeparator();
+        sprTeoria = new javax.swing.JSeparator();
+        jlSubtituloUnidades = new javax.swing.JLabel();
+        sprSubtituloUnidades = new javax.swing.JSeparator();
+        btnUnidad02 = new javax.swing.JButton();
+        btnUnidad03 = new javax.swing.JButton();
+        btnUnidad04 = new javax.swing.JButton();
+        sprRedes = new javax.swing.JSeparator();
+        jlSubtituloRedes = new javax.swing.JLabel();
+        sprSubtituloRedes = new javax.swing.JSeparator();
+        jlLogoFB = new javax.swing.JLabel();
+        jlLogoTwitter = new javax.swing.JLabel();
+        jlLogoYoutube = new javax.swing.JLabel();
+        jlLogoInstagram = new javax.swing.JLabel();
+        jlLogoCorreo = new javax.swing.JLabel();
+        jlCorreo01 = new javax.swing.JLabel();
+        jlCorreo02 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
 
         Nombre.setText("Nombre");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel3.setMinimumSize(new java.awt.Dimension(1550, 750));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 51));
         jLabel1.setText("BUSCAR ALUMNO");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
 
+        Nombre1.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        Nombre1.setForeground(new java.awt.Color(255, 255, 51));
         Nombre1.setText("Nombre");
+        jPanel1.add(Nombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 80, -1, -1));
 
+        txtBuscar.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         txtBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtBuscarActionPerformed(evt);
             }
         });
+        jPanel1.add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 76, 213, -1));
 
+        Apellido.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        Apellido.setForeground(new java.awt.Color(255, 255, 51));
         Apellido.setText("Apellido");
+        jPanel1.add(Apellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(478, 126, -1, 32));
 
+        Carrera.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        Carrera.setForeground(new java.awt.Color(255, 255, 51));
         Carrera.setText("Grado");
+        jPanel1.add(Carrera, new org.netbeans.lib.awtextra.AbsoluteConstraints(478, 176, -1, 32));
 
+        Nivel.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        Nivel.setForeground(new java.awt.Color(255, 255, 51));
         Nivel.setText("Nivel");
+        jPanel1.add(Nivel, new org.netbeans.lib.awtextra.AbsoluteConstraints(478, 236, -1, 32));
 
+        txtNombre.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         txtNombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNombreActionPerformed(evt);
             }
         });
+        jPanel1.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(606, 76, 197, -1));
 
+        txtGrado.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         txtGrado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtGradoActionPerformed(evt);
             }
         });
+        jPanel1.add(txtGrado, new org.netbeans.lib.awtextra.AbsoluteConstraints(606, 176, 197, -1));
 
+        txtNivel.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         txtNivel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtNivelActionPerformed(evt);
             }
         });
+        jPanel1.add(txtNivel, new org.netbeans.lib.awtextra.AbsoluteConstraints(606, 236, 197, -1));
 
+        jTable1.setBackground(new java.awt.Color(51, 153, 255));
+        jTable1.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -129,102 +198,246 @@ public class Tema04_TipoAbstractoDeDatos_BuscarAlumnoView extends javax.swing.JF
         ));
         jScrollPane1.setViewportView(jTable1);
 
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 358, 671, 167));
+
+        txtApellido.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         txtApellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtApellidoActionPerformed(evt);
             }
         });
+        jPanel1.add(txtApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(606, 126, 197, -1));
 
+        btnIrJFalumnos.setBackground(new java.awt.Color(51, 153, 255));
+        btnIrJFalumnos.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        btnIrJFalumnos.setForeground(new java.awt.Color(255, 255, 51));
         btnIrJFalumnos.setText("AGREGAR ALUMNO");
+        btnIrJFalumnos.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
         btnIrJFalumnos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnIrJFalumnosActionPerformed(evt);
             }
         });
+        jPanel1.add(btnIrJFalumnos, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 196, 204, 44));
 
+        btnEliminar.setBackground(new java.awt.Color(51, 153, 255));
+        btnEliminar.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        btnEliminar.setForeground(new java.awt.Color(255, 255, 51));
         btnEliminar.setText("ELIMINAR ALUMNO");
+        btnEliminar.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
         btnEliminar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnEliminarActionPerformed(evt);
             }
         });
+        jPanel1.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(533, 286, 211, 40));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(btnIrJFalumnos)
-                .addGap(38, 38, 38))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnEliminar)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(24, 24, 24)
-                            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(jLabel1)
-                                .addGroup(jPanel1Layout.createSequentialGroup()
-                                    .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(165, 165, 165)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(Nombre1)
-                                        .addComponent(Apellido)
-                                        .addComponent(Carrera)
-                                        .addComponent(Nivel))
-                                    .addGap(39, 39, 39)
-                                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addComponent(txtGrado, javax.swing.GroupLayout.DEFAULT_SIZE, 79, Short.MAX_VALUE)
-                                            .addComponent(txtApellido)
-                                            .addComponent(txtNivel))
-                                        .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 79, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGroup(jPanel1Layout.createSequentialGroup()
-                            .addGap(12, 12, 12)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 593, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(149, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(42, 42, 42)
-                .addComponent(jLabel1)
-                .addGap(8, 8, 8)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Nombre1)
-                    .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Apellido)
-                    .addComponent(txtApellido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(9, 9, 9)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Carrera)
-                    .addComponent(txtGrado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Nivel)
-                    .addComponent(txtNivel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnEliminar)
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnIrJFalumnos)
-                .addGap(14, 14, 14))
-        );
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1030, 550));
+
+        jPanel3.add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 120, 1030, 550));
+
+        BarraLateral.setBackground(new java.awt.Color(51, 153, 255));
+        BarraLateral.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        BarraLateral.setForeground(new java.awt.Color(51, 153, 255));
+        BarraLateral.setMinimumSize(new java.awt.Dimension(1550, 750));
+        BarraLateral.setPreferredSize(new java.awt.Dimension(1550, 750));
+        BarraLateral.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jlTitulo01.setFont(new java.awt.Font("Segoe UI Black", 1, 16)); // NOI18N
+        jlTitulo01.setForeground(new java.awt.Color(255, 255, 255));
+        jlTitulo01.setText("SISTEMA EDUCATIVO");
+        BarraLateral.add(jlTitulo01, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 16, 185, -1));
+
+        jlTitulo02.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        jlTitulo02.setForeground(new java.awt.Color(255, 255, 255));
+        jlTitulo02.setText("ALGORITMO Y ESTRUCTURAS");
+        BarraLateral.add(jlTitulo02, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 161, -1, -1));
+
+        btnMenuPrincipal.setBackground(new java.awt.Color(51, 153, 255));
+        btnMenuPrincipal.setForeground(new java.awt.Color(51, 153, 255));
+        btnMenuPrincipal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/LogoImage.png"))); // NOI18N
+        btnMenuPrincipal.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(51, 153, 255), 2, true));
+        btnMenuPrincipal.setContentAreaFilled(false);
+        btnMenuPrincipal.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        btnMenuPrincipal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMenuPrincipalActionPerformed(evt);
+            }
+        });
+        BarraLateral.add(btnMenuPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 45, 135, 110));
+
+        jlTitulo03.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        jlTitulo03.setForeground(new java.awt.Color(255, 255, 255));
+        jlTitulo03.setText("DE DATOS");
+        BarraLateral.add(jlTitulo03, new org.netbeans.lib.awtextra.AbsoluteConstraints(105, 184, -1, -1));
+
+        btnLogin.setBackground(new java.awt.Color(51, 153, 255));
+        btnLogin.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
+        btnLogin.setText("ACCESO");
+        btnLogin.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 153, 255), 2));
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoginActionPerformed(evt);
+            }
+        });
+        BarraLateral.add(btnLogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, 180, 41));
+
+        btnUnidad01.setBackground(new java.awt.Color(51, 153, 255));
+        btnUnidad01.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        btnUnidad01.setForeground(new java.awt.Color(255, 255, 255));
+        btnUnidad01.setText("UNIDAD 01");
+        btnUnidad01.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 153, 255), 2));
+        btnUnidad01.setMaximumSize(new java.awt.Dimension(74, 30));
+        btnUnidad01.setMinimumSize(new java.awt.Dimension(74, 30));
+        btnUnidad01.setPreferredSize(new java.awt.Dimension(74, 30));
+        btnUnidad01.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUnidad01ActionPerformed(evt);
+            }
+        });
+        BarraLateral.add(btnUnidad01, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 353, 180, 41));
+
+        sprUnidades.setBackground(new java.awt.Color(255, 255, 255));
+        sprUnidades.setForeground(new java.awt.Color(255, 255, 255));
+        sprUnidades.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        sprUnidades.setMinimumSize(new java.awt.Dimension(0, 2));
+        sprUnidades.setPreferredSize(new java.awt.Dimension(0, 2));
+        BarraLateral.add(sprUnidades, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 200, -1));
+
+        jlSubtituloTeoria.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jlSubtituloTeoria.setForeground(new java.awt.Color(255, 255, 51));
+        jlSubtituloTeoria.setText("INICIAR SESIÓN");
+        BarraLateral.add(jlSubtituloTeoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, -1, 13));
+
+        sprSubtituloTeoria.setBackground(new java.awt.Color(255, 255, 255));
+        sprSubtituloTeoria.setForeground(new java.awt.Color(255, 255, 255));
+        BarraLateral.add(sprSubtituloTeoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 253, 187, 4));
+
+        sprTeoria.setBackground(new java.awt.Color(255, 255, 255));
+        sprTeoria.setForeground(new java.awt.Color(255, 255, 255));
+        sprTeoria.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        sprTeoria.setMinimumSize(new java.awt.Dimension(0, 2));
+        sprTeoria.setPreferredSize(new java.awt.Dimension(0, 2));
+        sprTeoria.setRequestFocusEnabled(false);
+        BarraLateral.add(sprTeoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 219, 200, -1));
+
+        jlSubtituloUnidades.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jlSubtituloUnidades.setForeground(new java.awt.Color(255, 255, 51));
+        jlSubtituloUnidades.setText("BANDEJA DE UNIDADES");
+        BarraLateral.add(jlSubtituloUnidades, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 319, -1, -1));
+
+        sprSubtituloUnidades.setBackground(new java.awt.Color(255, 255, 255));
+        sprSubtituloUnidades.setForeground(new java.awt.Color(255, 255, 255));
+        BarraLateral.add(sprSubtituloUnidades, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 344, 178, -1));
+
+        btnUnidad02.setBackground(new java.awt.Color(51, 153, 255));
+        btnUnidad02.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        btnUnidad02.setForeground(new java.awt.Color(255, 255, 255));
+        btnUnidad02.setText("UNIDAD 02");
+        btnUnidad02.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 153, 255), 2));
+        btnUnidad02.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUnidad02ActionPerformed(evt);
+            }
+        });
+        BarraLateral.add(btnUnidad02, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 180, 41));
+
+        btnUnidad03.setBackground(new java.awt.Color(51, 153, 255));
+        btnUnidad03.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        btnUnidad03.setForeground(new java.awt.Color(255, 255, 255));
+        btnUnidad03.setText("UNIDAD 03");
+        btnUnidad03.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 153, 255), 2));
+        btnUnidad03.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUnidad03ActionPerformed(evt);
+            }
+        });
+        BarraLateral.add(btnUnidad03, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 447, 180, 41));
+
+        btnUnidad04.setBackground(new java.awt.Color(51, 153, 255));
+        btnUnidad04.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        btnUnidad04.setForeground(new java.awt.Color(255, 255, 255));
+        btnUnidad04.setText("UNIDAD 04");
+        btnUnidad04.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(51, 153, 255), 2));
+        btnUnidad04.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUnidad04ActionPerformed(evt);
+            }
+        });
+        BarraLateral.add(btnUnidad04, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 494, 180, 41));
+
+        sprRedes.setBackground(new java.awt.Color(255, 255, 255));
+        sprRedes.setForeground(new java.awt.Color(255, 255, 255));
+        sprRedes.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        sprRedes.setMinimumSize(new java.awt.Dimension(0, 2));
+        sprRedes.setPreferredSize(new java.awt.Dimension(0, 2));
+        BarraLateral.add(sprRedes, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 541, 200, -1));
+
+        jlSubtituloRedes.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        jlSubtituloRedes.setForeground(new java.awt.Color(255, 255, 51));
+        jlSubtituloRedes.setText("REDES SOCIALES");
+        BarraLateral.add(jlSubtituloRedes, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 550, -1, -1));
+
+        sprSubtituloRedes.setBackground(new java.awt.Color(255, 255, 255));
+        sprSubtituloRedes.setForeground(new java.awt.Color(255, 255, 255));
+        BarraLateral.add(sprSubtituloRedes, new org.netbeans.lib.awtextra.AbsoluteConstraints(35, 575, 123, 10));
+
+        jlLogoFB.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/FB.png"))); // NOI18N
+        BarraLateral.add(jlLogoFB, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 591, -1, -1));
+
+        jlLogoTwitter.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/Twitter.png"))); // NOI18N
+        BarraLateral.add(jlLogoTwitter, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 591, -1, -1));
+
+        jlLogoYoutube.setBackground(new java.awt.Color(255, 255, 255));
+        jlLogoYoutube.setForeground(new java.awt.Color(255, 255, 255));
+        jlLogoYoutube.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/YT.png"))); // NOI18N
+        BarraLateral.add(jlLogoYoutube, new org.netbeans.lib.awtextra.AbsoluteConstraints(124, 591, -1, -1));
+
+        jlLogoInstagram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/IG.png"))); // NOI18N
+        BarraLateral.add(jlLogoInstagram, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 647, -1, -1));
+
+        jlLogoCorreo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/Correo.png"))); // NOI18N
+        BarraLateral.add(jlLogoCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 647, -1, -1));
+
+        jlCorreo01.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        jlCorreo01.setForeground(new java.awt.Color(255, 255, 255));
+        jlCorreo01.setText("sistemaeduca");
+        BarraLateral.add(jlCorreo01, new org.netbeans.lib.awtextra.AbsoluteConstraints(104, 660, -1, -1));
+
+        jlCorreo02.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
+        jlCorreo02.setForeground(new java.awt.Color(255, 255, 255));
+        jlCorreo02.setText("tivo@gmail.com");
+        BarraLateral.add(jlCorreo02, new org.netbeans.lib.awtextra.AbsoluteConstraints(68, 683, -1, -1));
+
+        jPanel3.add(BarraLateral, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 200, 760));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI Black", 1, 38)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 153, 51));
+        jLabel2.setText("Tipo Abstracto de Datos (TAD)");
+        jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 60, -1, -1));
+
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/java.png"))); // NOI18N
+        jPanel3.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(1290, 20, -1, -1));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/utp/SistemaEducativo/Images/ImageDarkBlue.jpg"))); // NOI18N
+        jLabel4.setText("jLabel4");
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 1360, 770));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1550, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 756, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         pack();
@@ -294,6 +507,42 @@ public class Tema04_TipoAbstractoDeDatos_BuscarAlumnoView extends javax.swing.JF
 
     }//GEN-LAST:event_btnEliminarActionPerformed
 
+    private void btnMenuPrincipalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuPrincipalActionPerformed
+        MenuPrincipalView menu = new MenuPrincipalView();
+        menu.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnMenuPrincipalActionPerformed
+
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+        LoginView login = new LoginView();
+        login.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnLoginActionPerformed
+
+    private void btnUnidad01ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad01ActionPerformed
+        Unidad01_TeoriaView teoria01 = new Unidad01_TeoriaView();
+        teoria01.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnUnidad01ActionPerformed
+
+    private void btnUnidad02ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad02ActionPerformed
+        Unidad02_TeoriaView teoria02 = new Unidad02_TeoriaView();
+        teoria02.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnUnidad02ActionPerformed
+
+    private void btnUnidad03ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad03ActionPerformed
+        Unidad03_TeoriaView teoria03 = new Unidad03_TeoriaView();
+        teoria03.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnUnidad03ActionPerformed
+
+    private void btnUnidad04ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUnidad04ActionPerformed
+        Unidad04_TeoriaView teoria04 = new Unidad04_TeoriaView();
+        teoria04.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_btnUnidad04ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -305,21 +554,56 @@ public class Tema04_TipoAbstractoDeDatos_BuscarAlumnoView extends javax.swing.JF
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Apellido;
+    private javax.swing.JPanel BarraLateral;
     private javax.swing.JLabel Carrera;
     private javax.swing.JLabel Nivel;
     private javax.swing.JLabel Nombre;
     private javax.swing.JLabel Nombre1;
     private javax.swing.JToggleButton btnEliminar;
     private javax.swing.JButton btnIrJFalumnos;
+    private javax.swing.JButton btnLogin;
+    private javax.swing.JButton btnMenuPrincipal;
+    private javax.swing.JButton btnUnidad01;
+    private javax.swing.JButton btnUnidad02;
+    private javax.swing.JButton btnUnidad03;
+    private javax.swing.JButton btnUnidad04;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
+    private javax.swing.JLabel jlCorreo01;
+    private javax.swing.JLabel jlCorreo02;
+    private javax.swing.JLabel jlLogoCorreo;
+    private javax.swing.JLabel jlLogoFB;
+    private javax.swing.JLabel jlLogoInstagram;
+    private javax.swing.JLabel jlLogoTwitter;
+    private javax.swing.JLabel jlLogoYoutube;
+    private javax.swing.JLabel jlSubtituloRedes;
+    private javax.swing.JLabel jlSubtituloTeoria;
+    private javax.swing.JLabel jlSubtituloUnidades;
+    private javax.swing.JLabel jlTitulo01;
+    private javax.swing.JLabel jlTitulo02;
+    private javax.swing.JLabel jlTitulo03;
+    private javax.swing.JSeparator sprRedes;
+    private javax.swing.JSeparator sprSubtituloRedes;
+    private javax.swing.JSeparator sprSubtituloTeoria;
+    private javax.swing.JSeparator sprSubtituloUnidades;
+    private javax.swing.JSeparator sprTeoria;
+    private javax.swing.JSeparator sprUnidades;
     private javax.swing.JTextField txtApellido;
     private javax.swing.JTextField txtBuscar;
     private javax.swing.JTextField txtGrado;
     private javax.swing.JTextField txtNivel;
     private javax.swing.JTextField txtNombre;
+    private javax.swing.JTextField txtRellena;
+    private javax.swing.JTextArea txtaResultado;
     // End of variables declaration//GEN-END:variables
 
     private void buscarPorNombreCompleto() {
